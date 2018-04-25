@@ -1,0 +1,20 @@
+<ion-header>
+
+	<ion-navbar color="simposio">
+		<ion-title>Lector QR</ion-title>
+		<button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="readBarcode()">
+        		<ion-icon name="barcode"></ion-icon>
+	    	</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+	<button ion-button full text-wrap (click)="readBarcode()" ng-if="autenticado == true">Entradas y Salidas</button>
+	<button ion-button full  text-wrap (click)="readBarcode_refrigerio()" ng-if="autenticado == true">Refrigerios</button>
+</ion-content>

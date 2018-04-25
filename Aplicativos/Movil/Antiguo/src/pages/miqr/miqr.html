@@ -1,0 +1,26 @@
+<ion-header>
+
+    <ion-navbar color="simposio">
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{title}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding style="text-align:center">
+    <br/>
+    <h1>{{name}}</h1>
+    
+    <h5>{{rol}}</h5>
+    <br/>
+    <img [src]="url_src" class="qrcode" alt="">
+    
+    
+
+    <div style="text-align: center" *ngIf="!logeado">
+        <br/><br/><br/>
+        <h2>No se ha identificado el usuario. Por favor inicie sesión nuevamente.</h2>
+    </div>
+</ion-content>
