@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="simposio">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <h4 class="titulo">SIMPOSIO INTERNACIONAL DE INVESTIGACIÓN</h4>
+    <h6 style="text-align: center">Universidad de la Amazonia</h6>
+    <hr style="border: 1px dashed black; width: 70%; margin:auto;"/>
+    <div class="logo">
+      <br/>
+      <img src="assets/img/Logo.jpg">
+    </div>
+
+    <form #loginForm="ngForm" novalidate>
+      <ion-item >
+        <ion-input [(ngModel)]="login.username" name="username" placeholder="Correo" type="text" #username="ngModel" spellcheck="false" autocapitalize="off" required>
+        </ion-input>
+      </ion-item>
+      <p [hidden]="username.valid || submitted == false" color="danger" padding-left>
+        Nombre de usuario requerido
+      </p>
+
+      <ion-item>
+        <ion-input [(ngModel)]="login.password" name="password" placeholder="Contraseña" type="password" #password="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <p [hidden]="password.valid || submitted == false" color="danger" padding-left>
+        Contraseña requerida
+      </p>
+
+      <ion-row responsive-sm>
+        <ion-col>
+          <button ion-button (click)="onLogin(loginForm)" type="submit" color="simposio" block>Iniciar sesión</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <a ion-button href="http://200.21.7.94/simposio/Files/CronogramaSimposio2017.pdf" color="light" block>Descargar cronograma</a>
+        </ion-col>
+      </ion-row>
+    </form>
+    <div class="logo">
+      <br/>
+      <!--<img src="assets/img/banner.jpg">-->
+    </div>
+  </ion-list>
+
+</ion-content>

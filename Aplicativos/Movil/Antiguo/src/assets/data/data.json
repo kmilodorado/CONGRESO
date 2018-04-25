@@ -1,0 +1,422 @@
+{
+    "schedule": [{
+        "date": "2017-11-01",
+        "groups": [{
+            "time": "Miércoles 01 de Noviembre. Eje temático 1: Desafíos de la Investigación en Colombia",
+            "sessions": [{
+                "name": "Inscripciones",
+                "timeStart": "7:00 am",
+                "timeEnd": "8:30 am",
+                "location": "Comité Organizador",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "8:30 am",
+            "sessions": [{
+                "name": "Actos protocolarios",
+                "timeStart": "8:30 am",
+                "timeEnd": "8:40 am",
+                "location": "Comité Organizador",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "8:40 am",
+            "sessions": [{
+                "name": "Instalación del evento",
+                "timeStart": "8:40 am",
+                "timeEnd": "8:50 am",
+                "location": "Director Centro Tecnológico de la Amazonia - SENA",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "8:50 am",
+            "sessions": [{
+                "name": "Instalación del evento",
+                "timeStart": "8:50 am",
+                "timeEnd": "9:00 am",
+                "location": "Rector Uniamazonia",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "9:00 am",
+            "sessions": [{
+                "name": "Ponencia apertura",
+                "timeStart": "9:00 am",
+                "timeEnd": "9:30 am",
+                "location": "Dra. Adriana Silva",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "9:30 am",
+            "sessions": [{
+                "name": "Ponencia Nacional",
+                "timeStart": "9:30 am",
+                "timeEnd": "10:00 am",
+                "location": "Delegado Instituto Humboldt",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "10:00 am",
+            "sessions": [{
+                "name": "Refrigerio",
+                "timeStart": "10:00 am",
+                "timeEnd": "10:30 am",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "10:30 am",
+            "sessions": [{
+                "name": "Ponencia Nacional",
+                "timeStart": "10:30 am",
+                "timeEnd": "11:00 am",
+                "location": "Mg. Ervin Duran",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "11:00 am",
+            "sessions": [{
+                "name": "Ponencia Nacional",
+                "timeStart": "11:00 am",
+                "timeEnd": "11:30 am",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "11:30 am",
+            "sessions": [{
+                "name": "Panel de Preguntas",
+                "timeStart": "11:30 am",
+                "timeEnd": "12:00 m",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "12:00 m",
+            "sessions": [{
+                "name": "Almuerzo libre",
+                "timeStart": "12:00 m",
+                "timeEnd": "2:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "Eje temático 2: Investigación y desarrollo agropecuario",
+            "sessions": [{
+                "name": "Presentación Póster",
+                "timeStart": "2:00 pm",
+                "timeEnd": "3:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "3:00 pm",
+            "sessions": [{
+                "name": "Ponencia Local",
+                "timeStart": "3:00 pm",
+                "timeEnd": "3:30 pm",
+                "location": "Magister. José Alfredo Orjuela",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "3:30 pm",
+            "sessions": [{
+                "name": "Ponencia Internacional",
+                "timeStart": "3:30 pm",
+                "timeEnd": "4:10 pm",
+                "location": "Doctor Leidivan Almeida Frazao, Doctor en agronomía, Profesir Universidad Federal de Minas Gerals",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "4:10 pm",
+            "sessions": [{
+                "name": "Refrigerio",
+                "timeStart": "4:10 pm",
+                "timeEnd": "4:30 pm",
+                "location": "Comité Organizador",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "4:30 pm",
+            "sessions": [{
+                "name": "Ponencia Local",
+                "timeStart": "4:30 pm",
+                "timeEnd": "5:00 pm",
+                "location": "Doctor Armando Sterling",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "5:00 pm",
+            "sessions": [{
+                "name": "Ponencia Local",
+                "timeStart": "5:00 pm",
+                "timeEnd": "5:30 pm",
+                "location": "Doctor Fausto Andrés Ortiz Mórea",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "5:30 pm",
+            "sessions": [{
+                "name": "Panel de Preguntas",
+                "timeStart": "5:30 pm",
+                "timeEnd": "6:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "6:00 pm",
+            "sessions": [{
+                "name": "Exposición permanente de paisajes del escudo Guayanes colombiano y Coctel en la Plazoleta del Auditorio.",
+                "timeStart": "6:00 pm",
+                "timeEnd": "8:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "Jueves 02 de Noviembre - Eje temático 3: Investigación e innovación tecnológica",
+            "sessions": [{
+                "name": "Ponencia local",
+                "timeStart": "8:00 am",
+                "timeEnd": "8:30 am",
+                "location": "Doctor Alejandro Reyes",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "8:30 am",
+            "sessions": [{
+                "name": "Ponencia Internacional",
+                "timeStart": "8:30 am",
+                "timeEnd": "9:10 am",
+                "location": "Doctor Kiril Mishev, Doctor en Plant Biology, Profesor asistente del Institute of Plant Physiologyand Genetics -  Bulgaria Academy of Science",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "9:10 am",
+            "sessions": [{
+                "name": "Ponencia corta - Propuesta de Investigación",
+                "timeStart": "9:10 am",
+                "timeEnd": "10:20 am",
+                "location": "SENA o Estudiante Doctorado",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "10:20 am",
+            "sessions": [{
+                "name": "Refrigerio",
+                "timeStart": "10:20 am",
+                "timeEnd": "10:40 am",
+                "location": "Comité Organizador",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "10:40 am",
+            "sessions": [{
+                "name": "Ponencia local",
+                "timeStart": "10:40 am",
+                "timeEnd": "11:10 am",
+                "location": "Doctor Alberto Fajardo o Magister Andrea Hermosa",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "11:10 am",
+            "sessions": [{
+                "name": "Ponencia propuesta investigación",
+                "timeStart": "11:10 am",
+                "timeEnd": "11:30 am",
+                "location": "SENA o Estudiante Doctorado",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "11:30 am",
+            "sessions": [{
+                "name": "Panel de Preguntas",
+                "timeStart": "11:30 am",
+                "timeEnd": "12:00 am",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "12:00 m",
+            "sessions": [{
+                "name": "Almuerzo libre",
+                "timeStart": "12:00 m",
+                "timeEnd": "2:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "Eje temático 4: Investigación y medio ambiente",
+            "sessions": [{
+                "name": "Presentación poster",
+                "timeStart": "2:00 pm",
+                "timeEnd": "3:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "3:00 pm",
+            "sessions": [{
+                "name": "Ponencia local",
+                "timeStart": "3:00 pm",
+                "timeEnd": "3:30 pm",
+                "location": "Doctor Germán Londoño",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "3:30 pm",
+            "sessions": [{
+                "name": "Ponencia Internacional",
+                "timeStart": "3:30 pm",
+                "timeEnd": "4:10 pm",
+                "location": "Doctora Ligia López",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "4:10 pm",
+            "sessions": [{
+                "name": "Ponencia corta - Propuesta de Investigación",
+                "timeStart": "4:10 pm",
+                "timeEnd": "4:30 pm",
+                "location": "SENA o Estudiante Doctorado",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "4:30 pm",
+            "sessions": [{
+                "name": "Refrigerio",
+                "timeStart": "4:30 pm",
+                "timeEnd": "4:50 pm",
+                "location": "Comité Organizador",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "4:50 pm",
+            "sessions": [{
+                "name": "Ponencia Internacional",
+                "timeStart": "4:50 pm",
+                "timeEnd": "5:30 pm",
+                "location": "Doctor Gustavo Gudeblast, Doctor en Ciencias Biológicas: Disciplina Bioenergía y Biotecnología, Universidad de Buenos Aires, Argentina",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }, {
+            "time": "5:30 pm",
+            "sessions": [{
+                "name": "Panel de Preguntas",
+                "timeStart": "5:30 pm",
+                "timeEnd": "6:00 pm",
+                "location": "",
+                "tracks": [
+                    "Food"
+                ]
+            }]
+        }]
+    }],
+    "speakers": [{
+        "name": "Adriana Patricia Gallego",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Adriana%20patricia%20Gallego.jpg",
+        "about": "Doctorado Universidad de Valencia Ciencias fisicas Didacticas de las ciencias",
+        "location": "Colombia"
+    }, {
+        "name": "Carlos Morell",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Carlos%20Morell.jpg",
+        "about": "Jefe de laboratorio de investigaciones en inteligencia artificial de la Universidad Central de 'Martha Abreu' de las Villas - Cuba",
+        "location": "Cuba",
+        "phone": "+1-541-754-3010"
+    }, {
+        "name": "Jose Nelson Perez",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Jose%20Nelson%20Perez.jpg",
+        "about": "Director grupo de investigacion GICOGE de la universidad distrital Francisco Jose de Caldas",
+        "location": "Colombia"
+    }, {
+        "name": "Sergio Cleger Tamayo",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/Sergio_Cleger-Tamayo.jpg",
+        "about": "Responsable de una de las sub-líneas de la línea de investigación de UHOLM “Informatización de la Sociedad",
+        "location": "Brasil"
+    }, {
+        "name": "Dr. Hector Andres Melgar",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/melgar.jpg",
+        "about": "Ingeniero Informático por la Pontificia Universidad Católica del Perú (PUCP, 2000), magíster en Ingeniería Biomédica por la PUCP (2005) y doctor en Ingeniería y Gestión del Conocimiento por la Universidad Federal de Santa Catarina (2011), Brasil",
+        "location": "Perú"
+    }, {
+        "name": "PhD. Ricardo Antonio Gacitua Bustos",
+        "profilePic": "http://congresotic.uniamazonia.edu.co:86/img/team/gacitua.jpg",
+        "about": "Ph.D. otorgado por The School of Computing and Communication de la Universidad de Lancaster, Inglaterra",
+        "location": "Chile"
+    }],
+    "map": [{
+        "name": "Universidad de la Amazonia",
+        "lat": 1.619875,
+        "lng": -75.604380,
+        "center": true
+    }, {
+        "name": "Audiorio Angel Cuniberti",
+        "lat": 1.619684,
+        "lng": -75.604244
+    }]
+}

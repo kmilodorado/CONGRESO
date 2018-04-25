@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArv3JAw2Fnk2Fa+96mKrBJQAAAAACAAAAAAAQZgAAAAEAACAAAABHSkEg/jN0fdU6Azmn4un9/8Wb0/skqmIh2qmkjUNA6AAAAAAOgAAAAAIAACAAAAADO3f1D8IOOHPuw6xQ0Nh7JtszQI0XScdj9y7p7IJb+CAAAAAynmuL1zvZ85KoXspZQU4pBB/epsw9e76qSkiZemgHSkAAAABbX+exKAKgoXGXHjtf+GPdl4YFRa7RaqS2Dcz2Oq3xO1G4d1U33hf0b9dy8pwqQhzjs3CMGiIobGjOD7SdkItC</EncryptedPassword>
+    <_PublishTargetUrl>ftp://200.21.7.94/simposio</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/09/2016 11:18:02</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_cs.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_da.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_de.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_en.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_es.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_fi.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_fr.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_hu.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_it.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_ja.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_ko.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_nl.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_pl.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_pt.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_ru.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_sk.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_sv.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_th.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_tr.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_zh_CN.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/ActiveXControls/PrintControl_res_zh_TW.cab">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allInOne.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_cs.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_da.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_de.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_en.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_es.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_fi.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_fr.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_hu.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_it.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_ja.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_ko.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_nb.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_nl.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_pl.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_pt.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_ru.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_sk.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_sv.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_th.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_tr.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_zh_CN.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/allStrings_zh_TW.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/css/cedefault.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/css/default.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/css/exception.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/css/prompting.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/html/calendar.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/html/calendarbottom.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/html/calendartop.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/buttonl.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/buttonm.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/buttonr.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive350.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortActive50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover350.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortHover50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/DownArrowSortInactive50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive350.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortActive50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover350.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortHover50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive100.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive150.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive200.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive250.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive300.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive400.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/images/isort/UpArrowSortInactive50.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/js/calendar.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/js/calendar_param.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/js/crviewerinclude.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/js/dt_param.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/js/FlexParameterBridge.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/parameterUIController-compressed.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/processindicator.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="aspnet_client/system_web/4_6_81/crystalreportviewers13/promptengine-compressed.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/09/2016 11:18:02</publishTime>
+    </File>
+    <File Include="bin/CongresoTIC.dll">
+      <publishTime>11/03/2017 23:50:08</publishTime>
+    </File>
+    <File Include="bin/CRVsPackageLib.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Design.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Engine.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Data.AdoDotNetInterop.dll">
+      <publishTime>01/24/2016 06:30:10</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ClientDoc.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommLayer.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonControls.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonObjectModel.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Controllers.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CubeDefModel.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataDefModel.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ObjectFactory.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Prompting.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ReportDefModel.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.XmlSerialize.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportSource.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Shared.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.VSDesigner.dll">
+      <publishTime>01/24/2016 06:25:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Web.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Windows.Forms.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>06/20/2016 14:45:20</publishTime>
+    </File>
+    <File Include="bin/EnvDTE80.dll">
+      <publishTime>06/20/2016 14:45:20</publishTime>
+    </File>
+    <File Include="bin/FlashControlV71.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/Gma.QrCodeNet.Encoding.dll">
+      <publishTime>03/17/2013 13:26:30</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>10/10/2016 06:51:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>07/12/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/06/2016 15:40:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/06/2016 10:45:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/06/2016 15:40:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/06/2016 10:42:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.Designer.Interfaces.dll">
+      <publishTime>09/24/2015 15:57:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.OLE.Interop.dll">
+      <publishTime>09/24/2015 15:30:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.Shell.Interop.dll">
+      <publishTime>09/24/2015 15:30:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.TemplateWizardInterface.dll">
+      <publishTime>05/30/2015 12:09:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.dll">
+      <publishTime>09/24/2015 15:30:34</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>02/10/2015 17:05:26</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/QRCoder.dll">
+      <publishTime>09/13/2016 09:24:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/Select.Pdf.dll">
+      <publishTime>10/20/2016 13:22:24</publishTime>
+    </File>
+    <File Include="bin/ShockwaveFlashObjects.dll">
+      <publishTime>01/24/2016 06:25:42</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>07/26/2012 19:08:06</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/UnityEngine.dll">
+      <publishTime>09/13/2016 09:24:42</publishTime>
+    </File>
+    <File Include="bin/VSLangProj.dll">
+      <publishTime>06/20/2016 14:45:20</publishTime>
+    </File>
+    <File Include="bin/VsWebSite.Interop.dll">
+      <publishTime>05/30/2015 12:11:32</publishTime>
+    </File>
+    <File Include="Certificado.aspx">
+      <publishTime>11/03/2017 23:03:34</publishTime>
+    </File>
+    <File Include="Datos.aspx">
+      <publishTime>10/26/2017 23:23:33</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>06/09/2016 11:22:23</publishTime>
+    </File>
+    <File Include="Encuesta.aspx">
+      <publishTime>11/03/2017 22:25:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/09/2016 11:17:34</publishTime>
+    </File>
+    <File Include="Inscripcion.aspx">
+      <publishTime>01/11/2017 23:07:25</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>11/03/2017 23:46:39</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/31/2016 18:58:56</publishTime>
+    </File>
+    <File Include="Reportes/Datos/DS_Datos.xsc">
+      <publishTime>11/03/2017 23:37:51</publishTime>
+    </File>
+    <File Include="Reportes/Datos/DS_Datos.xss">
+      <publishTime>11/03/2017 23:37:51</publishTime>
+    </File>
+    <File Include="Reportes/ReportForm.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Reportes/ReportView.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.19-build00125.js">
+      <publishTime>06/09/2016 11:18:03</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.19-build00125.min.js">
+      <publishTime>06/09/2016 11:18:03</publishTime>
+    </File>
+    <File Include="Views/Evento/Asistencias.aspx">
+      <publishTime>10/19/2017 22:41:12</publishTime>
+    </File>
+    <File Include="Views/Evento/Certificado.aspx">
+      <publishTime>10/22/2016 23:34:59</publishTime>
+    </File>
+    <File Include="Views/Evento/Correos.aspx">
+      <publishTime>03/11/2017 15:10:45</publishTime>
+    </File>
+    <File Include="Views/Evento/Export.aspx">
+      <publishTime>01/11/2017 00:51:56</publishTime>
+    </File>
+    <File Include="Views/Evento/Generar.aspx">
+      <publishTime>01/11/2017 22:52:17</publishTime>
+    </File>
+    <File Include="Views/Evento/GestionarLogistica.aspx">
+      <publishTime>10/18/2016 23:35:01</publishTime>
+    </File>
+    <File Include="Views/Evento/Inscripcion.aspx">
+      <publishTime>10/26/2017 23:12:35</publishTime>
+    </File>
+    <File Include="Views/Evento/Inscritos.aspx">
+      <publishTime>10/27/2017 08:24:23</publishTime>
+    </File>
+    <File Include="Views/Evento/js/html5-qrcode.js">
+      <publishTime>04/10/2016 23:26:25</publishTime>
+    </File>
+    <File Include="Views/Evento/js/html5-qrcode.min.js">
+      <publishTime>04/10/2016 23:28:12</publishTime>
+    </File>
+    <File Include="Views/Evento/js/jQuery-2.1.4.min.js">
+      <publishTime>04/10/2016 23:27:20</publishTime>
+    </File>
+    <File Include="Views/Evento/js/jsqrcode-combined.min.js">
+      <publishTime>04/10/2016 23:28:12</publishTime>
+    </File>
+    <File Include="Views/Evento/Logistica.aspx">
+      <publishTime>09/19/2016 22:13:59</publishTime>
+    </File>
+    <File Include="Views/Evento/Masivos.aspx">
+      <publishTime>10/19/2017 23:02:16</publishTime>
+    </File>
+    <File Include="Views/Evento/ReciboPago.aspx">
+      <publishTime>10/26/2017 23:02:04</publishTime>
+    </File>
+    <File Include="Views/Evento/Refrigerios.aspx">
+      <publishTime>10/19/2017 23:35:28</publishTime>
+    </File>
+    <File Include="Views/Evento/VerQR.aspx">
+      <publishTime>10/17/2016 21:42:31</publishTime>
+    </File>
+    <File Include="Views/Home/CrystalImageHandler.aspx">
+      <publishTime>10/25/2016 22:33:32</publishTime>
+    </File>
+    <File Include="Views/Home/Main.aspx">
+      <publishTime>10/26/2017 23:12:35</publishTime>
+    </File>
+    <File Include="Views/Home/MasterPage.Master">
+      <publishTime>10/19/2017 22:56:02</publishTime>
+    </File>
+    <File Include="Views/Home/ReportForm.aspx">
+      <publishTime>09/23/2016 13:58:20</publishTime>
+    </File>
+    <File Include="Views/Users/Register.aspx">
+      <publishTime>06/09/2016 23:20:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/03/2017 23:50:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
