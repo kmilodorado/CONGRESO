@@ -1,6 +1,6 @@
 {
   "name": "Simposio",
-  "app_id": "",
+  "app_id": "cfb4c875",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
