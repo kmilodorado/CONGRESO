@@ -1,5 +1,4 @@
 ﻿using Eventos.AccesoDatos.Clase;
-using Eventos.AccesoDatos.Interface;
 using System;
 using System.Collections.Generic;
 using System.Data;

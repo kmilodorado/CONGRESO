@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eventos.Modelo.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,20 @@ namespace Eventos.Vistas.Publico
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Write("<script>demo.showNotification('bottom','center');</script>");
+        }
 
+        protected void BTN_INGRESAR_Click(object sender, EventArgs e)
+        {
+            UsuarioModel USU = new UsuarioModel().Validar(TXTUSUARIO.Text,TXTPASS.Text);
+            if (USU.IDUSUARIO=="")
+            {
+                Response.Redirect("../Privado/SuperAdmin/PrincipalView.aspx");
+            }
+            else
+            {
+
+            }
         }
     }
 }

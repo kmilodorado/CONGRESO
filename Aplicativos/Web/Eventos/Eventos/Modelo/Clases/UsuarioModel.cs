@@ -67,13 +67,23 @@ namespace Eventos.Modelo.Clases
 
         public UsuarioModel Validar(string user,string pass)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
-            return new UsuarioModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+            
+            DataTable consulta = new Datos().ConsultarDatos(string.Format("CALL `PR_USUARIO_VALIDAR`('{0}', '{1}')",user,pass));
+            try
+            {
+                return new UsuarioModel(
+                consulta.Rows[0]["IDUSUARIO"].ToString(),
+                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["ESTADO"].ToString(),
+                consulta.Rows[0]["USUA_IDROL"].ToString(),
+                consulta.Rows[0]["USUA_IDPERSONA"].ToString());
+            }
+            catch 
+            {
+
+                return new UsuarioModel();
+            }
+            
         }
 
         public DataTable Consultar()

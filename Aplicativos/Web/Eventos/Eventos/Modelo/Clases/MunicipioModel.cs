@@ -9,19 +9,22 @@ namespace Eventos.Modelo.Clases
 {
     public class MunicipioModel
     {
+        public string IDMUNICIPIO { get; set; }
         public string MUNICIPIO { get; set; }
         public string DEPARTAMENTO { get; set; }
         public string PAIS { get; set; }
-        
+
         public MunicipioModel()
         {
+            IDMUNICIPIO = "";
             MUNICIPIO = "";
             DEPARTAMENTO = "";
             PAIS = "";
         }
 
-        public MunicipioModel(string municipio, string departamento, string pais)
+        public MunicipioModel(string id,string municipio, string departamento, string pais)
         {
+            IDMUNICIPIO = id;
             MUNICIPIO = municipio;
             DEPARTAMENTO = departamento;
             PAIS = pais;
@@ -29,20 +32,21 @@ namespace Eventos.Modelo.Clases
 
         public MunicipioModel Consultar(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_MUNICIPIO_CONSULTAR_ID`('" + id + "')");
             return new MunicipioModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDMUNICIPIO"].ToString(),
+                consulta.Rows[0]["MUNI_NOMBRE"].ToString(),
+                consulta.Rows[0]["DEPA_NOMBRE"].ToString(),
+                consulta.Rows[0]["PAIS_NOMBRE"].ToString());
         }
 
         public DataTable ConsultarDepartamento()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_DEPARTAMENTO_CONSULTAR`()");
         }
         public DataTable ConsultarMunicipio(string departamento)
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_MUNICIPIO_CONSULTAR_DEP`('" + departamento + "')");
         }
     }
 }

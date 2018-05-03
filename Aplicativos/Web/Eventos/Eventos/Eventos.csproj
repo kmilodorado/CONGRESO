@@ -112,81 +112,145 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Estilo\assets\css\stylish-portfolio.css" />
-    <Content Include="Estilo\assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Estilo\assets\js\core\buttons.js" />
-    <Content Include="Estilo\assets\js\core\now-ui-dashboard.min.js" />
+    <Content Include="Estilo\Private\assets\assets-for-demo\demo.css" />
+    <Content Include="Estilo\Private\assets\assets-for-demo\js\jquery.sharrre.js" />
+    <Content Include="Estilo\Private\assets\assets-for-demo\js\modernizr.js" />
+    <Content Include="Estilo\Private\assets\css\font-awesome.min.css" />
+    <Content Include="Estilo\Private\assets\css\material-dashboard.min.css" />
+    <Content Include="Estilo\Private\assets\css\material.css" />
+    <Content Include="Estilo\Private\assets\img\apple-icon.png" />
+    <Content Include="Estilo\Private\assets\img\arrow-left.png" />
+    <Content Include="Estilo\Private\assets\img\arrow-right.png" />
+    <Content Include="Estilo\Private\assets\img\bg-pricing.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-1.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-2.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-3.jpg" />
+    <Content Include="Estilo\Private\assets\img\default-avatar.png" />
+    <Content Include="Estilo\Private\assets\img\faces\avatar.jpg" />
+    <Content Include="Estilo\Private\assets\img\faces\card-profile1-square.jpg" />
+    <Content Include="Estilo\Private\assets\img\faces\marc.jpg" />
+    <Content Include="Estilo\Private\assets\img\favicon.png" />
+    <Content Include="Estilo\Private\assets\img\flags\AU.png" />
+    <Content Include="Estilo\Private\assets\img\flags\BR.png" />
+    <Content Include="Estilo\Private\assets\img\flags\DE.png" />
+    <Content Include="Estilo\Private\assets\img\flags\GB.png" />
+    <Content Include="Estilo\Private\assets\img\flags\RO.png" />
+    <Content Include="Estilo\Private\assets\img\flags\US.png" />
+    <Content Include="Estilo\Private\assets\img\image_placeholder.jpg" />
+    <Content Include="Estilo\Private\assets\img\lock.jpg" />
+    <Content Include="Estilo\Private\assets\img\login.jpg" />
+    <Content Include="Estilo\Private\assets\img\placeholder.jpg" />
+    <Content Include="Estilo\Private\assets\img\product1.jpg" />
+    <Content Include="Estilo\Private\assets\img\product2.jpg" />
+    <Content Include="Estilo\Private\assets\img\product3.jpg" />
+    <Content Include="Estilo\Private\assets\img\register.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-1.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-2.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-3.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-4.jpg" />
+    <Content Include="Estilo\Private\assets\js\bootstrap-material-design.min.js" />
+    <Content Include="Estilo\Private\assets\js\core.js" />
+    <Content Include="Estilo\Private\assets\js\core\jquery.min.js" />
+    <Content Include="Estilo\Private\assets\js\core\popper.min.js" />
+    <Content Include="Estilo\Private\assets\js\material-dashboard.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\arrive.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\chartist.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\demo.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.datatables.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.select-bootstrap.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\moment.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\nouislider.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\sweetalert2.js" />
+    <Content Include="Estilo\Public\assets\css\stylish-portfolio.css" />
+    <Content Include="Estilo\Public\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Estilo\Public\assets\js\core\buttons.js" />
+    <Content Include="Estilo\Public\assets\js\core\now-ui-dashboard.min.js" />
+    <Content Include="Estilo\Public\assets\css\material-dashboard.min.css" />
     <Content Include="Imagen\LogoGIECOM.png" />
-    <Content Include="Estilo\assets\img\bg14.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg14.jpg" />
     <Content Include="Imagen\LogoUA.jpg" />
     <Content Include="Imagen\LogoUA.png" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Estilo\assets\css\all.css" />
-    <Content Include="Estilo\assets\css\bootstrap.min.css" />
-    <Content Include="Estilo\assets\css\font-awesome.min.css" />
-    <Content Include="Estilo\assets\css\Iconos.css" />
-    <Content Include="Estilo\assets\css\now-ui-dashboard.css" />
-    <Content Include="Estilo\assets\css\now-ui-dashboard.min.css" />
-    <Content Include="Estilo\assets\demo\demo.css" />
-    <Content Include="Estilo\assets\demo\demo.js" />
-    <Content Include="Estilo\assets\demo\jquery.sharrre.js" />
-    <Content Include="Estilo\assets\img\apple-icon.png" />
-    <Content Include="Estilo\assets\img\AU.png" />
-    <Content Include="Estilo\assets\img\balmain.jpg" />
-    <Content Include="Estilo\assets\img\bg1.jpg" />
-    <Content Include="Estilo\assets\img\bg13.jpg" />
-    <Content Include="Estilo\assets\img\bg15.jpg" />
-    <Content Include="Estilo\assets\img\bg16.jpg" />
-    <Content Include="Estilo\assets\img\bg3.jpg" />
-    <Content Include="Estilo\assets\img\bg5.jpg" />
-    <Content Include="Estilo\assets\img\BR.png" />
-    <Content Include="Estilo\assets\img\DE.png" />
-    <Content Include="Estilo\assets\img\default-avatar.png" />
-    <Content Include="Estilo\assets\img\emilyz.jpg" />
-    <Content Include="Estilo\assets\img\favicon.png" />
-    <Content Include="Estilo\assets\img\GB.png" />
-    <Content Include="Estilo\assets\img\image_placeholder.jpg" />
-    <Content Include="Estilo\assets\img\james.jpg" />
-    <Content Include="Estilo\assets\img\mike.jpg" />
-    <Content Include="Estilo\assets\img\now-logo.png" />
-    <Content Include="Estilo\assets\img\placeholder.jpg" />
-    <Content Include="Estilo\assets\img\prada.jpg" />
-    <Content Include="Estilo\assets\img\RO.png" />
-    <Content Include="Estilo\assets\img\saint-laurent.jpg" />
-    <Content Include="Estilo\assets\img\US.png" />
-    <Content Include="Estilo\assets\js\buttons.js" />
-    <Content Include="Estilo\assets\js\core\bootstrap.min.js" />
-    <Content Include="Estilo\assets\js\core\jquery.min.js" />
-    <Content Include="Estilo\assets\js\core\popper.min.js" />
-    <Content Include="Estilo\assets\js\now-ui-dashboard.minf700.js" />
-    <Content Include="Estilo\assets\js\plugins\bootstrap-datetimepicker.js" />
-    <Content Include="Estilo\assets\js\plugins\bootstrap-notify.js" />
-    <Content Include="Estilo\assets\js\plugins\bootstrap-selectpicker.js" />
-    <Content Include="Estilo\assets\js\plugins\bootstrap-switch.js" />
-    <Content Include="Estilo\assets\js\plugins\bootstrap-tagsinput.js" />
-    <Content Include="Estilo\assets\js\plugins\chartjs.min.js" />
-    <Content Include="Estilo\assets\js\plugins\fullcalendar.min.js" />
-    <Content Include="Estilo\assets\js\plugins\jasny-bootstrap.min.js" />
-    <Content Include="Estilo\assets\js\plugins\jquery-jvectormap.js" />
-    <Content Include="Estilo\assets\js\plugins\jquery.bootstrap-wizard.js" />
-    <Content Include="Estilo\assets\js\plugins\jquery.dataTables.min.js" />
-    <Content Include="Estilo\assets\js\plugins\jquery.validate.min.js" />
-    <Content Include="Estilo\assets\js\plugins\moment.min.js" />
-    <Content Include="Estilo\assets\js\plugins\nouislider.min.js" />
-    <Content Include="Estilo\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
-    <Content Include="Estilo\assets\js\plugins\sweetalert2.min.js" />
-    <Content Include="Vistas\Privado\PagMaster.Master" />
-    <Content Include="Estilo\assets\css\now-ui-dashboard.css.map" />
+    <Content Include="Estilo\Public\assets\css\all.css" />
+    <Content Include="Estilo\Public\assets\css\bootstrap.min.css" />
+    <Content Include="Estilo\Public\assets\css\font-awesome.min.css" />
+    <Content Include="Estilo\Public\assets\css\Iconos.css" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.css" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.min.css" />
+    <Content Include="Estilo\Public\assets\demo\demo.css" />
+    <Content Include="Estilo\Public\assets\demo\demo.js" />
+    <Content Include="Estilo\Public\assets\demo\jquery.sharrre.js" />
+    <Content Include="Estilo\Public\assets\img\apple-icon.png" />
+    <Content Include="Estilo\Public\assets\img\AU.png" />
+    <Content Include="Estilo\Public\assets\img\balmain.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg1.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg13.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg15.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg16.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg3.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg5.jpg" />
+    <Content Include="Estilo\Public\assets\img\BR.png" />
+    <Content Include="Estilo\Public\assets\img\DE.png" />
+    <Content Include="Estilo\Public\assets\img\default-avatar.png" />
+    <Content Include="Estilo\Public\assets\img\emilyz.jpg" />
+    <Content Include="Estilo\Public\assets\img\favicon.png" />
+    <Content Include="Estilo\Public\assets\img\GB.png" />
+    <Content Include="Estilo\Public\assets\img\image_placeholder.jpg" />
+    <Content Include="Estilo\Public\assets\img\james.jpg" />
+    <Content Include="Estilo\Public\assets\img\mike.jpg" />
+    <Content Include="Estilo\Public\assets\img\now-logo.png" />
+    <Content Include="Estilo\Public\assets\img\placeholder.jpg" />
+    <Content Include="Estilo\Public\assets\img\prada.jpg" />
+    <Content Include="Estilo\Public\assets\img\RO.png" />
+    <Content Include="Estilo\Public\assets\img\saint-laurent.jpg" />
+    <Content Include="Estilo\Public\assets\img\US.png" />
+    <Content Include="Estilo\Public\assets\js\buttons.js" />
+    <Content Include="Estilo\Public\assets\js\core\bootstrap.min.js" />
+    <Content Include="Estilo\Public\assets\js\core\jquery.min.js" />
+    <Content Include="Estilo\Public\assets\js\core\popper.min.js" />
+    <Content Include="Estilo\Public\assets\js\now-ui-dashboard.minf700.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-datetimepicker.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-switch.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\chartjs.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\moment.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\nouislider.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\sweetalert2.min.js" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.css.map" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx" />
     <Content Include="Vistas\Publico\LoginView.aspx" />
     <Content Include="Vistas\Publico\PagPublic.Master" />
-    <Content Include="Estilo\assets\fonts\nucleo-outline.eot" />
-    <Content Include="Estilo\assets\fonts\nucleo-outline.ttf" />
-    <Content Include="Estilo\assets\fonts\nucleo-outline.woff" />
-    <Content Include="Estilo\assets\fonts\nucleo-outline.woff2" />
-    <Content Include="Estilo\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.eot" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.ttf" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.woff" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.woff2" />
+    <Content Include="Estilo\Public\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -196,8 +260,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Vistas\Privado\PrincipalView.aspx" />
-    <Content Include="Vistas\Privado\SuperAdmin\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -208,9 +270,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Clases\AsistenciaModel.cs" />
     <Compile Include="Modelo\Clases\EventoModel.cs" />
+    <Compile Include="Modelo\Clases\FormacionModel.cs" />
     <Compile Include="Modelo\Clases\LugarModel.cs" />
     <Compile Include="Modelo\Clases\MenuModel.cs" />
+    <Compile Include="Modelo\Clases\OcupacionModel.cs" />
+    <Compile Include="Modelo\Clases\ParticipanteModel.cs" />
+    <Compile Include="Modelo\Clases\PrecioModel.cs" />
+    <Compile Include="Modelo\Clases\ProgramaModel.cs" />
+    <Compile Include="Modelo\Clases\ReciboModel.cs" />
+    <Compile Include="Modelo\Clases\RefrigerioModel.cs" />
+    <Compile Include="Modelo\Clases\SesionModel.cs" />
+    <Compile Include="Modelo\Clases\TemaModel.cs" />
     <Compile Include="Modelo\Clases\Tipo_PrecioModel.cs" />
     <Compile Include="Modelo\Clases\MunicipioModel.cs" />
     <Compile Include="Modelo\Clases\PersonaModel.cs" />
@@ -220,27 +292,44 @@
     <Compile Include="Modelo\Clases\Tipo_ParticipanteModel.cs" />
     <Compile Include="Modelo\Clases\Tipo_PersonaModel.cs" />
     <Compile Include="Modelo\Clases\UsuarioModel.cs" />
+    <Compile Include="Modelo\Complemento\AlertaModel.cs" />
+    <Compile Include="Modelo\Complemento\Correo.cs" />
+    <Compile Include="Modelo\Complemento\Metodos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vistas\Privado\PagMaster.Master.cs">
-      <DependentUpon>PagMaster.Master</DependentUpon>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx.cs">
+      <DependentUpon>GestionarEventoView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vistas\Privado\PagMaster.Master.designer.cs">
-      <DependentUpon>PagMaster.Master</DependentUpon>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx.designer.cs">
+      <DependentUpon>GestionarEventoView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\Privado\PrincipalView.aspx.cs">
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx.cs">
+      <DependentUpon>GestionarResponsableView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx.designer.cs">
+      <DependentUpon>GestionarResponsableView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx.cs">
+      <DependentUpon>GestionarTiposView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx.designer.cs">
+      <DependentUpon>GestionarTiposView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master.cs">
+      <DependentUpon>PagPrivateMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master.designer.cs">
+      <DependentUpon>PagPrivateMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vistas\Privado\PrincipalView.aspx.designer.cs">
+    <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.designer.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Privado\SuperAdmin\Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Privado\SuperAdmin\Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Publico\LoginView.aspx.cs">
       <DependentUpon>LoginView.aspx</DependentUpon>
@@ -258,7 +347,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Modelo\Interface\" />
     <Folder Include="Scripts\" />
     <Folder Include="Vistas\Privado\Admin\" />
   </ItemGroup>

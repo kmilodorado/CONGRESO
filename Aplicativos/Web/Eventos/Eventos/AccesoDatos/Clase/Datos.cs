@@ -1,5 +1,4 @@
-﻿using Eventos.AccesoDatos.Interface;
-using Eventos.AccesoDatos.Conexion;
+﻿using Eventos.AccesoDatos.Conexion;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using System.Data;
 
 namespace Eventos.AccesoDatos.Clase
 {
-    public class Datos : Connection, IDatos
+    public class Datos : Connection
     {
         //Realizar operaciones en la base de datos
         public bool OperarDatos(string sql)

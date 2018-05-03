@@ -31,13 +31,13 @@ namespace Eventos.Modelo.Clases
 
         public Tipo_IdentificacionModel Consultar(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
-            return new Tipo_IdentificacionModel(consulta.Rows[0][""].ToString(), consulta.Rows[0][""].ToString());
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_TIPO_DOCUMENTO_CONSULTAR_ID`('"+id+"')");
+            return new Tipo_IdentificacionModel(consulta.Rows[0]["IDTIPO_DOCUMENTO"].ToString(), consulta.Rows[0]["TIPO_DETALLE"].ToString());
         }
 
         public DataTable Consultar()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_TIPO_DOCUMENTO_CONSULTAR_G`()");
         }
     }
 }
