@@ -1,16 +1,42 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Privado/SuperAdmin/PagPrivateMaster.Master" AutoEventWireup="true" CodeBehind="PrincipalView.aspx.cs" Inherits="Eventos.Vistas.Privado.SuperAdmin.PrincipalView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Privado/SuperAdmin/PagPrivateMaster.Master" AutoEventWireup="true" CodeBehind="GestionarLugaresView.aspx.cs" Inherits="Eventos.Vistas.Privado.SuperAdmin.GestionarLugaresView" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Encabezado" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
     <div class="row">
         <div class="col-md-12">
+            <h3 class="title text-center">
+                <asp:Label ID="Titulo" runat="server" Text=""></asp:Label></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
             <div class="card ">
-                <div class="card-header card-header-danger card-header-icon">
-                    <div class="card-icon">
-                        <i class="material-icons">event</i>
+                <div class="card-header">
+                    <h4 class="card-title">Registrar Lugares del Evento</h4>
+                </div>
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group bmd-form-group">
+                                <asp:DropDownList ID="DDL_LUGAR" class="selectpicker" data-style="btn select-with-transition" title="Lugares" runat="server">
+                                </asp:DropDownList>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="card-title">Eventos</h4>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6  ml-auto mr-auto text-center ">
+                            <asp:LinkButton ID="LinkButton2" CssClass="btn btn-success" OnClick="LinkButton1_Click" runat="server"><i class="fa fa-plus"></i> Agregar Lugar</asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-title">Lugares del Evento</h4>
                 </div>
                 <div class="card-body ">
                     <div class="row">
@@ -23,36 +49,21 @@
                                 <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width: 100%">
                                     <thead>
                                         <tr>
-                                            <th>N°</th>
-                                            <th>Nombre</th>
-                                            <th>Fecha inicio</th>
-                                            <th>Fecha final</th>
-                                            <th>Cupos</th>
-                                            <th>Valor inscripción</th>
-                                            <th>Estado</th>
-                                            <th>Agregar Responsable</th>
-                                            <th>Modificar Lugares</th>
-                                            <th>Modificar</th>
+                                            <th style="width:10%">N°</th>
+                                            <th style="width:80%">Lugar</th>
+                                            <th style="width:10%">Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:Repeater ID="Repeater1" runat="server">
+                                        <asp:Repeater ID="Repeater2" runat="server">
                                             <ItemTemplate>
                                                 <tr>
                                                     <td><%# Container.ItemIndex+1 %></td>
                                                     <td><%# Eval("NOMBRE") %></td>
-                                                    <td><%# DateTime.Parse(Eval("F_INI").ToString()).ToString("dd/MM/yyyy") %></td>
-                                                    <td><%# DateTime.Parse(Eval("F_FIN").ToString()).ToString("dd/MM/yyyy") %></td>
-                                                    <td><%# Eval("CUPOS") %></td>
-                                                    <td><%# Eval("COSTO") %></td>
-                                                    <td><%# Eval("ESTADO") %></td>
-                                                    <td><a href="GestionarResponsableView.aspx?id=<%#Eval("ID")%>"><i class="fa fa-user-plus"></i>Agregar Responsable</a></td>
-                                                    <td><a href="GestionarLugaresView.aspx?id=<%#Eval("ID")%>" class="btn btn-warning"><i class="fa fa-plane"></i></a></td>
-                                                    <td><a href="GestionarResponsableView.aspx?id=<%#Eval("ID")%>" class="btn btn-warning"><i class="fa fa-edit"></i></a></td>
+                                                    <td><a href="GestionarLugaresView.aspx?Eliminar=<%#Eval("IDLUGAR")%>" class="btn btn-danger"><i class="fa fa-remove"></i></a></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>
-
                                     </tbody>
                                 </table>
                             </div>

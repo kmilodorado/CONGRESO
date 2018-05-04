@@ -38,11 +38,19 @@ namespace Eventos.Modelo.Clases
             return new Datos().OperarDatos("");
         }
 
+        public bool RegistrarLugares(string evento, string lugar)
+        {
+            return new Datos().OperarDatos("CALL `PR_LUGARES_REGISTRAR`('"+evento+"', '"+lugar+"')");
+        }
         public bool Modificar(LugarModel obj)
         {
             return new Datos().OperarDatos("");
         }
 
+        public bool EliminarLugares(string evento, string lugar)
+        {
+            return new Datos().OperarDatos("CALL `PR_LUGARES_ELIMINAR`('"+evento+"', '"+lugar+"')");
+        }
         public LugarModel Consultar(string id)
         {
             DataTable consulta = new Datos().ConsultarDatos("");
@@ -54,7 +62,16 @@ namespace Eventos.Modelo.Clases
 
         public DataTable Consultar()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_LUGAR_CONSULTAR_G`()");
+        }
+
+        public DataTable ConsultarEvento(string evento)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_LUGAR_CONSULTAR_EVENTO`('"+evento+"')");
+        }
+        public DataTable ValidarEvento(string evento, string lugar)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_LUGARES_VALIDAR`('"+evento+"', '"+lugar+"')");
         }
     }
 }

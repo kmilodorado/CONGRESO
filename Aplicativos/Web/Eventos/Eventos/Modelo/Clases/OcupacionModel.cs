@@ -37,7 +37,7 @@ namespace Eventos.Modelo.Clases
         public OcupacionModel Consultar(string id)
         {
             DataTable consulta = new Datos().ConsultarDatos("CALL `PR_OCUPACION_CONSULTAR_ID`('"+id+"')");
-            return new OcupacionModel(consulta.Rows[0]["IDOCUPACION"].ToString(), consulta.Rows[0]["TIPO_DETALLE"].ToString());
+            return new OcupacionModel(consulta.Rows[0]["IDOCUPACION"].ToString(), consulta.Rows[0]["OCUP_DETALLE"].ToString());
         }
 
         public DataTable Consultar()

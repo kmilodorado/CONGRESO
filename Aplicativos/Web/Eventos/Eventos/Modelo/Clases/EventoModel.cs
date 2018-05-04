@@ -93,39 +93,43 @@ namespace Eventos.Modelo.Clases
         }
         public EventoModel Consultar(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_EVENTO_CONSULTAR_ID`('"+id+"')");
             return new EventoModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDEVENTO"].ToString(),
+                consulta.Rows[0]["EVEN_NOMBRE"].ToString(),
+                consulta.Rows[0]["EVEN_SIGLAS"].ToString(),
+                consulta.Rows[0]["EVEN_LOGO"].ToString(),
+                consulta.Rows[0]["EVEN_POSTER"].ToString(),
+                consulta.Rows[0]["EVEN_CORREO"].ToString(),
+                consulta.Rows[0]["EVEN_FECHA_INI"].ToString(),
+                consulta.Rows[0]["EVEN_FECHA_FIN"].ToString(),
+                consulta.Rows[0]["EVEN_ESTADO"].ToString(),
+                consulta.Rows[0]["EVEN_CUPOS"].ToString(),
+                consulta.Rows[0]["EVEN_IDTIPO_COSTO"].ToString()
+                );
         }
 
         public EventoModel ConsultarSiglas(string sigla)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_EVENTO_CONSULTAR_SIGLAS`('"+sigla+"')");
             return new EventoModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDEVENTO"].ToString(),
+                consulta.Rows[0]["EVEN_NOMBRE"].ToString(),
+                consulta.Rows[0]["EVEN_SIGLAS"].ToString(),
+                consulta.Rows[0]["EVEN_LOGO"].ToString(),
+                consulta.Rows[0]["EVEN_POSTER"].ToString(),
+                consulta.Rows[0]["EVEN_CORREO"].ToString(),
+                consulta.Rows[0]["EVEN_FECHA_INI"].ToString(),
+                consulta.Rows[0]["EVEN_FECHA_FIN"].ToString(),
+                consulta.Rows[0]["EVEN_ESTADO"].ToString(),
+                consulta.Rows[0]["EVEN_CUPOS"].ToString(),
+                consulta.Rows[0]["EVEN_IDTIPO_COSTO"].ToString()
+                );
         }
 
         public DataTable Consultar()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_EVENTO_CONSULTAR_G`()");
         }
     }
 }

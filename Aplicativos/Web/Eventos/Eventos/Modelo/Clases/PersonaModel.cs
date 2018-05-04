@@ -46,8 +46,8 @@ namespace Eventos.Modelo.Clases
             IDPERSONA = id;
             IDENTIFICACION = consulta.Rows[0]["PERS_IDENTIFICACION"].ToString();
             TIPO_IDENTIFICACION = new Tipo_IdentificacionModel().Consultar(consulta.Rows[0]["PERS_IDTIPO_DOCUMENTO"].ToString());
-            NOMBRE = consulta.Rows[0]["PERS_NOMBRE"].ToString();
-            APELLIDO = consulta.Rows[0]["PERS_APELLIDO"].ToString();
+            NOMBRE = consulta.Rows[0]["PERS_NOMBRES"].ToString();
+            APELLIDO = consulta.Rows[0]["PERS_APELLIDOS"].ToString();
             CORREO = consulta.Rows[0]["PERS_CORREO"].ToString();
             CELULAR = consulta.Rows[0]["PERS_CELULAR"].ToString();
             MUNICIPIO = new MunicipioModel().Consultar(consulta.Rows[0]["PERS_IDMUNICIPIO"].ToString());

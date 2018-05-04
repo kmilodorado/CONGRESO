@@ -45,26 +45,36 @@ namespace Eventos.Modelo.Clases
 
         public UsuarioModel ConsultarUsuario(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_ID`('"+id+"')");
             return new UsuarioModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(), 
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDUSUARIO"].ToString(),
+                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
+                consulta.Rows[0]["USUA_IDROL"].ToString());
         }
 
         public UsuarioModel ConsultarUser(string user)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_USER`('"+user+"')");
             return new UsuarioModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDUSUARIO"].ToString(),
+                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
+                consulta.Rows[0]["USUA_IDROL"].ToString());
         }
 
+        public UsuarioModel ConsultarUserIdentificacion(string identificacion)
+        {
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_IDENTIFICACION`('"+ identificacion + "')");
+            return new UsuarioModel(
+                consulta.Rows[0]["IDUSUARIO"].ToString(),
+                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                consulta.Rows[0]["USUA_IDROL"].ToString(),
+                consulta.Rows[0]["USUA_IDPERSONA"].ToString());
+        }
         public UsuarioModel Validar(string user,string pass)
         {
             

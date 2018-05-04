@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eventos.Modelo.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,8 @@ namespace Eventos.Vistas.Privado.SuperAdmin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Repeater1.DataSource = new EventoModel().Consultar();
+            Repeater1.DataBind();
         }
     }
 }

@@ -36,13 +36,13 @@ namespace Eventos.Modelo.Clases
 
         public RolModel Consultar(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
-            return new RolModel(consulta.Rows[0][""].ToString(), consulta.Rows[0][""].ToString());
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_ROL_CONSULTAR_ID`('"+id+"');");
+            return new RolModel(consulta.Rows[0]["IDROL"].ToString(), consulta.Rows[0]["ROL_DETALLE"].ToString());
         }
 
         public DataTable Consultar()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_ROL_CONSULTAR_G`();");
         }
     }
 }
