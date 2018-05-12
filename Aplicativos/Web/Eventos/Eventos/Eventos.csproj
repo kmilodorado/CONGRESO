@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BF1D189A-4729-4CCC-A375-9D66266D4D59}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eventos</RootNamespace>
+    <AssemblyName>Eventos</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF5">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Data.Entity.EF5.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Fabric.Plugin">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Fabric.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\..\..\..\..\EVADOC\EvaDoc\EvaDoc\bin\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Estilo\Private\assets\assets-for-demo\demo.css" />
+    <Content Include="Estilo\Private\assets\assets-for-demo\js\jquery.sharrre.js" />
+    <Content Include="Estilo\Private\assets\assets-for-demo\js\modernizr.js" />
+    <Content Include="Estilo\Private\assets\css\font-awesome.min.css" />
+    <Content Include="Estilo\Private\assets\css\material-dashboard.min.css" />
+    <Content Include="Estilo\Private\assets\css\material.css" />
+    <Content Include="Estilo\Private\assets\img\apple-icon.png" />
+    <Content Include="Estilo\Private\assets\img\arrow-left.png" />
+    <Content Include="Estilo\Private\assets\img\arrow-right.png" />
+    <Content Include="Estilo\Private\assets\img\bg-pricing.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-1.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-2.jpg" />
+    <Content Include="Estilo\Private\assets\img\card-3.jpg" />
+    <Content Include="Estilo\Private\assets\img\default-avatar.png" />
+    <Content Include="Estilo\Private\assets\img\faces\avatar.jpg" />
+    <Content Include="Estilo\Private\assets\img\faces\card-profile1-square.jpg" />
+    <Content Include="Estilo\Private\assets\img\faces\marc.jpg" />
+    <Content Include="Estilo\Private\assets\img\favicon.png" />
+    <Content Include="Estilo\Private\assets\img\flags\AU.png" />
+    <Content Include="Estilo\Private\assets\img\flags\BR.png" />
+    <Content Include="Estilo\Private\assets\img\flags\DE.png" />
+    <Content Include="Estilo\Private\assets\img\flags\GB.png" />
+    <Content Include="Estilo\Private\assets\img\flags\RO.png" />
+    <Content Include="Estilo\Private\assets\img\flags\US.png" />
+    <Content Include="Estilo\Private\assets\img\image_placeholder.jpg" />
+    <Content Include="Estilo\Private\assets\img\lock.jpg" />
+    <Content Include="Estilo\Private\assets\img\login.jpg" />
+    <Content Include="Estilo\Private\assets\img\placeholder.jpg" />
+    <Content Include="Estilo\Private\assets\img\product1.jpg" />
+    <Content Include="Estilo\Private\assets\img\product2.jpg" />
+    <Content Include="Estilo\Private\assets\img\product3.jpg" />
+    <Content Include="Estilo\Private\assets\img\register.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-1.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-2.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-3.jpg" />
+    <Content Include="Estilo\Private\assets\img\sidebar-4.jpg" />
+    <Content Include="Estilo\Private\assets\js\bootstrap-material-design.min.js" />
+    <Content Include="Estilo\Private\assets\js\core.js" />
+    <Content Include="Estilo\Private\assets\js\core\jquery.min.js" />
+    <Content Include="Estilo\Private\assets\js\core\popper.min.js" />
+    <Content Include="Estilo\Private\assets\js\material-dashboard.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\arrive.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\chartist.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\demo.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.datatables.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.select-bootstrap.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\moment.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\nouislider.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Estilo\Private\assets\js\plugins\sweetalert2.js" />
+    <Content Include="Estilo\Public\assets\css\stylish-portfolio.css" />
+    <Content Include="Estilo\Public\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Estilo\Public\assets\js\core\buttons.js" />
+    <Content Include="Estilo\Public\assets\js\core\now-ui-dashboard.min.js" />
+    <Content Include="Estilo\Public\assets\css\material-dashboard.min.css" />
+    <Content Include="Imagen\Evento\logo cacao tic.png" />
+    <Content Include="Estilo\Public\assets\img\bg14.jpg" />
+    <Content Include="Imagen\LogoGIECOM.png" />
+    <Content Include="Imagen\Evento\bg14.jpg" />
+    <Content Include="Imagen\LogoUA.jpg" />
+    <Content Include="Imagen\LogoUA.png" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Estilo\Public\assets\css\all.css" />
+    <Content Include="Estilo\Public\assets\css\bootstrap.min.css" />
+    <Content Include="Estilo\Public\assets\css\font-awesome.min.css" />
+    <Content Include="Estilo\Public\assets\css\Iconos.css" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.css" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.min.css" />
+    <Content Include="Estilo\Public\assets\demo\demo.css" />
+    <Content Include="Estilo\Public\assets\demo\demo.js" />
+    <Content Include="Estilo\Public\assets\demo\jquery.sharrre.js" />
+    <Content Include="Estilo\Public\assets\img\apple-icon.png" />
+    <Content Include="Estilo\Public\assets\img\AU.png" />
+    <Content Include="Estilo\Public\assets\img\balmain.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg1.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg13.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg15.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg16.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg3.jpg" />
+    <Content Include="Estilo\Public\assets\img\bg5.jpg" />
+    <Content Include="Estilo\Public\assets\img\BR.png" />
+    <Content Include="Estilo\Public\assets\img\DE.png" />
+    <Content Include="Estilo\Public\assets\img\default-avatar.png" />
+    <Content Include="Estilo\Public\assets\img\emilyz.jpg" />
+    <Content Include="Estilo\Public\assets\img\favicon.png" />
+    <Content Include="Estilo\Public\assets\img\GB.png" />
+    <Content Include="Estilo\Public\assets\img\image_placeholder.jpg" />
+    <Content Include="Estilo\Public\assets\img\james.jpg" />
+    <Content Include="Estilo\Public\assets\img\mike.jpg" />
+    <Content Include="Estilo\Public\assets\img\now-logo.png" />
+    <Content Include="Estilo\Public\assets\img\placeholder.jpg" />
+    <Content Include="Estilo\Public\assets\img\prada.jpg" />
+    <Content Include="Estilo\Public\assets\img\RO.png" />
+    <Content Include="Estilo\Public\assets\img\saint-laurent.jpg" />
+    <Content Include="Estilo\Public\assets\img\US.png" />
+    <Content Include="Estilo\Public\assets\js\buttons.js" />
+    <Content Include="Estilo\Public\assets\js\core\bootstrap.min.js" />
+    <Content Include="Estilo\Public\assets\js\core\jquery.min.js" />
+    <Content Include="Estilo\Public\assets\js\core\popper.min.js" />
+    <Content Include="Estilo\Public\assets\js\now-ui-dashboard.minf700.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-datetimepicker.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-switch.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\chartjs.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\moment.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\nouislider.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Estilo\Public\assets\js\plugins\sweetalert2.min.js" />
+    <Content Include="Estilo\Public\assets\css\now-ui-dashboard.css.map" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarLugaresView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx" />
+    <Content Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx" />
+    <Content Include="Vistas\Publico\EventosView.aspx" />
+    <Content Include="Vistas\Publico\LoginPrivateView.aspx" />
+    <Content Include="Vistas\Publico\LoginView.aspx" />
+    <Content Include="Vistas\Publico\PagPublic.Master" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.eot" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.ttf" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.woff" />
+    <Content Include="Estilo\Public\assets\fonts\nucleo-outline.woff2" />
+    <Content Include="Estilo\Public\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Vistas\Publico\RegistrarView.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDatos\Clase\Datos.cs" />
+    <Compile Include="AccesoDatos\Conexion\Connection.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Clases\AsistenciaModel.cs" />
+    <Compile Include="Modelo\Clases\EventoModel.cs" />
+    <Compile Include="Modelo\Clases\FormacionModel.cs" />
+    <Compile Include="Modelo\Clases\LugarModel.cs" />
+    <Compile Include="Modelo\Clases\MenuModel.cs" />
+    <Compile Include="Modelo\Clases\OcupacionModel.cs" />
+    <Compile Include="Modelo\Clases\ParticipanteModel.cs" />
+    <Compile Include="Modelo\Clases\PrecioModel.cs" />
+    <Compile Include="Modelo\Clases\ProgramaModel.cs" />
+    <Compile Include="Modelo\Clases\ReciboModel.cs" />
+    <Compile Include="Modelo\Clases\RefrigerioModel.cs" />
+    <Compile Include="Modelo\Clases\SesionModel.cs" />
+    <Compile Include="Modelo\Clases\TemaModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_PrecioModel.cs" />
+    <Compile Include="Modelo\Clases\MunicipioModel.cs" />
+    <Compile Include="Modelo\Clases\PersonaModel.cs" />
+    <Compile Include="Modelo\Clases\RolModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_CostoModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_IdentificacionModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_ParticipanteModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_PersonaModel.cs" />
+    <Compile Include="Modelo\Clases\UsuarioModel.cs" />
+    <Compile Include="Modelo\Complemento\AlertaModel.cs" />
+    <Compile Include="Modelo\Complemento\CorreoEvento.cs" />
+    <Compile Include="Modelo\Complemento\Metodos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx.cs">
+      <DependentUpon>GestionarEventoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx.designer.cs">
+      <DependentUpon>GestionarEventoView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarLugaresView.aspx.cs">
+      <DependentUpon>GestionarLugaresView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarLugaresView.aspx.designer.cs">
+      <DependentUpon>GestionarLugaresView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx.cs">
+      <DependentUpon>GestionarResponsableView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarResponsableView.aspx.designer.cs">
+      <DependentUpon>GestionarResponsableView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx.cs">
+      <DependentUpon>GestionarTiposView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx.designer.cs">
+      <DependentUpon>GestionarTiposView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master.cs">
+      <DependentUpon>PagPrivateMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master.designer.cs">
+      <DependentUpon>PagPrivateMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.cs">
+      <DependentUpon>PrincipalView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.designer.cs">
+      <DependentUpon>PrincipalView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\EventosView.aspx.cs">
+      <DependentUpon>EventosView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\EventosView.aspx.designer.cs">
+      <DependentUpon>EventosView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\LoginPrivateView.aspx.cs">
+      <DependentUpon>LoginPrivateView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\LoginPrivateView.aspx.designer.cs">
+      <DependentUpon>LoginPrivateView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\LoginView.aspx.cs">
+      <DependentUpon>LoginView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\LoginView.aspx.designer.cs">
+      <DependentUpon>LoginView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\PagPublic.Master.cs">
+      <DependentUpon>PagPublic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\PagPublic.Master.designer.cs">
+      <DependentUpon>PagPublic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\RegistrarView.aspx.cs">
+      <DependentUpon>RegistrarView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\RegistrarView.aspx.designer.cs">
+      <DependentUpon>RegistrarView.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\" />
+    <Folder Include="Vistas\Privado\Admin\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3441</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3441/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
