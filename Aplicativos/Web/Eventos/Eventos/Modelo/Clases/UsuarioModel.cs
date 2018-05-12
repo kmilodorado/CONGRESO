@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Eventos.Modelo.Clases
 {
-    public class UsuarioModel:PersonaModel
+    public class UsuarioModel : PersonaModel
     {
         public string IDUSUARIO { get; set; }
         public string USERNAME { get; set; }
@@ -16,7 +16,7 @@ namespace Eventos.Modelo.Clases
         public RolModel ROL { get; set; }
 
         public UsuarioModel()
-            :base()
+            : base()
         {
             IDUSUARIO = "";
             USERNAME = "";
@@ -24,8 +24,8 @@ namespace Eventos.Modelo.Clases
             ROL = new RolModel();
         }
 
-        public UsuarioModel(string id,string usuario,string estado,string rol,string idpersona)
-            :base(idpersona)
+        public UsuarioModel(string id, string usuario, string estado, string rol, string idpersona)
+            : base(idpersona)
         {
             IDUSUARIO = id;
             USERNAME = usuario;
@@ -45,40 +45,62 @@ namespace Eventos.Modelo.Clases
 
         public UsuarioModel ConsultarUsuario(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_ID`('"+id+"')");
-            return new UsuarioModel(
-                consulta.Rows[0]["IDUSUARIO"].ToString(),
-                consulta.Rows[0]["USUA_USERNAME"].ToString(),
-                consulta.Rows[0]["USUA_ESTADO"].ToString(),
-                consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
-                consulta.Rows[0]["USUA_IDROL"].ToString());
+            try
+            {
+                DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_ID`('" + id + "')");
+                return new UsuarioModel(
+                    consulta.Rows[0]["IDUSUARIO"].ToString(),
+                    consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                    consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                    consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
+                    consulta.Rows[0]["USUA_IDROL"].ToString());
+            }
+            catch
+            {
+                return new UsuarioModel();
+            }
         }
 
         public UsuarioModel ConsultarUser(string user)
         {
-            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_USER`('"+user+"')");
-            return new UsuarioModel(
-                consulta.Rows[0]["IDUSUARIO"].ToString(),
-                consulta.Rows[0]["USUA_USERNAME"].ToString(),
-                consulta.Rows[0]["USUA_ESTADO"].ToString(),
-                consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
-                consulta.Rows[0]["USUA_IDROL"].ToString());
+            try
+            {
+                DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_USER`('" + user + "')");
+                return new UsuarioModel(
+                    consulta.Rows[0]["IDUSUARIO"].ToString(),
+                    consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                    consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                    consulta.Rows[0]["USUA_IDPERSONA"].ToString(),
+                    consulta.Rows[0]["USUA_IDROL"].ToString());
+            }
+            catch
+            {
+                return new UsuarioModel();
+            }
         }
 
         public UsuarioModel ConsultarUserIdentificacion(string identificacion)
         {
-            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_IDENTIFICACION`('"+ identificacion + "')");
-            return new UsuarioModel(
-                consulta.Rows[0]["IDUSUARIO"].ToString(),
-                consulta.Rows[0]["USUA_USERNAME"].ToString(),
-                consulta.Rows[0]["USUA_ESTADO"].ToString(),
-                consulta.Rows[0]["USUA_IDROL"].ToString(),
-                consulta.Rows[0]["USUA_IDPERSONA"].ToString());
+            try
+            {
+                DataTable consulta = new Datos().ConsultarDatos("CALL `PR_USUARIO_CONSULTAR_IDENTIFICACION`('" + identificacion + "')");
+                return new UsuarioModel(
+                    consulta.Rows[0]["IDUSUARIO"].ToString(),
+                    consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                    consulta.Rows[0]["USUA_ESTADO"].ToString(),
+                    consulta.Rows[0]["USUA_IDROL"].ToString(),
+                    consulta.Rows[0]["USUA_IDPERSONA"].ToString());
+            }
+            catch
+            {
+                return new UsuarioModel();
+            }
+
         }
-        public UsuarioModel Validar(string user,string pass)
+        public UsuarioModel Validar(string user, string pass)
         {
-            
-            DataTable consulta = new Datos().ConsultarDatos(string.Format("CALL `PR_USUARIO_VALIDAR`('{0}', '{1}')",user,pass));
+
+            DataTable consulta = new Datos().ConsultarDatos(string.Format("CALL `PR_USUARIO_VALIDAR`('{0}', '{1}')", user, pass));
             try
             {
                 return new UsuarioModel(
@@ -88,12 +110,12 @@ namespace Eventos.Modelo.Clases
                 consulta.Rows[0]["USUA_IDROL"].ToString(),
                 consulta.Rows[0]["USUA_IDPERSONA"].ToString());
             }
-            catch 
+            catch
             {
 
                 return new UsuarioModel();
             }
-            
+
         }
 
         public DataTable Consultar()

@@ -10,6 +10,7 @@ namespace Eventos.Models.Complemento
         public bool VISIBLE { get; set; }
         public string ESTILO { get; set; }
         public string MENSAJE { get; set; }
+        public string AFIRMACION { get; set; }
 
         public AlertaModel(string id)
         {
@@ -17,25 +18,26 @@ namespace Eventos.Models.Complemento
             switch (id)
             {
                 case "1":
+                    AFIRMACION ="Éxito";
                     ESTILO = "alert alert-success";
-                    MENSAJE = "Se ha registrado exitosamente";
+                    MENSAJE = "La acción realizada se ejecutó satisfactoriamente.";
                     break;
                 case "2":
-                    ESTILO = "alert alert-success";
-                    MENSAJE = "Se ha modificado exitosamente";
+                    AFIRMACION ="Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "La acción realizado no cumple con los requerimiento.";
                     break;
                 case "3":
-                    ESTILO = "alert alert-success";
-                    MENSAJE = "Se ha eliminado exitosamente";
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "En el envió del correo.";
                     break;
                 case "4":
+                    AFIRMACION = "Error";
                     ESTILO = "alert alert-danger";
-                    MENSAJE = "Error en la operación, la acción realizado no cumple con los requerimiento.";
+                    MENSAJE = "Te falto por Seleccionar un campo";
                     break;
-                case "5":
-                    ESTILO = "alert alert-danger";
-                    MENSAJE = "Error, contraseñas no compatibles.";
-                    break;
+
             }
         }
 

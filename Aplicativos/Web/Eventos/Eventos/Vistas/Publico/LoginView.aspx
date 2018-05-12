@@ -1,37 +1,71 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Publico/PagPublic.Master" AutoEventWireup="true" CodeBehind="LoginView.aspx.cs" Inherits="Eventos.Vistas.Publico.LoginView" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Encabezado" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <div class="col-md-4 ml-auto mr-auto">
-        <div class="card card-login card-plain">
-            <div class="card-header ">
-                <div class="logo-container">
-                    <img src="../../Imagen/LogoUA.png" height="80" alt="" />
-                </div>
-                <h4 class="control-label text_align-center text-center" style="text-align: center; vertical-align: central">Sistema de eventos Universidad de la Amazonia</h4>
-            </div>
-
-            <div class="card-body ">
-                <div class="input-group no-border form-control-lg">
-                    <span class="input-group-addon">
-                        <i class="fa fa-user"></i>
-                    </span>
-                    <asp:TextBox ID="TXTUSUARIO" placeholder="Usuario..." CssClass="form-control" required="required" MaxLength="50" ValidateRequestMode="Disabled" runat="server"></asp:TextBox>
+<asp:Content ID="Content2" ContentPlaceHolderID="Contenido" runat="server">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 ml-auto mr-auto">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="card card-login card-hidden">
+                <div class="card-header card-header-warning text-center" style="background:linear-gradient(60deg,#e28b0c,#965605);">
+                    <h4 class="card-title">Iniciar Sesión</h4>
                 </div>
 
-                <div class="input-group no-border form-control-lg">
-                    <span class="input-group-addon">
-                        <i class="fa fa-unlock-alt"></i>
-                    </span>
-                    <asp:TextBox ID="TXTPASS" TextMode="Password" placeholder="Contraseña..." required="required" CssClass="form-control" MaxLength="20" ValidateRequestMode="Disabled" runat="server"></asp:TextBox>
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <asp:Image ID="Image1" Width="100" Height="50" ImageUrl="~/Imagen/Evento/logo cacao tic.png" runat="server" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">person</i>
+                                    </span>
+                                </div>
+                                <asp:TextBox ID="TXT_USER" class="form-control" placeholder="Usuario o Correo..." MaxLength="100" runat="server"></asp:TextBox>
+                            </div>
+                            <br />
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                                </div>
+                                <asp:TextBox ID="TXT_PASS" TextMode="Password" class="form-control" placeholder="Contraseña..." MaxLength="20" runat="server"></asp:TextBox>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <asp:Button ID="BTN_INGRESAR" CssClass="btn btn-default" style="background:linear-gradient(60deg,#a06104,#623905);" runat="server" Text="Ingresar" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="#">Recuperar Contraseña</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="card-footer ">
-                <asp:Button ID="BTN_INGRESAR" CssClass="btn btn-primary btn-round btn-lg btn-block mb-3" OnClick="BTN_INGRESAR_Click" runat="server" Text="Ingresar" />
-            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </div>
 </asp:Content>

@@ -7,9 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace Eventos.Vistas.Publico
 {
-    public partial class LoginView : System.Web.UI.Page
+    public partial class LoginPrivateView : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BTN_INGRESAR_Click(object sender, EventArgs e)
         {
 
         }
