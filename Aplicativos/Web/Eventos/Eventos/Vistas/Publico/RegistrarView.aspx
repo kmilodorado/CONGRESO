@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Publico/PagPublic.Master" AutoEventWireup="true" EnableEventValidation="false" CodeBehind="RegistrarView.aspx.cs" Inherits="Eventos.Vistas.Publico.RegistrarView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Publico/PagPublic.Master" AutoEventWireup="true" CodeBehind="RegistrarView.aspx.cs" Inherits="Eventos.Vistas.Publico.RegistrarView" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Encabezado" runat="server">
 </asp:Content>
@@ -32,7 +32,7 @@
                                                     <i class="material-icons">perm_identity</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_IDENTIFICACION" required="required" CssClass="form-control" placeholder="N° Identificación..." pattern="^[0-9]+" MaxLength="12" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_IDENTIFICACION" required="required" CssClass="form-control" placeholder="N° Identificación..." pattern="^[0-9]+" MaxLength="10" MinLength="7" onblur="ValidarPersona()" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -55,7 +55,7 @@
                                                     <i class="material-icons">face</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_NOMBRE" required="required" CssClass="form-control" placeholder="Nombre..." MaxLength="50" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_NOMBRE" required="required" CssClass="form-control"  MinLength="3"  placeholder="Nombre..." MaxLength="50" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@
                                                     <i class="material-icons">face</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_APELLIDO" required="required" CssClass="form-control" placeholder="Apellido..." MaxLength="50" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_APELLIDO" required="required" CssClass="form-control" MinLength="3" placeholder="Apellido..." MaxLength="50" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                                     <i class="material-icons">phone</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_CELULAR" required="required" CssClass="form-control" placeholder="Telefono o Celular..." pattern="^[0-9]+" MaxLength="10" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_CELULAR" required="required" CssClass="form-control" MinLength="7" placeholder="Telefono o Celular..." pattern="^[0-9]+" MaxLength="10" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -179,7 +179,7 @@
                                                     <i class="material-icons">person</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_USER" required="required" CssClass="form-control" placeholder="Usuario..." MaxLength="50" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_USER" required="required" CssClass="form-control" placeholder="Usuario..."  MinLength="4"  MaxLength="20" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +194,7 @@
                                                     <i class="material-icons">lock_outline</i>
                                                 </span>
                                             </div>
-                                            <asp:TextBox ID="TXT_PASS" TextMode="Password" required="required" CssClass="form-control" placeholder="Contraseña..." MaxLength="20" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="TXT_PASS" TextMode="Password" required="required" CssClass="form-control" placeholder="Contraseña..." MaxLength="20" MinLength="5" max="20" runat="server"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>

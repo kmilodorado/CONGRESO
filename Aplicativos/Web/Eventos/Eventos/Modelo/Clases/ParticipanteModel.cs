@@ -20,7 +20,7 @@ namespace Eventos.Modelo.Clases
             IDPARTICIPANTE = "";
             EVENTO = "";
             USUARIO = new UsuarioModel();
-            TIPO_PARTICIPANTE = new  Tipo_ParticipanteModel();
+            TIPO_PARTICIPANTE = new Tipo_ParticipanteModel();
             CERTIFICADO = 'N';
         }
 
@@ -40,6 +40,14 @@ namespace Eventos.Modelo.Clases
             CERTIFICADO = certificado.ToCharArray()[0];
         }
 
+        public ParticipanteModel(string id, string evento, UsuarioModel usuario, string tipo_participante, string certificado)
+        {
+            IDPARTICIPANTE = id;
+            EVENTO = evento;
+            USUARIO = usuario;
+            TIPO_PARTICIPANTE = new Tipo_ParticipanteModel().Consultar(tipo_participante);
+            CERTIFICADO = certificado.ToCharArray()[0];
+        }
         public ParticipanteModel(string evento, UsuarioModel usuario, string tipo_participante, string certificado)
         {
             EVENTO = evento;
@@ -72,7 +80,7 @@ namespace Eventos.Modelo.Clases
 
         public bool Inscripcion()
         {
-            return new Datos().OperarDatos(string.Format("CALL `PR_PARTICIPANTE_INSCRIPCION`('{0}', '{1}', '{2}');",EVENTO,USUARIO.IDUSUARIO,TIPO_PARTICIPANTE.IDTIPO_PARTICIPANTE));
+            return new Datos().OperarDatos(string.Format("CALL `PR_PARTICIPANTE_INSCRIPCION`('{0}', '{1}', '{2}');", EVENTO, USUARIO.IDUSUARIO, TIPO_PARTICIPANTE.IDTIPO_PARTICIPANTE));
         }
 
         public bool Modificar(ParticipanteModel obj)
@@ -91,27 +99,37 @@ namespace Eventos.Modelo.Clases
                 consulta.Rows[0][""].ToString());
         }
 
-        public ParticipanteModel ConsultarUser(string user)
+        public ParticipanteModel ConsultarValidar(string evento, UsuarioModel user)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
-            return new ParticipanteModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString());
+            DataTable consulta = new Datos().ConsultarDatos(string.Format("CALL `PR_PARTICIPANTE_VALIDAR`('{0}', '{1}')", evento, user.IDUSUARIO));
+
+            if (consulta.Rows.Count != 0)
+            {
+                return new ParticipanteModel(
+                    consulta.Rows[0]["IDPARTICIPANTE"].ToString(),
+                    evento,
+                    user,
+                    consulta.Rows[0]["PART_IDTIPO_PARTICIPANTE"].ToString(),
+                    consulta.Rows[0]["PART_CERTIFICADO"].ToString()
+                    );
+            }
+            else
+            {
+                return new ParticipanteModel();
+            }
+
         }
 
-        public DataTable ConsultarParticipantes(string evento,string tipo_participante)
+        public DataTable ConsultarParticipantes(string evento, string tipo_participante)
         {
-            return new Datos().ConsultarDatos("CALL `PR_PARTICIPANTE_CONSULTAR_EVENTO`('"+evento+"', '"+tipo_participante+"')");
+            return new Datos().ConsultarDatos("CALL `PR_PARTICIPANTE_CONSULTAR_EVENTO`('" + evento + "', '" + tipo_participante + "')");
         }
 
         public DataTable ConsultarParticipantes(string evento)
         {
             return new Datos().ConsultarDatos("");
         }
-        
+
 
     }
 }

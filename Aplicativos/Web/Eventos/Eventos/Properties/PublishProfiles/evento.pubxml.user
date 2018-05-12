@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo es utilizado por el proceso de paquete/publicación de nuestro proyecto Web. Puede personalizar el comportamiento de este proceso
+editando este archivo MSBuild. Para conocer más acerca de esto, visite http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Publicacion</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>04/27/2018 16:10:06</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>04/27/2018 16:10:06</publishTime>
+    </File>
+    <File Include="bin/Eventos.dll">
+      <publishTime>05/12/2018 18:12:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF5.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/MySql.Fabric.Plugin.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>02/28/2018 19:02:47</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/assets-for-demo/demo.css">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/assets-for-demo/js/jquery.sharrre.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/assets-for-demo/js/modernizr.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/css/font-awesome.min.css">
+      <publishTime>05/02/2018 06:31:36</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/css/material-dashboard.min.css">
+      <publishTime>05/02/2018 06:27:41</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/css/material.css">
+      <publishTime>05/02/2018 06:31:36</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/apple-icon.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/arrow-left.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/arrow-right.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/bg-pricing.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/card-1.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/card-2.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/card-3.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/default-avatar.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/faces/avatar.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/faces/card-profile1-square.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/faces/marc.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/favicon.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/AU.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/BR.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/DE.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/GB.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/RO.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/flags/US.png">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/image_placeholder.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/lock.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/login.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/placeholder.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/product1.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/product2.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/product3.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/register.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/sidebar-1.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/sidebar-2.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/sidebar-3.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/img/sidebar-4.jpg">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/bootstrap-material-design.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/core.js">
+      <publishTime>05/02/2018 07:03:17</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/core/jquery.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/core/popper.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/material-dashboard.js">
+      <publishTime>05/02/2018 07:03:17</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/arrive.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/bootstrap-datetimepicker.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/bootstrap-notify.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/bootstrap-selectpicker.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/bootstrap-tagsinput.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/chartist.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/demo.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/fullcalendar.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jasny-bootstrap.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jquery-jvectormap.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jquery.bootstrap-wizard.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jquery.datatables.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jquery.select-bootstrap.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/jquery.validate.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/moment.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/nouislider.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/perfect-scrollbar.jquery.min.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Private/assets/js/plugins/sweetalert2.js">
+      <publishTime>05/02/2018 06:13:14</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/all.css">
+      <publishTime>04/28/2018 11:14:01</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/bootstrap.min.css">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/font-awesome.min.css">
+      <publishTime>04/28/2018 11:24:07</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/Iconos.css">
+      <publishTime>04/28/2018 09:30:32</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/material-dashboard.min.css">
+      <publishTime>04/30/2018 15:47:00</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/now-ui-dashboard.css">
+      <publishTime>04/28/2018 16:50:31</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/now-ui-dashboard.css.map">
+      <publishTime>04/28/2018 11:05:57</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/now-ui-dashboard.min.css">
+      <publishTime>04/28/2018 16:59:12</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/css/stylish-portfolio.css">
+      <publishTime>04/28/2018 16:06:36</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/demo/demo.css">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/demo/demo.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/demo/jquery.sharrre.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/fontawesome-webfont.woff">
+      <publishTime>04/28/2018 15:28:23</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/fontawesome-webfont.woff2">
+      <publishTime>04/28/2018 15:30:56</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/nucleo-outline.eot">
+      <publishTime>04/28/2018 15:17:41</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/nucleo-outline.ttf">
+      <publishTime>04/28/2018 15:17:41</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/nucleo-outline.woff">
+      <publishTime>04/28/2018 15:17:41</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/fonts/nucleo-outline.woff2">
+      <publishTime>04/28/2018 15:17:41</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/apple-icon.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/AU.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/balmain.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg1.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg13.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg14.jpg">
+      <publishTime>05/11/2018 19:21:19</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg15.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg16.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg3.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/bg5.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/BR.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/DE.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/default-avatar.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/emilyz.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/favicon.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/GB.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/image_placeholder.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/james.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/mike.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/now-logo.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/placeholder.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/prada.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/RO.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/saint-laurent.jpg">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/img/US.png">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/buttons.js">
+      <publishTime>04/28/2018 09:41:24</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/core/bootstrap.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/core/buttons.js">
+      <publishTime>04/28/2018 15:09:54</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/core/jquery.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/core/now-ui-dashboard.min.js">
+      <publishTime>04/28/2018 15:06:49</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/core/popper.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/now-ui-dashboard.minf700.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/bootstrap-datetimepicker.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/bootstrap-notify.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/bootstrap-selectpicker.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/bootstrap-switch.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/bootstrap-tagsinput.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/chartjs.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/fullcalendar.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/jasny-bootstrap.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/jquery-jvectormap.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/jquery.bootstrap-wizard.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/jquery.dataTables.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/jquery.validate.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/moment.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/nouislider.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/perfect-scrollbar.jquery.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Estilo/Public/assets/js/plugins/sweetalert2.min.js">
+      <publishTime>04/28/2018 09:07:47</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/27/2018 16:09:45</publishTime>
+    </File>
+    <File Include="Imagen/Evento/bg14.jpg">
+      <publishTime>04/28/2018 14:30:12</publishTime>
+    </File>
+    <File Include="Imagen/Evento/logo cacao tic.png">
+      <publishTime>05/11/2018 17:28:10</publishTime>
+    </File>
+    <File Include="Imagen/LogoGIECOM.png">
+      <publishTime>04/28/2018 11:51:10</publishTime>
+    </File>
+    <File Include="Imagen/LogoUA.jpg">
+      <publishTime>04/28/2018 16:26:11</publishTime>
+    </File>
+    <File Include="Imagen/LogoUA.png">
+      <publishTime>04/28/2018 16:23:36</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/27/2018 16:10:06</publishTime>
+    </File>
+    <File Include="Scripts/axios.min.js">
+      <publishTime>05/12/2018 14:12:21</publishTime>
+    </File>
+    <File Include="Scripts/Metodos.js">
+      <publishTime>05/12/2018 17:34:06</publishTime>
+    </File>
+    <File Include="Vistas/Complemento/ValidarPersona.aspx">
+      <publishTime>05/12/2018 16:39:18</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/GestionarEventoView.aspx">
+      <publishTime>05/03/2018 10:09:47</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/GestionarLugaresView.aspx">
+      <publishTime>05/03/2018 18:02:16</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/GestionarResponsableView.aspx">
+      <publishTime>05/03/2018 16:04:16</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/GestionarTiposView.aspx">
+      <publishTime>04/30/2018 15:30:17</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/PagPrivateMaster.Master">
+      <publishTime>05/03/2018 11:39:31</publishTime>
+    </File>
+    <File Include="Vistas/Privado/SuperAdmin/PrincipalView.aspx">
+      <publishTime>05/03/2018 17:08:11</publishTime>
+    </File>
+    <File Include="Vistas/Privado/Usuario/PagPublicMaster.Master">
+      <publishTime>05/12/2018 15:34:42</publishTime>
+    </File>
+    <File Include="Vistas/Privado/Usuario/PrincipalView.aspx">
+      <publishTime>05/12/2018 15:35:41</publishTime>
+    </File>
+    <File Include="Vistas/Publico/EventosView.aspx">
+      <publishTime>05/11/2018 18:38:05</publishTime>
+    </File>
+    <File Include="Vistas/Publico/LoginPrivateView.aspx">
+      <publishTime>05/12/2018 16:34:57</publishTime>
+    </File>
+    <File Include="Vistas/Publico/LoginView.aspx">
+      <publishTime>05/12/2018 15:45:55</publishTime>
+    </File>
+    <File Include="Vistas/Publico/PagPublic.Master">
+      <publishTime>05/12/2018 16:35:11</publishTime>
+    </File>
+    <File Include="Vistas/Publico/RegistrarView.aspx">
+      <publishTime>05/12/2018 17:50:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/12/2018 15:12:48</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

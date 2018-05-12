@@ -70,7 +70,7 @@ namespace Eventos.Models.Complemento
                 smpt.Host = con_gen.Rows[0]["SMTP"].ToString();
                 smpt.Port = Convert.ToInt32(con_gen.Rows[0]["PUERTO"].ToString());
                 smpt.Credentials = new NetworkCredential(con_gen.Rows[0]["CORREO"].ToString(), con_gen.Rows[0]["PASS"].ToString());
-                smpt.EnableSsl = true;
+                smpt.EnableSsl = false;
                 smpt.Send(m);
 
                 return true;//Correo enviado

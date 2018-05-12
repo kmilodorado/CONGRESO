@@ -47,8 +47,20 @@
                     </div>
                     <br />
                     <div class="row">
+                        <div class="col-md-12">
+                            <asp:Panel ID="Alerta" CssClass="alert alert-success" Visible="false" runat="server">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <i class="material-icons">close</i>
+                                </button>
+                                <span><b id="Afirm" runat="server"></b>
+                                    <asp:Label ID="Alert" runat="server"></asp:Label></span>
+                            </asp:Panel>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
                         <div class="col-md-12 text-center">
-                            <asp:Button ID="BTN_INGRESAR" CssClass="btn btn-default" style="background:linear-gradient(60deg,#a06104,#623905);" runat="server" Text="Ingresar" />
+                            <asp:Button ID="BTN_INGRESAR" OnClick="BTN_INGRESAR_Click" CssClass="btn btn-default" style="background:linear-gradient(60deg,#a06104,#623905);" runat="server" Text="Ingresar" />
                         </div>
                     </div>
                     <br />

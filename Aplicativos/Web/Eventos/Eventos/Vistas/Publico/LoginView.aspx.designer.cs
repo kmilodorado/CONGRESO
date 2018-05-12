@@ -40,6 +40,33 @@ namespace Eventos.Vistas.Publico {
         protected global::System.Web.UI.WebControls.TextBox TXT_PASS;
         
         /// <summary>
+        /// Control Alerta.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Alerta;
+        
+        /// <summary>
+        /// Control Afirm.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Afirm;
+        
+        /// <summary>
+        /// Control Alert.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Alert;
+        
+        /// <summary>
         /// Control BTN_INGRESAR.
         /// </summary>
         /// <remarks>

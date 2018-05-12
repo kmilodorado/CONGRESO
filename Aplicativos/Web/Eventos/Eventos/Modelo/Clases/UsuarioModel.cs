@@ -105,7 +105,7 @@ namespace Eventos.Modelo.Clases
             {
                 return new UsuarioModel(
                 consulta.Rows[0]["IDUSUARIO"].ToString(),
-                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["USERNAME"].ToString(),
                 consulta.Rows[0]["ESTADO"].ToString(),
                 consulta.Rows[0]["USUA_IDROL"].ToString(),
                 consulta.Rows[0]["USUA_IDPERSONA"].ToString());

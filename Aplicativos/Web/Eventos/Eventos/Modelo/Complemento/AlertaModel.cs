@@ -37,7 +37,16 @@ namespace Eventos.Models.Complemento
                     ESTILO = "alert alert-danger";
                     MENSAJE = "Te falto por Seleccionar un campo";
                     break;
-
+                case "5":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "Usuario o contraseña incorrecta.";
+                    break;
+                case "6":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "No se ha registrado en el evento.";
+                    break;
             }
         }
 

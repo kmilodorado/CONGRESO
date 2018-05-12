@@ -18,7 +18,7 @@
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../../Estilo/assets/demo/demo.css" rel="stylesheet" />
 </head>
-<body class="sidebar-mini">
+<body onload="nobackbutton()" class="sidebar-mini">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
         <div class="container-fluid">

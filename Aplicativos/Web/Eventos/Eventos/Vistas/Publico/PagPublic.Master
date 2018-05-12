@@ -31,7 +31,7 @@
     </asp:ContentPlaceHolder>
     <!---------------------------------------- End Estilos ----------------------------------------->
 </head>
-<body class="off-canvas-sidebar register-page">
+<body onload="nobackbutton()" class="off-canvas-sidebar register-page">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary navbar-transparent navbar-absolute" color-on-scroll="500">
         <div class="container">
@@ -44,19 +44,19 @@
                         <a id="login" href="#" class="nav-link" runat="server">
                             <i class="material-icons">fingerprint</i>
                             Iniciar sesión
-                    </a>
+                        </a>
                     </li>
                     <li class="nav-item  active ">
                         <a id="inscribir" href="#" class="nav-link" runat="server">
                             <i class="material-icons">person_add</i>
                             Registrarse
-                    </a>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a id="programa" href="#" class="nav-link" runat="server">
                             <i class="material-icons">dashboard</i>
                             Programación del evento
-                    </a>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -88,6 +88,10 @@
     </div>
 
 </body>
+<!-- Enviar parametro instantaniamente -->
+<script src="../../Scripts/axios.min.js"></script>
+<!-- Metodos -->
+<script src="../../Scripts/Metodos.js"></script>
 <!--   Core JS Files   -->
 <script src="../../Estilo/Private/assets/js/core/jquery.min.js"></script>
 <script src="../../Estilo/Private/assets/js/core/popper.min.js"></script>

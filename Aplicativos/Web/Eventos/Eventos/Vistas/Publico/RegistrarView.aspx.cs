@@ -91,16 +91,16 @@ namespace Eventos.Vistas.Publico
 
                             if (CORREO.EnviarCorreo(TXT_CORREO.Text, "ensayo", "exitoso", EVEN))
                             {
-                                Response.Redirect("RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 1);
+                                Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 1);
                             }
                             else
                             {
-                                Response.Redirect("RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 3);
+                                Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 3);
                             }
                         }
                         else
                         {
-                            Response.Redirect("RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 2);
+                            Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 2);
                         }
                     }
                     else
@@ -111,13 +111,13 @@ namespace Eventos.Vistas.Publico
                 }
                 else
                 {
-                    Response.Redirect("RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 4);
+                    Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 4);
                 }
 
             }
             else
             {
-
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
             }
         }
     }
