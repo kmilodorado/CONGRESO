@@ -42,12 +42,12 @@ namespace Eventos.Modelo.Clases
 
         public bool Registrar()
         {
-            return new Datos().OperarDatos("");
+            return new Datos().OperarDatos("CALL `PR_MENU_REGISTRAR`('"+NOMBRE+ "', '" + URL + "', '" + ICONO + "', '" + TIPO + "')");
         }
 
-        public bool Modificar(MenuModel obj)
+        public bool Modificar()
         {
-            return new Datos().OperarDatos("");
+            return new Datos().OperarDatos("CALL `PR_MENU_ACTUALIZAR`('"+IDMENU+ "', '" + NOMBRE + "', '" + URL + "', '" + ICONO + "', '" + TIPO + "')");
         }
 
         public bool AgregarPermiso(string tipo,string menu, string rol)
@@ -78,23 +78,23 @@ namespace Eventos.Modelo.Clases
 
         public bool Eliminar(string id)
         {
-            return new Datos().OperarDatos("");
+            return new Datos().OperarDatos("CALL `PR_MENU_ELIMINAR`('"+id+"')");
         }
 
         public MenuModel Consultar(string id)
         {
-            DataTable consulta = new Datos().ConsultarDatos("");
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_MENU_CONSULTAR_ID`('"+id+"')");
             return new MenuModel(
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(),
-                consulta.Rows[0][""].ToString(), 
-                consulta.Rows[0][""].ToString());
+                consulta.Rows[0]["IDMENU"].ToString(),
+                consulta.Rows[0]["MENU_NOMBRE"].ToString(),
+                consulta.Rows[0]["MENU_URL"].ToString(),
+                consulta.Rows[0]["MENU_ICONO"].ToString(), 
+                consulta.Rows[0]["MENU_TIPO"].ToString());
         }
 
         public DataTable Consultar()
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_MENU_CONSULTAR_G`()");
         }
 
         public DataTable ConsultarPermiso(string tipo,string rol)
@@ -102,7 +102,7 @@ namespace Eventos.Modelo.Clases
             switch (tipo)
             {
                 case "USUARIO":
-                    return new Datos().ConsultarDatos("");
+                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_CONSULTAR`('"+rol+"')");
                 case "PARTICIPANTE":
                     return new Datos().ConsultarDatos("");
                 default:

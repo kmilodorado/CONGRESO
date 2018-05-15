@@ -29,7 +29,7 @@
                         <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Vistas/Publico/LoginView.aspx" CssClass="nav-link" runat="server"><i class="fa fa-user"></i> Login</asp:HyperLink>
                     </li>
                     <li class="nav-item ">
-                        <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Vistas/Publico/LoginView.aspx" CssClass="nav-link" runat="server"><i class="fa fa-university"></i> Eventos</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Vistas/Publico/EventosView.aspx" CssClass="nav-link" runat="server"><i class="fa fa-university"></i> Eventos</asp:HyperLink>
                     </li>
                 </ul>
             </div>

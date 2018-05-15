@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Privado/SuperAdmin/PagPrivateMaster.Master" AutoEventWireup="true" CodeBehind="PrincipalView.aspx.cs" Inherits="Eventos.Vistas.Privado.SuperAdmin.PrincipalView" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Privado/SuperAdmin/PagPrivateMaster.Master" AutoEventWireup="true" CodeBehind="PrincipalView.aspx.cs" Inherits="Eventos.Vistas.Privado.SuperAdmin.PrincipalView" EnableEventValidation="false"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Encabezado" runat="server">
 </asp:Content>
@@ -20,7 +20,7 @@
                             </div>
                             <div class="material-datatables">
 
-                                <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width: 100%">
+                                <table id="datatables" class="table table-striped table-no-bordered table-hover"  style="width: 100%">
                                     <thead>
                                         <tr>
                                             <th>N°</th>

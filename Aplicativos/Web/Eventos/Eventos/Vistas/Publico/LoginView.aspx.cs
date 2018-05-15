@@ -53,7 +53,7 @@ namespace Eventos.Vistas.Publico
                 }
                 else
                 {
-                    Response.Redirect("~/Vistas/Publico/LoginView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 4);
+                    Response.Redirect("~/Vistas/Publico/LoginView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 5);
                 }
             }
             else
