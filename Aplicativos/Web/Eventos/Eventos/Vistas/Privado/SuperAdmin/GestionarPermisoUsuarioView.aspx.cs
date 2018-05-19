@@ -19,20 +19,43 @@ namespace Eventos.Vistas.Privado.SuperAdmin
                 DDL_ROL.DataTextField = "ROL_DETALLE";
                 DDL_ROL.DataValueField = "IDROL";
                 DDL_ROL.DataBind();
-                Repeater1.DataSource = new MenuModel().ConsultarPermiso("USUARIO", "0");
-                Repeater1.DataBind();
+                datatables.DataSource = new MenuModel().ConsultarTipo("USUARIO"); ;
+                datatables.DataBind();
             }
         }
 
-        protected void CB_VALIDACION_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
 
         protected void DDL_ROL_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Repeater1.DataSource = new MenuModel().ConsultarPermiso("USUARIO", DDL_ROL.Text);
-            Repeater1.DataBind();
+            // Iterate through the Products.Rows property
+            foreach (GridViewRow row in datatables.Rows)
+            {
+                // Access the CheckBox
+                CheckBox cb = (CheckBox)row.FindControl("CB_SELECIONAR");
+                if (cb != null)
+                {
+                    if (new MenuModel().ConsultarPermiso("USUARIO", DDL_ROL.Text, row.Cells[1].Text).Rows.Count != 0)
+                    {
+                        cb.Checked = true;
+                    }
+                    else
+                    {
+                        cb.Checked = false;
+                    }
+                }
+            }
         }
+
+        protected void CB_SELECIONAR_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox CB = (CheckBox)sender;
+            string accion = "FALSE";
+            if (CB.Checked)
+            {
+                accion = "TRUE";
+            }
+            new MenuModel().GestionarPermiso("USUARIO", CB.Text, DDL_ROL.Text, accion);
+        }
+
     }
 }

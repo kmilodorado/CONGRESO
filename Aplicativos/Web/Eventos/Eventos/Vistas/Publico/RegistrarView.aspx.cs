@@ -1,7 +1,12 @@
 ﻿using Eventos.Modelo.Clases;
 using Eventos.Models.Complemento;
+using Gma.QrCodeNet.Encoding;
+using Gma.QrCodeNet.Encoding.Windows.Render;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,57 +14,69 @@ using System.Web.UI.WebControls;
 
 namespace Eventos.Vistas.Publico
 {
-    public partial class RegistrarView : System.Web.UI.Page
+    public partial class RegistrarView1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                DDL_TIPO_DOC.DataSource = new Tipo_IdentificacionModel().Consultar();
-                DDL_TIPO_DOC.DataTextField = "TIPO_DETALLE";
-                DDL_TIPO_DOC.DataValueField = "ID";
-                DDL_TIPO_DOC.DataBind();
-
-                DDL_DEPARTAMENTO.DataSource = new MunicipioModel().ConsultarDepartamento();
-                DDL_DEPARTAMENTO.DataTextField = "DEPA_NOMBRE";
-                DDL_DEPARTAMENTO.DataValueField = "IDDEPARTAMENTO";
-                DDL_DEPARTAMENTO.DataBind();
-
-                DDL_FORMACION.DataSource = new FormacionModel().Consultar();
-                DDL_FORMACION.DataTextField = "FORM_DETALLE";
-                DDL_FORMACION.DataValueField = "ID";
-                DDL_FORMACION.DataBind();
-
-                DDL_OCUPACION.DataSource = new OcupacionModel().Consultar();
-                DDL_OCUPACION.DataTextField = "OCUP_DETALLE";
-                DDL_OCUPACION.DataValueField = "ID";
-                DDL_OCUPACION.DataBind();
-
-                DDL_PARTICIPACION.DataSource = new Tipo_ParticipanteModel().Consultar();
-                DDL_PARTICIPACION.DataTextField = "TIPO_DETALLE";
-                DDL_PARTICIPACION.DataValueField = "ID";
-                DDL_PARTICIPACION.DataBind();
-
-                if (Request.QueryString["alert"] != null)
+                if (!IsPostBack)
                 {
-                    AlertaModel AR = new AlertaModel(Request.QueryString["alert"]);
-                    Alerta.Visible = AR.VISIBLE;
-                    Alerta.CssClass = AR.ESTILO;
-                    Alert.Text = AR.MENSAJE;
-                    Afirm.InnerHtml = AR.AFIRMACION;
+                    EventoModel EVE = new EventoModel().ConsultarSiglas(Request.QueryString["Evento"]);
+                    titulo.Text = EVE.NOMBRE;
+                    if (EVE.LOGO != "")
+                    {
+                        icono.Href = "../../Imagen/Evento/" + EVE.LOGO;
+                    }
+                    Evento.InnerHtml = EVE.NOMBRE;
+                    titulo_registro.InnerHtml = "INSCRIPCIÓN DEL " + EVE.NOMBRE;
+                    login.HRef = "LoginView.aspx?Evento=" + EVE.SIGLAS;
+                    inscribir.HRef = "RegistrarView.aspx?Evento=" + EVE.SIGLAS;
+                    programa.HRef = "ProgramaView.aspx?Evento=" + EVE.SIGLAS;
+                    Session["EVENTO_PUBLIC"] = EVE;
+
+                    DDL_TIPO_DOC.DataSource = new Tipo_IdentificacionModel().Consultar();
+                    DDL_TIPO_DOC.DataTextField = "TIPO_DETALLE";
+                    DDL_TIPO_DOC.DataValueField = "ID";
+                    DDL_TIPO_DOC.DataBind();
+
+                    DDL_DEPARTAMENTO.DataSource = new MunicipioModel().ConsultarDepartamento();
+                    DDL_DEPARTAMENTO.DataTextField = "DEPA_NOMBRE";
+                    DDL_DEPARTAMENTO.DataValueField = "IDDEPARTAMENTO";
+                    DDL_DEPARTAMENTO.DataBind();
+
+                    DDL_FORMACION.DataSource = new FormacionModel().Consultar();
+                    DDL_FORMACION.DataTextField = "FORM_DETALLE";
+                    DDL_FORMACION.DataValueField = "ID";
+                    DDL_FORMACION.DataBind();
+
+                    DDL_OCUPACION.DataSource = new OcupacionModel().Consultar();
+                    DDL_OCUPACION.DataTextField = "OCUP_DETALLE";
+                    DDL_OCUPACION.DataValueField = "ID";
+                    DDL_OCUPACION.DataBind();
+
+                    DDL_PARTICIPACION.DataSource = new Tipo_ParticipanteModel().Consultar();
+                    DDL_PARTICIPACION.DataTextField = "TIPO_DETALLE";
+                    DDL_PARTICIPACION.DataValueField = "ID";
+                    DDL_PARTICIPACION.DataBind();
+
+                    Repeater1.DataSource = new CuestionarioModel().ConsultarPreguntas();
+                    Repeater1.DataBind();
+                    if (Request.QueryString["alert"] != null)
+                    {
+                        AlertaModel AR = new AlertaModel(Request.QueryString["alert"]);
+                        Alerta.Visible = AR.VISIBLE;
+                        Alerta.CssClass = AR.ESTILO;
+                        Alert.Text = AR.MENSAJE;
+                        Afirm.InnerHtml = AR.AFIRMACION;
+                    }
                 }
             }
-
+            catch
+            {
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
+            }
         }
-
-        protected void DDL_DEPARTAMENTO_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DDL_MUNICIPIO.DataSource = new MunicipioModel().ConsultarMunicipio(DDL_DEPARTAMENTO.Text);
-            DDL_MUNICIPIO.DataTextField = "MUNI_NOMBRE";
-            DDL_MUNICIPIO.DataValueField = "IDMUNICIPIO";
-            DDL_MUNICIPIO.DataBind();
-        }
-
 
         protected void Registrar_Click(object sender, EventArgs e)
         {
@@ -82,16 +99,27 @@ namespace Eventos.Vistas.Publico
                         usu.INSTITUCION = TXT_INSTITUCION.Text;
                         usu.FORMACION.IDFORMACION = DDL_FORMACION.SelectedValue;
                         usu.OCUPACION.IDOCUPACION = DDL_OCUPACION.SelectedValue;
-                        usu.USERNAME = TXT_USER.Text;
-                        usu.PASS = TXT_PASS.Text;
+                        usu.USERNAME = TXT_IDENTIFICACION.Text;
+                        usu.PASS = TXT_IDENTIFICACION.Text;
                         usu.ROL.IDROL = "2";
                         if (new ParticipanteModel(EVEN.IDEVENTO, usu, DDL_PARTICIPACION.Text, "N").Registrar())
                         {
-                            CorreoEvento CORREO = new CorreoEvento();
+                            //Generar Codigo QR
+                            this.getQRCode(usu.IDENTIFICACION);
 
-                            if (CORREO.EnviarCorreo(TXT_CORREO.Text, "ensayo", "exitoso", EVEN))
+                            //Registrar Cuestionario
+                            foreach (Control item in Repeater1.Items)
                             {
-                                Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 1);
+                                TextBox txt = (TextBox)item.FindControl("TXT_RESPUESTA");
+                                Label lab=(Label)item.FindControl("LB_PREGUNTA");
+                                new CuestionarioModel().RegistrarRespuesta(lab.Text,txt.Text,usu.IDENTIFICACION);
+                            }
+
+                            //Enviar Correo
+                            CorreoEvento CORREO = new CorreoEvento();
+                            if (CORREO.EnviarCorreo(TXT_CORREO.Text, "ensayo", "exitoso", EVEN, usu))
+                            {
+                                Response.Redirect("~/Vistas/Publico/RegistrarView.aspx?Evento=" + EVEN.SIGLAS + "&alert=" + 7);
                             }
                             else
                             {
@@ -119,6 +147,46 @@ namespace Eventos.Vistas.Publico
             {
                 Response.Redirect("~/Vistas/Publico/EventosView.aspx");
             }
+        }
+
+
+        protected void DDL_DEPARTAMENTO_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DDL_MUNICIPIO.DataSource = new MunicipioModel().ConsultarMunicipio(DDL_DEPARTAMENTO.Text);
+            DDL_MUNICIPIO.DataTextField = "MUNI_NOMBRE";
+            DDL_MUNICIPIO.DataValueField = "IDMUNICIPIO";
+            DDL_MUNICIPIO.DataBind();
+        }
+
+        public byte[] getQRCode(string code)
+        {
+            QrEncoder qrEncoder = new QrEncoder(ErrorCorrectionLevel.H);
+            QrCode qrCode = new QrCode();
+            qrEncoder.TryEncode(code, out qrCode);
+
+            GraphicsRenderer renderer = new GraphicsRenderer(new FixedCodeSize(400, QuietZoneModules.Zero), Brushes.Black, Brushes.White);
+
+            MemoryStream ms = new MemoryStream();
+
+            renderer.WriteToStream(qrCode.Matrix, System.Drawing.Imaging.ImageFormat.Png, ms);
+            var imageTemporal = new Bitmap(ms);
+            var imagen = new Bitmap(imageTemporal, new Size(new Point(200, 200)));
+
+
+            string path = Server.MapPath("~/Imagen/Codigo/" + code + ".jpg");
+            if (!File.Exists(path))
+            {
+                imagen.Save(path, ImageFormat.Jpeg);
+            }
+            byte[] result = imageToByteArray(imagen);
+            return result;
+        }
+
+        public byte[] imageToByteArray(System.Drawing.Image imageIn)
+        {
+            MemoryStream ms = new MemoryStream();
+            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            return ms.ToArray();
         }
     }
 }

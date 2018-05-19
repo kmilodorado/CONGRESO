@@ -50,31 +50,19 @@ namespace Eventos.Modelo.Clases
             return new Datos().OperarDatos("CALL `PR_MENU_ACTUALIZAR`('"+IDMENU+ "', '" + NOMBRE + "', '" + URL + "', '" + ICONO + "', '" + TIPO + "')");
         }
 
-        public bool AgregarPermiso(string tipo,string menu, string rol)
+        public bool GestionarPermiso(string tipo,string menu, string rol,string accion)
         {
             switch (tipo)
             {
                 case "USUARIO":
-                    return new Datos().OperarDatos("");
+                    return new Datos().OperarDatos("CALL `PR_PERMISO_GESTIONAR`('"+rol+ "', '" + menu + "', '" + accion + "')");
                 case "PARTICIPANTE":
-                    return new Datos().OperarDatos("");
+                    return new Datos().OperarDatos("CALL `PR_PERMISO_PARTICIPANTE_GESTIONAR`('"+ rol + "', '" + menu + "', '" + accion + "')");
                 default:
                     return false;
             }
         }
-
-        public bool EliminarPermiso(string tipo, string rol)
-        {
-            switch (tipo)
-            {
-                case "USUARIO":
-                    return new Datos().OperarDatos("");
-                case "PARTICIPANTE":
-                    return new Datos().OperarDatos("");
-                default:
-                    return false;
-            }
-        }
+        
 
         public bool Eliminar(string id)
         {
@@ -97,14 +85,18 @@ namespace Eventos.Modelo.Clases
             return new Datos().ConsultarDatos("CALL `PR_MENU_CONSULTAR_G`()");
         }
 
-        public DataTable ConsultarPermiso(string tipo,string rol)
+        public DataTable ConsultarTipo(string tipo)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_MENU_CONSULTAR_TIPO`('"+tipo+"')");
+        }
+        public DataTable ConsultarPermiso(string tipo,string rol,string menu)
         {
             switch (tipo)
             {
                 case "USUARIO":
-                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_CONSULTAR`('"+rol+"')");
+                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_CONSULTAR`('" + rol + "', '" + menu + "')");
                 case "PARTICIPANTE":
-                    return new Datos().ConsultarDatos("");
+                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_PARTICIPANTE_CONSULTAR`('" + rol + "', '" + menu + "')");
                 default:
                     return new DataTable();
             }

@@ -80,18 +80,16 @@
                     <div class="copyright pull-right">
                         &copy;
                         <script>document.write(new Date().getFullYear())</script>
-                        , Desarrollado por el grupos Investigació <a href="http://giecom.co/" target="_blank">Giecom</a>.
+                        , Desarrollado por el grupo de Investigación <a href="http://giecom.co/" target="_blank">Giecom</a>.
                     </div>
                 </div>
             </footer>
         </div>
     </div>
 
+
 </body>
-<!-- Enviar parametro instantaniamente -->
-<script src="../../Scripts/axios.min.js"></script>
-<!-- Metodos -->
-<script src="../../Scripts/Metodos.js"></script>
+
 <!--   Core JS Files   -->
 <script src="../../Estilo/Private/assets/js/core/jquery.min.js"></script>
 <script src="../../Estilo/Private/assets/js/core/popper.min.js"></script>
@@ -164,7 +162,11 @@
 
 <!-- demo init -->
 <script src="../../Estilo/Private/assets/js/plugins/demo.js"></script>
+<!-- Enviar parametro instantaniamente -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+<!-- Metodos -->
+<script src="../../Scripts/Metodos.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         //init wizard

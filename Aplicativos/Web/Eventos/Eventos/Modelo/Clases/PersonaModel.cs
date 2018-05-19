@@ -97,7 +97,7 @@ namespace Eventos.Modelo.Clases
         {
             DataTable consulta = new Datos().ConsultarDatos("CALL `PR_PERSONA_CONSULTAR_ID`('" + id + "')");
             return new PersonaModel(
-                consulta.Rows[0]["PERS_IDPERSONA"].ToString(),
+                consulta.Rows[0]["IDPERSONA"].ToString(),
                 consulta.Rows[0]["PERS_IDENTIFICACION"].ToString(),
                 consulta.Rows[0]["PERS_IDTIPO_DOCUMENTO"].ToString(),
                 consulta.Rows[0]["PERS_NOMBRE"].ToString(),
@@ -115,11 +115,29 @@ namespace Eventos.Modelo.Clases
         {
             DataTable consulta = new Datos().ConsultarDatos("CALL `PR_PERSONA_CONSULTAR_IDENTIFICACION`('"+identificacion+"')");
             return new PersonaModel(
-               consulta.Rows[0]["PERS_IDPERSONA"].ToString(),
+               consulta.Rows[0]["IDPERSONA"].ToString(),
                consulta.Rows[0]["PERS_IDENTIFICACION"].ToString(),
                consulta.Rows[0]["PERS_IDTIPO_DOCUMENTO"].ToString(),
                consulta.Rows[0]["PERS_NOMBRE"].ToString(),
                consulta.Rows[0]["PERS_APELLIDO"].ToString(),
+               consulta.Rows[0]["PERS_CORREO"].ToString(),
+               consulta.Rows[0]["PERS_CELULAR"].ToString(),
+               consulta.Rows[0]["PERS_IDMUNICIPIO"].ToString(),
+               consulta.Rows[0]["PERS_DIRECCION"].ToString(),
+               consulta.Rows[0]["PERS_INSTITUCION"].ToString(),
+               consulta.Rows[0]["PERS_IDFORMACION"].ToString(),
+               consulta.Rows[0]["PERS_IDOCUPACION"].ToString());
+        }
+
+        public PersonaModel ConsultarCorreo(string Correo)
+        {
+            DataTable consulta = new Datos().ConsultarDatos("CALL `PR_PERSONA_CONSULTAR_CORREO`('"+Correo+"')");
+            return new PersonaModel(
+               consulta.Rows[0]["IDPERSONA"].ToString(),
+               consulta.Rows[0]["PERS_IDENTIFICACION"].ToString(),
+               consulta.Rows[0]["PERS_IDTIPO_DOCUMENTO"].ToString(),
+               consulta.Rows[0]["PERS_NOMBRES"].ToString(),
+               consulta.Rows[0]["PERS_APELLIDOS"].ToString(),
                consulta.Rows[0]["PERS_CORREO"].ToString(),
                consulta.Rows[0]["PERS_CELULAR"].ToString(),
                consulta.Rows[0]["PERS_IDMUNICIPIO"].ToString(),

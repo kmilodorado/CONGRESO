@@ -98,6 +98,7 @@ namespace Eventos.Modelo.Clases
                 consulta.Rows[0][""].ToString(),
                 consulta.Rows[0][""].ToString());
         }
+        
 
         public ParticipanteModel ConsultarValidar(string evento, UsuarioModel user)
         {

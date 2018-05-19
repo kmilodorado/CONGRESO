@@ -37,3 +37,6 @@ C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Event
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.pdb
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.dll
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.pdb
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.xml

@@ -118,6 +118,11 @@ namespace Eventos.Modelo.Clases
 
         }
 
+        public bool ModificarPassword(string usuario,string pass)
+        {
+            return new Datos().OperarDatos("CALL `PR_USUARIO_CAMBIAR_PASSWORD`('"+ usuario + "', '" + pass + "')");
+        }
+
         public DataTable Consultar()
         {
             return new Datos().ConsultarDatos("");
