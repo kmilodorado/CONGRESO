@@ -157,6 +157,33 @@ namespace Eventos.Vistas.Publico {
         protected global::System.Web.UI.WebControls.TextBox TXT_APELLIDO;
         
         /// <summary>
+        /// Control DDL_GENERO.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_GENERO;
+        
+        /// <summary>
+        /// Control TXT_FECHA_NAC.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TXT_FECHA_NAC;
+        
+        /// <summary>
+        /// Control DDL_PAIS_NAC.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_PAIS_NAC;
+        
+        /// <summary>
         /// Control TXT_CORREO.
         /// </summary>
         /// <remarks>
@@ -173,6 +200,15 @@ namespace Eventos.Vistas.Publico {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXT_CELULAR;
+        
+        /// <summary>
+        /// Control DDL_PAIS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_PAIS;
         
         /// <summary>
         /// Control DDL_DEPARTAMENTO.
@@ -209,6 +245,24 @@ namespace Eventos.Vistas.Publico {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TXT_INSTITUCION;
+        
+        /// <summary>
+        /// Control DDL_CONDICION.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_CONDICION;
+        
+        /// <summary>
+        /// Control DDL_CIRCUNS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DDL_CIRCUNS;
         
         /// <summary>
         /// Control DDL_FORMACION.

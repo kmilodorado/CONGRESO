@@ -58,14 +58,14 @@ namespace Eventos.Modelo.Clases
         public bool Registrar()
         {
 
-            return new Datos().OperarDatos(string.Format("CALL `PR_PARTICIPANTE_REGISTRAR`('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}')",
+            return new Datos().OperarDatos(string.Format("CALL `PR_PARTICIPANTE_REGISTRAR`('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}','{16}','{17}','{18}','{19}','{20}')",
                 USUARIO.IDENTIFICACION,
                 USUARIO.TIPO_IDENTIFICACION.IDTIPO_IDENTIFICACION,
                 USUARIO.NOMBRE,
                 USUARIO.APELLIDO,
                 USUARIO.CORREO,
                 USUARIO.CELULAR,
-                USUARIO.MUNICIPIO.IDMUNICIPIO,
+                USUARIO.MUNICIPIO_RES.IDMUNICIPIO,
                 USUARIO.DIRECCION,
                 USUARIO.INSTITUCION,
                 USUARIO.FORMACION.IDFORMACION,
@@ -74,7 +74,12 @@ namespace Eventos.Modelo.Clases
                 USUARIO.PASS,
                 USUARIO.ROL.IDROL,
                 EVENTO,
-                TIPO_PARTICIPANTE.IDTIPO_PARTICIPANTE
+                TIPO_PARTICIPANTE.IDTIPO_PARTICIPANTE,
+                USUARIO.GENERO.IDGENERO,
+                USUARIO.FECHA_NAC.ToString("yyyy-MM-dd"),
+                USUARIO.PAIS_NAC,
+                USUARIO.CONDICION.IDESPECIAL,
+                USUARIO.CIRCUNSCRIPCION.IDCIRCUNSCRIPCION
                 ));
         }
 

@@ -18,6 +18,7 @@ function ValidarPersona() {
             document.getElementById("TXT_CELULAR").value = mensaje[5];
             document.getElementById("TXT_DIRECCION").value = mensaje[6];
             document.getElementById("TXT_INSTITUCION").value = mensaje[7];
+            document.getElementById("TXT_FECHA_NAC").disabled = mensaje[8];
             document.getElementById("Registrar").value = "Inscribir";
             condicion = true;
         } else {
@@ -26,8 +27,12 @@ function ValidarPersona() {
         document.getElementById("DDL_TIPO_DOC").disabled = condicion;
         document.getElementById("TXT_NOMBRE").disabled = condicion;
         document.getElementById("TXT_APELLIDO").disabled = condicion;
+        document.getElementById("DDL_GENERO").disabled = condicion;
+        document.getElementById("TXT_FECHA_NAC").disabled = condicion;
         document.getElementById("TXT_CORREO").disabled = condicion;
         document.getElementById("TXT_CELULAR").disabled = condicion;
+        document.getElementById("DDL_PAIS_NAC").disabled = condicion;
+        document.getElementById("DDL_PAIS").disabled = condicion;
         document.getElementById("DDL_DEPARTAMENTO").disabled = condicion;
         document.getElementById("DDL_MUNICIPIO").disabled = condicion;
         document.getElementById("TXT_DIRECCION").disabled = condicion;
@@ -35,6 +40,8 @@ function ValidarPersona() {
         document.getElementById("DDL_FORMACION").disabled = condicion;
         document.getElementById("DDL_OCUPACION").disabled = condicion;
         document.getElementById("DDL_PARTICIPACION").disabled = condicion;
+        document.getElementById("DDL_CONDICION").disabled = condicion;
+        document.getElementById("DDL_CIRCUNS").disabled = condicion;
        
     }).catch(error=> {
     });

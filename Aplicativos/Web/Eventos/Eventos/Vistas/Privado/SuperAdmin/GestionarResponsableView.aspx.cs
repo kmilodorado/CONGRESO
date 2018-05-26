@@ -46,10 +46,10 @@ namespace Eventos.Vistas.Privado.SuperAdmin
                 DDL_OCUPACION.DataBind();
 
                 //Departamento
-                DDL_DEPARTAMENTO.DataSource = new MunicipioModel().ConsultarDepartamento();
-                DDL_DEPARTAMENTO.DataTextField = "DEPA_NOMBRE";
-                DDL_DEPARTAMENTO.DataValueField = "IDDEPARTAMENTO";
-                DDL_DEPARTAMENTO.DataBind();
+                //DDL_DEPARTAMENTO.DataSource = new MunicipioModel().ConsultarDepartamento();
+                //DDL_DEPARTAMENTO.DataTextField = "DEPA_NOMBRE";
+                //DDL_DEPARTAMENTO.DataValueField = "IDDEPARTAMENTO";
+                //DDL_DEPARTAMENTO.DataBind();
 
             }
 
@@ -78,7 +78,7 @@ namespace Eventos.Vistas.Privado.SuperAdmin
                     usu.APELLIDO = TXT_APELLIDO.Text;
                     usu.CORREO = TXT_CORREO.Text;
                     usu.CELULAR = TXT_CELULAR.Text;
-                    usu.MUNICIPIO.IDMUNICIPIO = DDL_MUNICIPIO.SelectedValue;
+                    usu.MUNICIPIO_RES.IDMUNICIPIO = DDL_MUNICIPIO.SelectedValue;
                     usu.DIRECCION = TXT_DIRECCION.Text;
                     usu.INSTITUCION = TXT_INSTITUCION.Text;
                     usu.FORMACION.IDFORMACION = DDL_FORMACION.SelectedValue;

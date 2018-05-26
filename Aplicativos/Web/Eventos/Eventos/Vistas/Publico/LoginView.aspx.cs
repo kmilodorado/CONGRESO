@@ -24,6 +24,7 @@ namespace Eventos.Vistas.Publico
                         icono.Href = "../../Imagen/Evento/" + EVE.LOGO;
                     }
                     Evento.InnerHtml = EVE.NOMBRE;
+                    Image1.ImageUrl = "~/Imagen/Evento/" + EVE.LOGO;
                     login.HRef = "LoginView.aspx?Evento=" + EVE.SIGLAS;
                     inscribir.HRef = "RegistrarView.aspx?Evento=" + EVE.SIGLAS;
                     programa.HRef = "ProgramaView.aspx?Evento=" + EVE.SIGLAS;

@@ -16,7 +16,8 @@
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../../Estilo/Private/assets/assets-for-demo/demo.css" rel="stylesheet" />
-
+  <!-- Select2 -->
+    <link rel="stylesheet" href="../../Estilo/select2/select2.css" />
     <!-- iframe removal -->
     <script type="text/javascript">
         if (document.readyState === 'complete') {
@@ -80,12 +81,13 @@
                     <div class="copyright pull-right">
                         &copy;
                         <script>document.write(new Date().getFullYear())</script>
-                        , Desarrollado por el grupos Investigació <a href="http://giecom.co/" target="_blank">Giecom</a>.
+                        , Desarrollado por el grupo de Investigación <a href="http://giecom.co/" target="_blank">Giecom</a>.
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+
 
 </body>
 
@@ -105,7 +107,8 @@
 <!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
 <script src="../../Estilo/Private/assets/js/plugins/nouislider.min.js"></script>
 
-
+    <!-- Select2 -->
+<script src="../../Estilo/select2/select2.full.min.js"></script>
 
 <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
 <script src="../../Estilo/Private/assets/js/plugins/bootstrap-selectpicker.js"></script>
@@ -163,7 +166,7 @@
 <script src="../../Estilo/Private/assets/js/plugins/demo.js"></script>
 <!-- Enviar parametro instantaniamente -->
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    
+
 <!-- Metodos -->
 <script src="../../Scripts/Metodos.js"></script>
 <script type="text/javascript">
@@ -178,6 +181,10 @@
 <script type="text/javascript">
     $(document).ready(function () {
         demo.initVectorMap();
+    });
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2();
     });
 </script>
 <!-- Sharrre libray -->

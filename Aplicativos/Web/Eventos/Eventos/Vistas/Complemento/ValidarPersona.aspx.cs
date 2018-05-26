@@ -17,7 +17,7 @@ namespace Eventos.Vistas.Complemento
                 UsuarioModel USU = new UsuarioModel().ConsultarUserIdentificacion(Request.QueryString["id"]);
                 if (USU.IDENTIFICACION!="")
                 {
-                    Response.Write("true,"+USU.IDENTIFICACION+"," + USU.NOMBRE + "," + USU.APELLIDO + "," + USU.CORREO + "," + USU.CELULAR + "," + USU.DIRECCION + "," + USU.INSTITUCION + "," + USU.USERNAME);
+                    Response.Write("true,"+USU.IDENTIFICACION+"," + USU.NOMBRE + "," + USU.APELLIDO + "," + USU.CORREO + "," + USU.CELULAR + "," + USU.DIRECCION + "," + USU.INSTITUCION + "," + USU.USERNAME + "," + USU.FECHA_NAC);
                 }
                 else
                 {

@@ -63,6 +63,16 @@ namespace Eventos.Models.Complemento
                     ESTILO = "alert alert-success";
                     MENSAJE = "Verificar el correo electrónico para su contraseña.";
                     break;
+                case "10":
+                    AFIRMACION = "Éxito";
+                    ESTILO = "alert alert-success";
+                    MENSAJE = "Inscripción Exitoso, Verificar el correo electrónico para su usuario y contraseña.";
+                    break;
+                case "11":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "Ya está inscripto en el evento";
+                    break;
             }
         }
 

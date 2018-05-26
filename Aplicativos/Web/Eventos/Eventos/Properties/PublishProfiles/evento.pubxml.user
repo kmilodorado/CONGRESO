@@ -16,7 +16,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/15/2018 07:18:34</publishTime>
     </File>
     <File Include="bin/Eventos.dll">
-      <publishTime>05/17/2018 15:59:18</publishTime>
+      <publishTime>05/25/2018 19:47:32</publishTime>
     </File>
     <File Include="bin/Gma.QrCodeNet.Encoding.dll">
       <publishTime>05/15/2018 07:18:32</publishTime>
@@ -112,7 +112,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/15/2018 07:18:34</publishTime>
     </File>
     <File Include="Estilo/Private/assets/css/material-dashboard.min.css">
-      <publishTime>05/15/2018 12:25:11</publishTime>
+      <publishTime>05/22/2018 14:16:43</publishTime>
     </File>
     <File Include="Estilo/Private/assets/css/material.css">
       <publishTime>05/15/2018 07:18:35</publishTime>
@@ -474,6 +474,165 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Estilo/Public/assets/js/plugins/sweetalert2.min.js">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
+    <File Include="Estilo/select2/i18n/ar.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/az.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/bg.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ca.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/cs.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/da.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/de.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/el.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/en.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/es.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/et.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/eu.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/fa.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/fi.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/fr.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/gl.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/he.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/hi.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/hr.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/hu.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/id.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/is.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/it.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ja.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/km.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ko.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/lt.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/lv.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/mk.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ms.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/nb.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/nl.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/pl.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/pt-BR.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/pt.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ro.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/ru.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/sk.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/sr-Cyrl.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/sr.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/sv.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/th.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/tr.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/uk.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/vi.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/zh-CN.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/i18n/zh-TW.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.css">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.full.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.full.min.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.js">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.min.css">
+      <publishTime>05/24/2018 13:21:07</publishTime>
+    </File>
+    <File Include="Estilo/select2/select2.min.js">
+      <publishTime>05/24/2018 13:21:08</publishTime>
+    </File>
     <File Include="Global.asax">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
@@ -485,6 +644,15 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="Imagen/Evento/logo cacao tic.png">
       <publishTime>05/15/2018 07:18:40</publishTime>
+    </File>
+    <File Include="Imagen/Evento/logo theobroma.png">
+      <publishTime>05/21/2018 20:32:29</publishTime>
+    </File>
+    <File Include="Imagen/Evento/logotaller.jpg">
+      <publishTime>05/24/2018 13:05:38</publishTime>
+    </File>
+    <File Include="Imagen/Evento/logoworkshop.jpg">
+      <publishTime>05/24/2018 13:17:30</publishTime>
     </File>
     <File Include="Imagen/LogoGIECOM.png">
       <publishTime>05/15/2018 07:18:40</publishTime>
@@ -502,10 +670,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
     <File Include="Scripts/Metodos.js">
-      <publishTime>05/17/2018 11:34:54</publishTime>
+      <publishTime>05/22/2018 10:43:24</publishTime>
     </File>
     <File Include="Vistas/Complemento/ValidarPersona.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
+    </File>
+    <File Include="Vistas/Error/Error.html">
+      <publishTime>05/21/2018 19:34:00</publishTime>
     </File>
     <File Include="Vistas/Privado/SuperAdmin/GestionarEventoView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
@@ -534,6 +705,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Vistas/Privado/SuperAdmin/PrincipalView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
+    <File Include="Vistas/Privado/Usuario/GestionarPrograma.aspx">
+      <publishTime>05/21/2018 18:44:05</publishTime>
+    </File>
     <File Include="Vistas/Privado/Usuario/PagPublicMaster.Master">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
@@ -543,20 +717,29 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Vistas/Publico/EventosView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
+    <File Include="Vistas/Publico/InscribirCursoView.aspx">
+      <publishTime>05/24/2018 15:46:14</publishTime>
+    </File>
     <File Include="Vistas/Publico/LoginPrivateView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
     <File Include="Vistas/Publico/LoginView.aspx">
-      <publishTime>05/15/2018 07:18:40</publishTime>
+      <publishTime>05/21/2018 20:39:01</publishTime>
     </File>
     <File Include="Vistas/Publico/PagPublic.Master">
-      <publishTime>05/17/2018 10:59:33</publishTime>
+      <publishTime>05/24/2018 15:46:14</publishTime>
+    </File>
+    <File Include="Vistas/Publico/ProgramaView.aspx">
+      <publishTime>05/21/2018 20:38:21</publishTime>
     </File>
     <File Include="Vistas/Publico/RegistrarView.aspx">
-      <publishTime>05/17/2018 15:54:27</publishTime>
+      <publishTime>05/25/2018 19:37:04</publishTime>
+    </File>
+    <File Include="Vistas/Publico/WorkshopView.aspx">
+      <publishTime>05/24/2018 15:25:45</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/17/2018 15:10:51</publishTime>
+      <publishTime>05/21/2018 20:40:00</publishTime>
     </File>
   </ItemGroup>
 </Project>

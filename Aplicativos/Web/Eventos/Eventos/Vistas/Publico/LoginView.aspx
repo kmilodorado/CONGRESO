@@ -83,7 +83,7 @@
                                 <div class="card-body ">
                                     <div class="row">
                                         <div class="col-md-12 text-center">
-                                            <asp:Image ID="Image1" Width="100" Height="50" ImageUrl="~/Imagen/Evento/logo cacao tic.png" runat="server" />
+                                            <asp:Image ID="Image1" Width="250" Height="100" ImageUrl="~/Imagen/Evento/logo cacao tic.png" runat="server" />
                                         </div>
                                     </div>
                                     <br />

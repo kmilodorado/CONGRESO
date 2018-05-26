@@ -16,7 +16,8 @@
     <!-- Documentation extras -->
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="../../Estilo/Private/assets/assets-for-demo/demo.css" rel="stylesheet" />
-
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../Estilo/select2/select2.css" />
     <!-- iframe removal -->
     <script type="text/javascript">
         if (document.readyState === 'complete') {
@@ -78,11 +79,11 @@
                                             <h3 class="card-title" id="titulo_registro" runat="server"></h3>
                                             <br />
                                             <div class="col-md-12 text-center">
-                                                <asp:Image ID="Image2" ImageUrl="~/Imagen/Evento/logo cacao tic.png" Width="100" Height="50" runat="server" />
+                                                <asp:Image ID="Image2" ImageUrl="~/Imagen/Evento/logo cacao tic.png" Width="250" Height="100" runat="server" />
                                             </div>
                                             <br />
-                                            <div class="col-md-11">
-                                                <asp:Panel ID="Alerta" CssClass="alert alert-success" Visible="false" runat="server">
+                                            <div class="col-md-11 text-left">
+                                                <asp:Panel ID="Alerta" CssClass="alert alert-success text-left" Visible="false" runat="server">
                                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                                         <i class="material-icons">close</i>
                                                     </button>
@@ -123,13 +124,20 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <br />
                                                             <!-- tipo Identificación -->
                                                             <div class="row">
-                                                                <div class="col-md-1">
-                                                                </div>
-                                                                <div class="col-md-11">
-                                                                    <asp:DropDownList ID="DDL_TIPO_DOC" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Tipo Documento" runat="server"></asp:DropDownList>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">contact_mail</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_TIPO_DOC" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Tipo Documento" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                             <!-- Nombre -->
@@ -162,6 +170,54 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <!-- Genero -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">brightness_1</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_GENERO" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Genero" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fecha Nacimiento -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">calendar_today</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:TextBox ID="TXT_FECHA_NAC" required="required" CssClass="form-control" placeholder="Fecha Nacimiento..." title="Fecha Nacimiento" TextMode="Date"  runat="server"></asp:TextBox>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Pais Nacimiento -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">flag</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_PAIS_NAC" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Pais Nacimiento" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ml-auto">
                                                             <!-- Correo -->
                                                             <div class="row">
                                                                 <div class="col-md-12">
@@ -177,9 +233,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                        </div>
-                                                        <div class="col-md-6 ml-auto">
                                                             <!-- Celular -->
                                                             <div class="row">
                                                                 <div class="col-md-12">
@@ -195,21 +248,54 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <br />
+                                                            <!-- Pais-->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">flag</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_PAIS" OnSelectedIndexChanged="DDL_PAIS_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Pais de Residencia" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                             <!-- Departamento -->
                                                             <div class="row">
-                                                                <div class="col-md-1">
-                                                                </div>
-                                                                <div class="col-md-11">
-                                                                    <asp:DropDownList ID="DDL_DEPARTAMENTO" OnSelectedIndexChanged="DDL_DEPARTAMENTO_SelectedIndexChanged" AutoPostBack="true" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Departamento" runat="server"></asp:DropDownList>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">flag</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_DEPARTAMENTO" OnSelectedIndexChanged="DDL_DEPARTAMENTO_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Departamento de Residencia" runat="server">
+                                                                                <asp:ListItem Text="Seleccionar Departamento"></asp:ListItem>
+                                                                            </asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                             <!-- Municipio -->
                                                             <div class="row">
-                                                                <div class="col-md-1">
-                                                                </div>
-                                                                <div class="col-md-11">
-                                                                    <asp:DropDownList ID="DDL_MUNICIPIO" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Municipio" runat="server"></asp:DropDownList>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">flag</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_MUNICIPIO" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Municipio de Residencia" runat="server">
+                                                                                <asp:ListItem Text="Seleccionar Municipio"></asp:ListItem>
+                                                                            </asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <!-- Dirección -->
@@ -246,26 +332,82 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="account">
-                                                    <div class="col-md-12 ml-auto">
-                                                        <br />
-                                                        <!-- Nivel de formación -->
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <asp:DropDownList ID="DDL_FORMACION" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Nivel de Formación" runat="server"></asp:DropDownList>
+                                                    <div class="row">
+                                                        <div class="col-md-12 ml-auto">
+                                                            <!-- Condición -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">supervised_user_circle</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_CONDICION" CssClass="form-control select2" Width="90%"  title="Cuenta con alguna condición especial" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <br />
-                                                        <!-- Ocupación -->
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <asp:DropDownList ID="DDL_OCUPACION" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Ocupación" runat="server"></asp:DropDownList>
+                                                            <!-- Nivel de formación -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">supervised_user_circle</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_CIRCUNS" CssClass="form-control select2" Width="90%" data-style="btn select-with-transition" title=" Seleccionar Circunscripción" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <br />
-                                                        <!-- Participante -->
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <asp:DropDownList ID="DDL_PARTICIPACION" CssClass="selectpicker" data-style="btn select-with-transition" title=" Seleccionar Tipo de Participación" runat="server"></asp:DropDownList>
+                                                            <!-- Nivel de formación -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">supervised_user_circle</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_FORMACION" CssClass="form-control  select2" Width="90%" data-style="btn select-with-transition" title=" Seleccionar Nivel de Formación" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Ocupación -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">supervised_user_circle</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_OCUPACION" CssClass="form-control  select2" Width="90%" data-style="btn select-with-transition" title=" Seleccionar Ocupación" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Participante -->
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group has-default">
+                                                                        <div class="input-group">
+                                                                            <div class="input-group-prepend">
+                                                                                <span class="input-group-text">
+                                                                                    <i class="material-icons">supervised_user_circle</i>
+                                                                                </span>
+                                                                            </div>
+                                                                            <asp:DropDownList ID="DDL_PARTICIPACION" CssClass="form-control  select2" Width="90%" data-style="btn select-with-transition" title=" Seleccionar Tipo de Participación" runat="server"></asp:DropDownList>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -333,7 +475,8 @@
 <script src="../../Estilo/Private/assets/js/core/popper.min.js"></script>
 <script src="../../Estilo/Private/assets/js/bootstrap-material-design.min.js"></script>
 <script src="../../Estilo/Private/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-
+    <!-- Select2 -->
+<script src="../../Estilo/select2/select2.full.min.js"></script>
 
 <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
 <script src="../../Estilo/Private/assets/js/plugins/moment.min.js"></script>
@@ -411,6 +554,10 @@
 <script type="text/javascript">
     $(document).ready(function () {
         demo.initVectorMap();
+    });
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2();
     });
 </script>
 <!-- Sharrre libray -->

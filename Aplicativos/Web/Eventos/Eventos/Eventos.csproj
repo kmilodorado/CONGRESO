@@ -179,9 +179,65 @@
     <Content Include="Estilo\Public\assets\js\core\buttons.js" />
     <Content Include="Estilo\Public\assets\js\core\now-ui-dashboard.min.js" />
     <Content Include="Estilo\Public\assets\css\material-dashboard.min.css" />
+    <Content Include="Estilo\select2\i18n\ar.js" />
+    <Content Include="Estilo\select2\i18n\az.js" />
+    <Content Include="Estilo\select2\i18n\bg.js" />
+    <Content Include="Estilo\select2\i18n\ca.js" />
+    <Content Include="Estilo\select2\i18n\cs.js" />
+    <Content Include="Estilo\select2\i18n\da.js" />
+    <Content Include="Estilo\select2\i18n\de.js" />
+    <Content Include="Estilo\select2\i18n\el.js" />
+    <Content Include="Estilo\select2\i18n\en.js" />
+    <Content Include="Estilo\select2\i18n\es.js" />
+    <Content Include="Estilo\select2\i18n\et.js" />
+    <Content Include="Estilo\select2\i18n\eu.js" />
+    <Content Include="Estilo\select2\i18n\fa.js" />
+    <Content Include="Estilo\select2\i18n\fi.js" />
+    <Content Include="Estilo\select2\i18n\fr.js" />
+    <Content Include="Estilo\select2\i18n\gl.js" />
+    <Content Include="Estilo\select2\i18n\he.js" />
+    <Content Include="Estilo\select2\i18n\hi.js" />
+    <Content Include="Estilo\select2\i18n\hr.js" />
+    <Content Include="Estilo\select2\i18n\hu.js" />
+    <Content Include="Estilo\select2\i18n\id.js" />
+    <Content Include="Estilo\select2\i18n\is.js" />
+    <Content Include="Estilo\select2\i18n\it.js" />
+    <Content Include="Estilo\select2\i18n\ja.js" />
+    <Content Include="Estilo\select2\i18n\km.js" />
+    <Content Include="Estilo\select2\i18n\ko.js" />
+    <Content Include="Estilo\select2\i18n\lt.js" />
+    <Content Include="Estilo\select2\i18n\lv.js" />
+    <Content Include="Estilo\select2\i18n\mk.js" />
+    <Content Include="Estilo\select2\i18n\ms.js" />
+    <Content Include="Estilo\select2\i18n\nb.js" />
+    <Content Include="Estilo\select2\i18n\nl.js" />
+    <Content Include="Estilo\select2\i18n\pl.js" />
+    <Content Include="Estilo\select2\i18n\pt-BR.js" />
+    <Content Include="Estilo\select2\i18n\pt.js" />
+    <Content Include="Estilo\select2\i18n\ro.js" />
+    <Content Include="Estilo\select2\i18n\ru.js" />
+    <Content Include="Estilo\select2\i18n\sk.js" />
+    <Content Include="Estilo\select2\i18n\sr-Cyrl.js" />
+    <Content Include="Estilo\select2\i18n\sr.js" />
+    <Content Include="Estilo\select2\i18n\sv.js" />
+    <Content Include="Estilo\select2\i18n\th.js" />
+    <Content Include="Estilo\select2\i18n\tr.js" />
+    <Content Include="Estilo\select2\i18n\uk.js" />
+    <Content Include="Estilo\select2\i18n\vi.js" />
+    <Content Include="Estilo\select2\i18n\zh-CN.js" />
+    <Content Include="Estilo\select2\i18n\zh-TW.js" />
+    <Content Include="Estilo\select2\select2.css" />
+    <Content Include="Estilo\select2\select2.full.js" />
+    <Content Include="Estilo\select2\select2.full.min.js" />
+    <Content Include="Estilo\select2\select2.js" />
+    <Content Include="Estilo\select2\select2.min.css" />
+    <Content Include="Estilo\select2\select2.min.js" />
     <Content Include="Imagen\Codigo\GetFileAttachment.jpg" />
     <Content Include="Imagen\Evento\logo cacao tic.png" />
     <Content Include="Estilo\Public\assets\img\bg14.jpg" />
+    <Content Include="Imagen\Evento\logo theobroma.png" />
+    <Content Include="Imagen\Evento\logotaller.jpg" />
+    <Content Include="Imagen\Evento\logoworkshop.jpg" />
     <Content Include="Imagen\LogoGIECOM.png" />
     <Content Include="Imagen\Evento\bg14.jpg" />
     <Content Include="Imagen\LogoUA.jpg" />
@@ -248,6 +304,7 @@
     <Content Include="Scripts\axios.min.js" />
     <Content Include="Scripts\Metodos.js" />
     <Content Include="Vistas\Complemento\ValidarPersona.aspx" />
+    <Content Include="Vistas\Error\Error.html" />
     <Content Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx" />
     <Content Include="Vistas\Privado\SuperAdmin\GestionarLugaresView.aspx" />
     <Content Include="Vistas\Privado\SuperAdmin\GestionarMenuView.aspx" />
@@ -257,8 +314,10 @@
     <Content Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx" />
     <Content Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master" />
     <Content Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\GestionarPrograma.aspx" />
     <Content Include="Vistas\Privado\Usuario\PrincipalView.aspx" />
     <Content Include="Vistas\Publico\EventosView.aspx" />
+    <Content Include="Vistas\Publico\InscribirCursoView.aspx" />
     <Content Include="Vistas\Publico\LoginPrivateView.aspx" />
     <Content Include="Vistas\Publico\LoginView.aspx" />
     <Content Include="Vistas\Publico\PagPublic.Master" />
@@ -277,7 +336,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Vistas\Publico\ProgramaView.aspx" />
     <Content Include="Vistas\Publico\RegistrarView.aspx" />
+    <Content Include="Vistas\Publico\WorkshopView.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -289,9 +350,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Clases\AsistenciaModel.cs" />
+    <Compile Include="Modelo\Clases\CircunscripcionModel.cs" />
     <Compile Include="Modelo\Clases\CuestionarioModel.cs" />
+    <Compile Include="Modelo\Clases\CursoModel.cs" />
+    <Compile Include="Modelo\Clases\EspecialModel.cs" />
     <Compile Include="Modelo\Clases\EventoModel.cs" />
     <Compile Include="Modelo\Clases\FormacionModel.cs" />
+    <Compile Include="Modelo\Clases\GeneroModel.cs" />
     <Compile Include="Modelo\Clases\LugarModel.cs" />
     <Compile Include="Modelo\Clases\MenuModel.cs" />
     <Compile Include="Modelo\Clases\OcupacionModel.cs" />
@@ -302,6 +367,7 @@
     <Compile Include="Modelo\Clases\RefrigerioModel.cs" />
     <Compile Include="Modelo\Clases\SesionModel.cs" />
     <Compile Include="Modelo\Clases\TemaModel.cs" />
+    <Compile Include="Modelo\Clases\Tipo_EventoModel.cs" />
     <Compile Include="Modelo\Clases\Tipo_PrecioModel.cs" />
     <Compile Include="Modelo\Clases\MunicipioModel.cs" />
     <Compile Include="Modelo\Clases\PersonaModel.cs" />
@@ -385,6 +451,13 @@
     <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.designer.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Privado\Usuario\GestionarPrograma.aspx.cs">
+      <DependentUpon>GestionarPrograma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\GestionarPrograma.aspx.designer.cs">
+      <DependentUpon>GestionarPrograma.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Privado\Usuario\PagPublicMaster.Master.cs">
       <DependentUpon>PagPublicMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -405,6 +478,13 @@
     </Compile>
     <Compile Include="Vistas\Publico\EventosView.aspx.designer.cs">
       <DependentUpon>EventosView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Publico\InscribirCursoView.aspx.cs">
+      <DependentUpon>InscribirCursoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\InscribirCursoView.aspx.designer.cs">
+      <DependentUpon>InscribirCursoView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Publico\LoginPrivateView.aspx.cs">
       <DependentUpon>LoginPrivateView.aspx</DependentUpon>
@@ -427,6 +507,13 @@
     <Compile Include="Vistas\Publico\PagPublic.Master.designer.cs">
       <DependentUpon>PagPublic.Master</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Publico\ProgramaView.aspx.cs">
+      <DependentUpon>ProgramaView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\ProgramaView.aspx.designer.cs">
+      <DependentUpon>ProgramaView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Publico\RegistrarView.aspx.cs">
       <DependentUpon>RegistrarView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -434,10 +521,15 @@
     <Compile Include="Vistas\Publico\RegistrarView.aspx.designer.cs">
       <DependentUpon>RegistrarView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Publico\WorkshopView.aspx.cs">
+      <DependentUpon>WorkshopView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Publico\WorkshopView.aspx.designer.cs">
+      <DependentUpon>WorkshopView.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Vistas\Privado\Admin\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
