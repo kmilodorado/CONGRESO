@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -332,6 +333,7 @@
     <Content Include="Scripts\axios.min.js" />
     <Content Include="Scripts\Metodos.js" />
     <Content Include="Vistas\Complemento\ValidarPersona.aspx" />
+    <Content Include="Vistas\Error\Error.aspx" />
     <Content Include="Vistas\Error\Error.html" />
     <Content Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx" />
     <Content Include="Vistas\Privado\SuperAdmin\GestionarLugaresView.aspx" />
@@ -356,6 +358,10 @@
     <Content Include="Estilo\Public\assets\fonts\nucleo-outline.woff2" />
     <Content Include="Estilo\Public\assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Vistas\Privado\Usuario\PagPublicMaster.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\evento.pubxml" />
+    <None Include="Properties\PublishProfiles\theobromaparalapaz - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\theobromaparalapaz - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -416,6 +422,13 @@
     </Compile>
     <Compile Include="Vistas\Complemento\ValidarPersona.aspx.designer.cs">
       <DependentUpon>ValidarPersona.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Error\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Error\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Privado\SuperAdmin\GestionarEventoView.aspx.cs">
       <DependentUpon>GestionarEventoView.aspx</DependentUpon>
