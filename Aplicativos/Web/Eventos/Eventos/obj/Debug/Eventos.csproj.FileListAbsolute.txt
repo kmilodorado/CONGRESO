@@ -1,4 +1,3 @@
-C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.csprojResolveAssemblyReference.cache
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\ApplicationInsights.config
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\roslyn\csc.exe
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -15,6 +14,7 @@ C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Event
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Eventos.dll.config
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Eventos.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Eventos.pdb
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -29,6 +29,8 @@ C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Event
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\MySql.Data.Entity.EF6.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\MySql.Fabric.Plugin.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\MySql.Web.dll
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.pdb
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.xml
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.AI.Web.xml
@@ -37,6 +39,4 @@ C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Event
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.dll
 C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.pdb
-C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.dll
-C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.pdb
-C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\bin\Gma.QrCodeNet.Encoding.xml
+C:\Users\Giecom\Desktop\Proyecto\CONGRESO\CONGRESO\Aplicativos\Web\Eventos\Eventos\obj\Debug\Eventos.csprojResolveAssemblyReference.cache

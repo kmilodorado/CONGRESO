@@ -133,9 +133,12 @@ namespace Eventos.Modelo.Clases
 
         public DataTable ConsultarParticipantes(string evento)
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_PARTICIPANTE_CONSULTAR_EVENTOS`('"+evento+"')");
         }
 
-
+        public DataTable ConsultarParticipanteInscripcion(string evento,string inscripcion)
+        {
+            return new Datos().ConsultarDatos("CALL PR_PARTICIPANTE_CONSULTAR_INSCIRPCION('" + evento+"', '"+inscripcion+"')");
+        }
     }
 }

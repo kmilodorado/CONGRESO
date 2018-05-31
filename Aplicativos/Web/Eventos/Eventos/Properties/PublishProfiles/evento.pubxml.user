@@ -16,7 +16,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/15/2018 07:18:34</publishTime>
     </File>
     <File Include="bin/Eventos.dll">
-      <publishTime>05/25/2018 19:47:32</publishTime>
+      <publishTime>05/28/2018 21:45:01</publishTime>
     </File>
     <File Include="bin/Gma.QrCodeNet.Encoding.dll">
       <publishTime>05/15/2018 07:18:32</publishTime>
@@ -636,6 +636,90 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="Global.asax">
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
+    <File Include="Imagen/Codigo/1013609328.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1016072576.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1028002328.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1030524547.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1049608698.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1053799654.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1073505169.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1075285401.jpg">
+      <publishTime>05/21/2018 15:32:00</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1082127395.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1083899098.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1090487487.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1110462693.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1117553160.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121822267.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121911521.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121935101.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121937595.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121940230.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121940663.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1121946848.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/1126421367.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/12199276.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/21203334.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/25179384.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/40092915.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/40428183.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/80803077.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
+    <File Include="Imagen/Codigo/86087362.jpg">
+      <publishTime>05/28/2018 15:23:35</publishTime>
+    </File>
     <File Include="Imagen/Codigo/GetFileAttachment.jpg">
       <publishTime>05/17/2018 15:56:15</publishTime>
     </File>
@@ -676,7 +760,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/15/2018 07:18:40</publishTime>
     </File>
     <File Include="Vistas/Error/Error.html">
-      <publishTime>05/21/2018 19:34:00</publishTime>
+      <publishTime>05/28/2018 13:56:28</publishTime>
     </File>
     <File Include="Vistas/Privado/SuperAdmin/GestionarEventoView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
@@ -709,10 +793,13 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/21/2018 18:44:05</publishTime>
     </File>
     <File Include="Vistas/Privado/Usuario/PagPublicMaster.Master">
-      <publishTime>05/15/2018 07:18:40</publishTime>
+      <publishTime>05/28/2018 14:50:47</publishTime>
+    </File>
+    <File Include="Vistas/Privado/Usuario/ParticipanteView.aspx">
+      <publishTime>05/28/2018 21:38:58</publishTime>
     </File>
     <File Include="Vistas/Privado/Usuario/PrincipalView.aspx">
-      <publishTime>05/15/2018 07:18:40</publishTime>
+      <publishTime>05/28/2018 15:53:06</publishTime>
     </File>
     <File Include="Vistas/Publico/EventosView.aspx">
       <publishTime>05/15/2018 07:18:40</publishTime>
@@ -739,7 +826,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/24/2018 15:25:45</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/21/2018 20:40:00</publishTime>
+      <publishTime>05/28/2018 13:56:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

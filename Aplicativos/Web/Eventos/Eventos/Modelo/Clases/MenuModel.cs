@@ -101,5 +101,18 @@ namespace Eventos.Modelo.Clases
                     return new DataTable();
             }
         }
+
+        public DataTable ConsultarPermiso_Navegacion(string tipo, string rol)
+        {
+            switch (tipo)
+            {
+                case "USUARIO":
+                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_NAVEGACION`('" + rol + "')");
+                case "PARTICIPANTE":
+                    return new Datos().ConsultarDatos("CALL `PR_PERMISO_PARTICIPANTE_NAVEGACION`('"+rol+"');");
+                default:
+                    return new DataTable();
+            }
+        }
     }
 }

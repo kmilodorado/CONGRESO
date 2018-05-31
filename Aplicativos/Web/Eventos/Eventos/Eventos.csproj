@@ -232,6 +232,34 @@
     <Content Include="Estilo\select2\select2.js" />
     <Content Include="Estilo\select2\select2.min.css" />
     <Content Include="Estilo\select2\select2.min.js" />
+    <Content Include="Imagen\Codigo\1013609328.jpg" />
+    <Content Include="Imagen\Codigo\1016072576.jpg" />
+    <Content Include="Imagen\Codigo\1028002328.jpg" />
+    <Content Include="Imagen\Codigo\1030524547.jpg" />
+    <Content Include="Imagen\Codigo\1049608698.jpg" />
+    <Content Include="Imagen\Codigo\1053799654.jpg" />
+    <Content Include="Imagen\Codigo\1073505169.jpg" />
+    <Content Include="Imagen\Codigo\1075285401.jpg" />
+    <Content Include="Imagen\Codigo\1082127395.jpg" />
+    <Content Include="Imagen\Codigo\1083899098.jpg" />
+    <Content Include="Imagen\Codigo\1090487487.jpg" />
+    <Content Include="Imagen\Codigo\1110462693.jpg" />
+    <Content Include="Imagen\Codigo\1117553160.jpg" />
+    <Content Include="Imagen\Codigo\1121822267.jpg" />
+    <Content Include="Imagen\Codigo\1121911521.jpg" />
+    <Content Include="Imagen\Codigo\1121935101.jpg" />
+    <Content Include="Imagen\Codigo\1121937595.jpg" />
+    <Content Include="Imagen\Codigo\1121940230.jpg" />
+    <Content Include="Imagen\Codigo\1121940663.jpg" />
+    <Content Include="Imagen\Codigo\1121946848.jpg" />
+    <Content Include="Imagen\Codigo\1126421367.jpg" />
+    <Content Include="Imagen\Codigo\12199276.jpg" />
+    <Content Include="Imagen\Codigo\21203334.jpg" />
+    <Content Include="Imagen\Codigo\25179384.jpg" />
+    <Content Include="Imagen\Codigo\40092915.jpg" />
+    <Content Include="Imagen\Codigo\40428183.jpg" />
+    <Content Include="Imagen\Codigo\80803077.jpg" />
+    <Content Include="Imagen\Codigo\86087362.jpg" />
     <Content Include="Imagen\Codigo\GetFileAttachment.jpg" />
     <Content Include="Imagen\Evento\logo cacao tic.png" />
     <Content Include="Estilo\Public\assets\img\bg14.jpg" />
@@ -315,6 +343,7 @@
     <Content Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master" />
     <Content Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx" />
     <Content Include="Vistas\Privado\Usuario\GestionarPrograma.aspx" />
+    <Content Include="Vistas\Privado\Usuario\ParticipanteView.aspx" />
     <Content Include="Vistas\Privado\Usuario\PrincipalView.aspx" />
     <Content Include="Vistas\Publico\EventosView.aspx" />
     <Content Include="Vistas\Publico\InscribirCursoView.aspx" />
@@ -465,6 +494,13 @@
     <Compile Include="Vistas\Privado\Usuario\PagPublicMaster.Master.designer.cs">
       <DependentUpon>PagPublicMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Privado\Usuario\ParticipanteView.aspx.cs">
+      <DependentUpon>ParticipanteView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\ParticipanteView.aspx.designer.cs">
+      <DependentUpon>ParticipanteView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Privado\Usuario\PrincipalView.aspx.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -529,7 +565,9 @@
       <DependentUpon>WorkshopView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DataSet\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -40,58 +40,49 @@ namespace Eventos.Vistas.Publico
                     DDL_TIPO_DOC.DataSource = new Tipo_IdentificacionModel().Consultar();
                     DDL_TIPO_DOC.DataTextField = "TIPO_DETALLE";
                     DDL_TIPO_DOC.DataValueField = "ID";
-                    DDL_TIPO_DOC.DataBind();
                     DDL_TIPO_DOC.Items.Insert(0, new ListItem("Seleccionar Tipo Identificación", ""));
 
                     DataTable Consulta = new MunicipioModel().ConsultarPais();
                     DDL_PAIS.DataSource = Consulta;
                     DDL_PAIS.DataTextField = "PAIS_NOMBRE";
                     DDL_PAIS.DataValueField = "IDPAIS";
-                    DDL_PAIS.DataBind();
                     DDL_PAIS.Items.Insert(0, new ListItem("Seleccionar País Residencia", ""));
 
                     DDL_PAIS_NAC.DataSource = Consulta;
                     DDL_PAIS_NAC.DataTextField = "PAIS_NOMBRE";
                     DDL_PAIS_NAC.DataValueField = "IDPAIS";
-                    DDL_PAIS_NAC.DataBind();
                     DDL_PAIS_NAC.Items.Insert(0, new ListItem("Seleccionar País Nacimiento", ""));
 
                     DDL_GENERO.DataSource = new GeneroModel().Consultar();
                     DDL_GENERO.DataTextField = "GENE_DETALLE";
                     DDL_GENERO.DataValueField = "IDGENERO";
-                    DDL_GENERO.DataBind();
                     DDL_GENERO.Items.Insert(0, new ListItem("Seleccionar Genero", ""));
 
                     DDL_CONDICION.DataSource = new EspecialModel().Consultar();
                     DDL_CONDICION.DataTextField = "COND_DETALLE";
                     DDL_CONDICION.DataValueField = "IDCOND_ESPECIAL";
-                    DDL_CONDICION.DataBind();
                     DDL_CONDICION.Items.Insert(0, new ListItem("Cuenta con alguna condición especial", ""));
 
                     DDL_CIRCUNS.DataSource = new CircunscripcionModel().Consultar();
                     DDL_CIRCUNS.DataTextField = "CIRC_DETALLE";
                     DDL_CIRCUNS.DataValueField = "IDCIRCUNSCRIPCION";
-                    DDL_CIRCUNS.DataBind();
                     DDL_CIRCUNS.Items.Insert(0, new ListItem("Seleccionar Circunscripción", ""));
 
                     DDL_FORMACION.DataSource = new FormacionModel().Consultar();
                     DDL_FORMACION.DataTextField = "FORM_DETALLE";
                     DDL_FORMACION.DataValueField = "ID";
-                    DDL_FORMACION.DataBind();
                     DDL_FORMACION.Items.Insert(0, new ListItem("Seleccionar Nivel de Formación", ""));
 
                     DDL_OCUPACION.DataSource = new OcupacionModel().Consultar();
                     DDL_OCUPACION.DataTextField = "OCUP_DETALLE";
                     DDL_OCUPACION.DataValueField = "ID";
-                    DDL_OCUPACION.DataBind();
                     DDL_OCUPACION.Items.Insert(0, new ListItem(" Seleccionar Ocupación", ""));
 
                     DDL_PARTICIPACION.DataSource = new Tipo_ParticipanteModel().Consultar();
                     DDL_PARTICIPACION.DataTextField = "TIPO_DETALLE";
                     DDL_PARTICIPACION.DataValueField = "ID";
-                    DDL_PARTICIPACION.DataBind();
                     DDL_PARTICIPACION.Items.Insert(0, new ListItem("Seleccionar Tipo de Participación", ""));
-
+                    DataBind();
                     Repeater1.DataSource = new CuestionarioModel().ConsultarPreguntas();
                     Repeater1.DataBind();
 

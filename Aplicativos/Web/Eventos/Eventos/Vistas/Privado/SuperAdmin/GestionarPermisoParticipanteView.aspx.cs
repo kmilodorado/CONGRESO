@@ -14,9 +14,9 @@ namespace Eventos.Vistas.Privado.SuperAdmin
         {
             if (!IsPostBack)
             {
-                DDL_PARTICIPANTE.DataSource = new Tipo_ParticipanteModel().Consultar();
+                DDL_PARTICIPANTE.DataSource = new Tipo_ParticipanteModel().ConsultarTodos();
                 DDL_PARTICIPANTE.DataTextField = "TIPO_DETALLE";
-                DDL_PARTICIPANTE.DataValueField = "ID";
+                DDL_PARTICIPANTE.DataValueField = "IDTIPO_PARTICIPANTE";
                 DDL_PARTICIPANTE.DataBind();
                 datatables.DataSource = new MenuModel().ConsultarTipo("PARTICIPANTE");
                 datatables.DataBind();
