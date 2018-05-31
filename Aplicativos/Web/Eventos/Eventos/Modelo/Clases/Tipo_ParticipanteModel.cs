@@ -43,5 +43,9 @@ namespace Eventos.Modelo.Clases
         {
             return new Datos().ConsultarDatos("CALL `PR_TIPO_PARTICIPANTE_CONSULTAR_G`();");
         }
+        public DataTable ConsultarTodos()
+        {
+            return new Datos().ConsultarDatos("CALL `PR_TIPO_PARTICIPANTE_CONSULTAR_TODOS`();");
+        }
     }
 }

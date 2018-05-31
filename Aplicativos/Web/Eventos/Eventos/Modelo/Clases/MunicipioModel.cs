@@ -36,13 +36,17 @@ namespace Eventos.Modelo.Clases
             return new MunicipioModel(
                 consulta.Rows[0]["IDMUNICIPIO"].ToString(),
                 consulta.Rows[0]["MUNI_NOMBRE"].ToString(),
-                consulta.Rows[0]["DEPA_NOMBRE"].ToString(),
+                consulta.Rows[0]["MUNI_DEPARTAMENTO"].ToString(),
                 consulta.Rows[0]["PAIS_NOMBRE"].ToString());
         }
 
-        public DataTable ConsultarDepartamento()
+        public DataTable ConsultarPais()
         {
-            return new Datos().ConsultarDatos("CALL `PR_DEPARTAMENTO_CONSULTAR`()");
+            return new Datos().ConsultarDatos("CALL `PR_PAIS_CONSULTAR`()");
+        }
+        public DataTable ConsultarDepartamento(string pais)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_DEPARTAMENTO_CONSULTAR`('"+ pais + "')");
         }
         public DataTable ConsultarMunicipio(string departamento)
         {

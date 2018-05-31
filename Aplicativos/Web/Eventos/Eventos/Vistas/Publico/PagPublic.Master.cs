@@ -15,23 +15,27 @@ namespace Eventos.Vistas.Publico
         {
             try
             {
-                EventoModel EVE = new EventoModel().ConsultarSiglas(Request.QueryString["Evento"]);
-                titulo.Text = EVE.NOMBRE;
-                if (EVE.LOGO!="")
+                if (!IsPostBack)
                 {
-                    icono.ResolveUrl("../../Imagen/Evento/" + EVE.LOGO);
+                    EventoModel EVE = new EventoModel().ConsultarSiglas(Request.QueryString["Evento"]);
+                    titulo.Text = EVE.NOMBRE;
+                    if (EVE.LOGO != "")
+                    {
+                        icono.Href = "../../Imagen/Evento/" + EVE.LOGO;
+                    }
+                    Evento.InnerHtml = EVE.NOMBRE;
+                    login.HRef = "LoginView.aspx?Evento=" + EVE.SIGLAS;
+                    inscribir.HRef = "RegistrarView.aspx?Evento=" + EVE.SIGLAS;
+                    programa.HRef = "ProgramaView.aspx?Evento=" + EVE.SIGLAS;
+                    Session["EVENTO_PUBLIC"] = EVE;
                 }
-                Evento.InnerHtml =EVE.NOMBRE;
-                login.HRef = "LoginView.aspx?Evento="+EVE.SIGLAS;
-                inscribir.HRef = "RegistrarView.aspx?Evento=" + EVE.SIGLAS;
-                programa.HRef = "ProgramaView.aspx?Evento=" + EVE.SIGLAS;
-                Session["EVENTO_PUBLIC"] = EVE;
             }
             catch 
             {
-                Response.Redirect("EventosView.aspx");
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
             }
             
         }
+        
     }
 }

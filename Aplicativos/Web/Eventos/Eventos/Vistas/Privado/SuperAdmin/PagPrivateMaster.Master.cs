@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Eventos.Models.Complemento;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,14 @@ namespace Eventos.Vistas.Privado.SuperAdmin
         {
             HyperLink3.NavigateUrl = Request.Path.Split('/')[4];
             HyperLink3.Text = Request.Path.Split('/')[4];
+            if (Request.QueryString["alert"] != null)
+            {
+                AlertaModel AR = new AlertaModel(Request.QueryString["alert"]);
+                Alerta.Visible = AR.VISIBLE;
+                Alerta.CssClass = AR.ESTILO;
+                Alert.Text = AR.MENSAJE;
+                Afirm.InnerHtml = AR.AFIRMACION;
+            }
         }
     }
 }

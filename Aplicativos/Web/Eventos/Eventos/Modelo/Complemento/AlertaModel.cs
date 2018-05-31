@@ -17,6 +17,7 @@ namespace Eventos.Models.Complemento
             VISIBLE = true;
             switch (id)
             {
+                
                 case "1":
                     AFIRMACION ="Éxito";
                     ESTILO = "alert alert-success";
@@ -37,7 +38,41 @@ namespace Eventos.Models.Complemento
                     ESTILO = "alert alert-danger";
                     MENSAJE = "Te falto por Seleccionar un campo";
                     break;
-
+                case "5":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "Usuario o contraseña incorrecta.";
+                    break;
+                case "6":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "No se ha registrado en el evento.";
+                    break;
+                case "7":
+                    AFIRMACION = "Éxito";
+                    ESTILO = "alert alert-success";
+                    MENSAJE = "Registro Exitoso, Verificar el correo electrónico para su usuario y contraseña.";
+                    break;
+                case "8":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "Correo incorrecto, No existe un usuario con este correo.";
+                    break;
+                case "9":
+                    AFIRMACION = "Éxito";
+                    ESTILO = "alert alert-success";
+                    MENSAJE = "Verificar el correo electrónico para su contraseña.";
+                    break;
+                case "10":
+                    AFIRMACION = "Éxito";
+                    ESTILO = "alert alert-success";
+                    MENSAJE = "Inscripción Exitoso, Verificar el correo electrónico para su usuario y contraseña.";
+                    break;
+                case "11":
+                    AFIRMACION = "Error";
+                    ESTILO = "alert alert-danger";
+                    MENSAJE = "Ya está inscripto en el evento";
+                    break;
             }
         }
 

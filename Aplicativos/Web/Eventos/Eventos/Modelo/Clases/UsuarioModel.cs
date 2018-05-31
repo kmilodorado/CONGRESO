@@ -105,7 +105,7 @@ namespace Eventos.Modelo.Clases
             {
                 return new UsuarioModel(
                 consulta.Rows[0]["IDUSUARIO"].ToString(),
-                consulta.Rows[0]["USUA_USERNAME"].ToString(),
+                consulta.Rows[0]["USERNAME"].ToString(),
                 consulta.Rows[0]["ESTADO"].ToString(),
                 consulta.Rows[0]["USUA_IDROL"].ToString(),
                 consulta.Rows[0]["USUA_IDPERSONA"].ToString());
@@ -116,6 +116,11 @@ namespace Eventos.Modelo.Clases
                 return new UsuarioModel();
             }
 
+        }
+
+        public bool ModificarPassword(string usuario,string pass)
+        {
+            return new Datos().OperarDatos("CALL `PR_USUARIO_CAMBIAR_PASSWORD`('"+ usuario + "', '" + pass + "')");
         }
 
         public DataTable Consultar()
