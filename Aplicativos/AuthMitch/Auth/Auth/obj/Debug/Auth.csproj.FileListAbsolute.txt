@@ -1,0 +1,9 @@
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\bin\Auth.dll.config
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\bin\Auth.dll
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\bin\Auth.pdb
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\obj\Debug\Auth.csprojResolveAssemblyReference.cache
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\obj\Debug\Auth.csproj.CoreCompileInputs.cache
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\obj\Debug\Auth.dll
+G:\ProyectosInvestigacion\CONGRESO\Aplicativos\AuthMitch\Auth\Auth\obj\Debug\Auth.pdb
