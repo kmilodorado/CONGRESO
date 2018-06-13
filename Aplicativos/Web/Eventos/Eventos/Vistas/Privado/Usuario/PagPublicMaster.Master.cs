@@ -24,6 +24,11 @@ namespace Eventos.Vistas.Privado.Usuario
                 //salir.HRef = "~/Vistas/Publico/EventosView.aspx?Evento=CacaoTics";
                 HyperLink3.NavigateUrl = Request.Path.Split('/')[4];
                 HyperLink3.Text = Request.Path.Split('/')[4];
+                if (EVEN.LOGO != "")
+                {
+                    icono.Href = "../../../Imagen/Evento/" + EVEN.LOGO;
+                }
+                Label1.Text = PART.USUARIO.NOMBRE.Split(' ')[0]+" "+ PART.USUARIO.APELLIDO.Split(' ')[0];
 
                 Repeater1.DataSource = new MenuModel().ConsultarPermiso_Navegacion("PARTICIPANTE", PART.TIPO_PARTICIPANTE.IDTIPO_PARTICIPANTE);
                 Repeater1.DataBind();

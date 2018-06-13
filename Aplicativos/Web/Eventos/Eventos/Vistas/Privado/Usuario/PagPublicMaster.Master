@@ -6,6 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title id="rol" runat="server"></title>
+    <link id="icono" rel="icon" href="../../Imagen/Evento/LogoGIECOM.png" runat="server" />
     <!---------------------------------------- Estilos ----------------------------------------->
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="../../../Estilo/Private/assets/css/material.css" />

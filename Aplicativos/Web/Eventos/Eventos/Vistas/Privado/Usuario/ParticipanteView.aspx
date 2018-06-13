@@ -73,18 +73,24 @@
                                             <th>Correo</th>
                                             <th>Celular</th>
                                             <th>Participación</th>
+                                            <th>Curso del 18 Junio</th>
+                                            <th>Curso del 19 Junio</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <asp:Repeater ID="Repeater2" runat="server">
                                             <ItemTemplate>
+                                                <%# CONSULTA = Cursos(DataBinder.Eval(Container.DataItem, "IDPARTICIPANTE").ToString())%>
                                                 <tr>
-                                                    <td><%# Container.ItemIndex+1 %></td>
+                                                    <td><%# Container.ItemIndex+1 %>
+                                                    </td>
                                                     <td><%# Eval("PERS_IDENTIFICACION") %></td>
                                                     <td><%# Eval("PERS_NOMBRES")+" "+Eval("PERS_APELLIDOS") %></td>
                                                     <td><%# Eval("PERS_CORREO") %></td>
                                                     <td><%# Eval("PERS_CELULAR") %></td>
                                                     <td><%# Eval("TIPO_DETALLE") %></td>
+                                                    <td><%# CONSULTA.Rows[0]["CURS_ITEM"].ToString() %></td>
+                                                    <td><%# CONSULTA.Rows[1]["CURS_ITEM"].ToString() %></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

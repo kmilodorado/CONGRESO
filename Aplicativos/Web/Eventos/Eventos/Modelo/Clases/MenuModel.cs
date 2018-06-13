@@ -50,7 +50,7 @@ namespace Eventos.Modelo.Clases
             return new Datos().OperarDatos("CALL `PR_MENU_ACTUALIZAR`('"+IDMENU+ "', '" + NOMBRE + "', '" + URL + "', '" + ICONO + "', '" + TIPO + "')");
         }
 
-        public bool GestionarPermiso(string tipo,string menu, string rol,string accion)
+        public bool GestionarPermiso(string tipo,string menu, string rol,bool accion)
         {
             switch (tipo)
             {

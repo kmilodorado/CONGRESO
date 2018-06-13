@@ -26,12 +26,7 @@ namespace Eventos.Vistas.Privado.SuperAdmin
         protected void CB_SELECIONAR_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox CB = (CheckBox)sender;
-            string accion = "FALSE";
-            if (CB.Checked)
-            {
-                accion = "TRUE";
-            }
-            new MenuModel().GestionarPermiso("PARTICIPANTE", CB.Text, DDL_PARTICIPANTE.Text, accion);
+            new MenuModel().GestionarPermiso("PARTICIPANTE", CB.Text, DDL_PARTICIPANTE.Text, CB.Checked);
         }
 
         protected void DDL_PARTICIPANTE_SelectedIndexChanged(object sender, EventArgs e)

@@ -56,7 +56,7 @@ namespace Eventos.Modelo.Clases
 
         public DataTable ConsultarAsistencia(string evento)
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_ASISTENCIA_CONSULTAR`('"+evento+"')");
         }
 
         public DataTable ConsultarParticipante(string Participante)

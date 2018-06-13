@@ -49,12 +49,7 @@ namespace Eventos.Vistas.Privado.SuperAdmin
         protected void CB_SELECIONAR_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox CB = (CheckBox)sender;
-            string accion = "FALSE";
-            if (CB.Checked)
-            {
-                accion = "TRUE";
-            }
-            new MenuModel().GestionarPermiso("USUARIO", CB.Text, DDL_ROL.Text, accion);
+            new MenuModel().GestionarPermiso("USUARIO", CB.Text, DDL_ROL.Text, CB.Checked);
         }
 
     }

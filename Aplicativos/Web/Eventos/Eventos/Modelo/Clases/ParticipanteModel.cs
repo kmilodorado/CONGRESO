@@ -103,7 +103,7 @@ namespace Eventos.Modelo.Clases
                 consulta.Rows[0][""].ToString(),
                 consulta.Rows[0][""].ToString());
         }
-        
+
 
         public ParticipanteModel ConsultarValidar(string evento, UsuarioModel user)
         {
@@ -133,12 +133,21 @@ namespace Eventos.Modelo.Clases
 
         public DataTable ConsultarParticipantes(string evento)
         {
-            return new Datos().ConsultarDatos("CALL `PR_PARTICIPANTE_CONSULTAR_EVENTOS`('"+evento+"')");
+            return new Datos().ConsultarDatos("CALL `PR_PARTICIPANTE_CONSULTAR_EVENTOS`('" + evento + "')");
         }
 
-        public DataTable ConsultarParticipanteInscripcion(string evento,string inscripcion)
+        public DataTable ConsultarParticipanteInscripcion(string evento, string inscripcion)
         {
-            return new Datos().ConsultarDatos("CALL PR_PARTICIPANTE_CONSULTAR_INSCIRPCION('" + evento+"', '"+inscripcion+"')");
+            return new Datos().ConsultarDatos("CALL PR_PARTICIPANTE_CONSULTAR_INSCIRPCION('" + evento + "', '" + inscripcion + "')");
+        }
+        public DataTable ConsultarParticipanteCurso(string participante)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_CURSO_SELECCION`('" + participante + "')");
+        }
+
+        public DataTable ConsultarParticipanteCurso()
+        {
+            return new Datos().ConsultarDatos("CALL `PR_CURSO_SELECCIONAR_G`()");
         }
     }
 }
