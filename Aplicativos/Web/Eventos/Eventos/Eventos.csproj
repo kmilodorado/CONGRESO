@@ -233,35 +233,203 @@
     <Content Include="Estilo\select2\select2.js" />
     <Content Include="Estilo\select2\select2.min.css" />
     <Content Include="Estilo\select2\select2.min.js" />
+    <Content Include="Imagen\Codigo\0437821.jpg" />
+    <Content Include="Imagen\Codigo\1002941696.jpg" />
+    <Content Include="Imagen\Codigo\1004519124.jpg" />
+    <Content Include="Imagen\Codigo\1006460093.jpg" />
+    <Content Include="Imagen\Codigo\1006501554.jpg" />
+    <Content Include="Imagen\Codigo\1007364383.jpg" />
+    <Content Include="Imagen\Codigo\1007512697.jpg" />
+    <Content Include="Imagen\Codigo\1007761363.jpg" />
+    <Content Include="Imagen\Codigo\1010214323.jpg" />
     <Content Include="Imagen\Codigo\1013609328.jpg" />
+    <Content Include="Imagen\Codigo\1014202743.jpg" />
     <Content Include="Imagen\Codigo\1016072576.jpg" />
+    <Content Include="Imagen\Codigo\1018482598.jpg" />
+    <Content Include="Imagen\Codigo\1018494260.jpg" />
+    <Content Include="Imagen\Codigo\1022404089.jpg" />
     <Content Include="Imagen\Codigo\1028002328.jpg" />
     <Content Include="Imagen\Codigo\1030524547.jpg" />
+    <Content Include="Imagen\Codigo\10307473.jpg" />
     <Content Include="Imagen\Codigo\1049608698.jpg" />
+    <Content Include="Imagen\Codigo\1052388346.jpg" />
     <Content Include="Imagen\Codigo\1053799654.jpg" />
+    <Content Include="Imagen\Codigo\1053858352.jpg" />
     <Content Include="Imagen\Codigo\1073505169.jpg" />
+    <Content Include="Imagen\Codigo\1073603565.jpg" />
+    <Content Include="Imagen\Codigo\1073714149.jpg" />
     <Content Include="Imagen\Codigo\1075285401.jpg" />
+    <Content Include="Imagen\Codigo\1077864904.jpg" />
+    <Content Include="Imagen\Codigo\1078754594.jpg" />
+    <Content Include="Imagen\Codigo\1080365767.jpg" />
     <Content Include="Imagen\Codigo\1082127395.jpg" />
+    <Content Include="Imagen\Codigo\1082776174.jpg" />
+    <Content Include="Imagen\Codigo\1083897836.jpg" />
     <Content Include="Imagen\Codigo\1083899098.jpg" />
+    <Content Include="Imagen\Codigo\1083905225.jpg" />
+    <Content Include="Imagen\Codigo\1083913583.jpg" />
+    <Content Include="Imagen\Codigo\1083915328.jpg" />
+    <Content Include="Imagen\Codigo\1084258501.jpg" />
+    <Content Include="Imagen\Codigo\1086136222.jpg" />
+    <Content Include="Imagen\Codigo\1088018785.jpg" />
+    <Content Include="Imagen\Codigo\1088025430.jpg" />
     <Content Include="Imagen\Codigo\1090487487.jpg" />
+    <Content Include="Imagen\Codigo\1097394088.jpg" />
     <Content Include="Imagen\Codigo\1110462693.jpg" />
+    <Content Include="Imagen\Codigo\1110493708.jpg" />
+    <Content Include="Imagen\Codigo\1110534745.jpg" />
+    <Content Include="Imagen\Codigo\1110577595.jpg" />
+    <Content Include="Imagen\Codigo\1115796015.jpg" />
+    <Content Include="Imagen\Codigo\1116920359.jpg" />
+    <Content Include="Imagen\Codigo\1117505024.jpg" />
+    <Content Include="Imagen\Codigo\1117526250.jpg" />
+    <Content Include="Imagen\Codigo\1117535701.jpg" />
+    <Content Include="Imagen\Codigo\1117541564.jpg" />
+    <Content Include="Imagen\Codigo\1117541638.jpg" />
+    <Content Include="Imagen\Codigo\1117541866.jpg" />
+    <Content Include="Imagen\Codigo\1117542337.jpg" />
+    <Content Include="Imagen\Codigo\1117545427.jpg" />
+    <Content Include="Imagen\Codigo\1117545538.jpg" />
+    <Content Include="Imagen\Codigo\1117546194.jpg" />
+    <Content Include="Imagen\Codigo\1117547360.jpg" />
+    <Content Include="Imagen\Codigo\1117547456.jpg" />
+    <Content Include="Imagen\Codigo\1117547665.jpg" />
+    <Content Include="Imagen\Codigo\1117548334.jpg" />
+    <Content Include="Imagen\Codigo\1117548439.jpg" />
+    <Content Include="Imagen\Codigo\1117548852.jpg" />
+    <Content Include="Imagen\Codigo\1117549825.jpg" />
+    <Content Include="Imagen\Codigo\1117550109.jpg" />
+    <Content Include="Imagen\Codigo\1117550126.jpg" />
+    <Content Include="Imagen\Codigo\1117550249.jpg" />
+    <Content Include="Imagen\Codigo\1117550456.jpg" />
+    <Content Include="Imagen\Codigo\1117551271.jpg" />
+    <Content Include="Imagen\Codigo\1117552154.jpg" />
     <Content Include="Imagen\Codigo\1117553160.jpg" />
+    <Content Include="Imagen\Codigo\1117553434.jpg" />
+    <Content Include="Imagen\Codigo\1117553777.jpg" />
+    <Content Include="Imagen\Codigo\1117554959.jpg" />
+    <Content Include="Imagen\Codigo\1118027194.jpg" />
+    <Content Include="Imagen\Codigo\1118028359.jpg" />
+    <Content Include="Imagen\Codigo\1118028524.jpg" />
+    <Content Include="Imagen\Codigo\1119217158.jpg" />
+    <Content Include="Imagen\Codigo\1120362129.jpg" />
+    <Content Include="Imagen\Codigo\1120380584.jpg" />
+    <Content Include="Imagen\Codigo\1120380715.jpg" />
+    <Content Include="Imagen\Codigo\1120380865.jpg" />
+    <Content Include="Imagen\Codigo\1120504835.jpg" />
+    <Content Include="Imagen\Codigo\1121416225.jpg" />
     <Content Include="Imagen\Codigo\1121822267.jpg" />
+    <Content Include="Imagen\Codigo\1121831849.jpg" />
+    <Content Include="Imagen\Codigo\1121855929.jpg" />
+    <Content Include="Imagen\Codigo\1121886786.jpg" />
+    <Content Include="Imagen\Codigo\1121890956.jpg" />
+    <Content Include="Imagen\Codigo\1121895305.jpg" />
+    <Content Include="Imagen\Codigo\1121895430.jpg" />
+    <Content Include="Imagen\Codigo\1121901659.jpg" />
+    <Content Include="Imagen\Codigo\1121901953.jpg" />
+    <Content Include="Imagen\Codigo\1121905226.jpg" />
+    <Content Include="Imagen\Codigo\1121909365.jpg" />
     <Content Include="Imagen\Codigo\1121911521.jpg" />
+    <Content Include="Imagen\Codigo\1121913744.jpg" />
+    <Content Include="Imagen\Codigo\1121917050.jpg" />
+    <Content Include="Imagen\Codigo\1121917985.jpg" />
+    <Content Include="Imagen\Codigo\1121922141.jpg" />
     <Content Include="Imagen\Codigo\1121935101.jpg" />
     <Content Include="Imagen\Codigo\1121937595.jpg" />
+    <Content Include="Imagen\Codigo\1121938575.jpg" />
     <Content Include="Imagen\Codigo\1121940230.jpg" />
     <Content Include="Imagen\Codigo\1121940663.jpg" />
+    <Content Include="Imagen\Codigo\1121940670.jpg" />
+    <Content Include="Imagen\Codigo\1121941028.jpg" />
+    <Content Include="Imagen\Codigo\1121946334.jpg" />
     <Content Include="Imagen\Codigo\1121946848.jpg" />
+    <Content Include="Imagen\Codigo\1121949867.jpg" />
+    <Content Include="Imagen\Codigo\1121952740.jpg" />
+    <Content Include="Imagen\Codigo\1121953685.jpg" />
+    <Content Include="Imagen\Codigo\1121955012.jpg" />
+    <Content Include="Imagen\Codigo\1121955179.jpg" />
+    <Content Include="Imagen\Codigo\1121956943.jpg" />
+    <Content Include="Imagen\Codigo\1121961789.jpg" />
+    <Content Include="Imagen\Codigo\1122122045.jpg" />
+    <Content Include="Imagen\Codigo\1122136498.jpg" />
+    <Content Include="Imagen\Codigo\1122143289.jpg" />
     <Content Include="Imagen\Codigo\1126421367.jpg" />
+    <Content Include="Imagen\Codigo\11342064.jpg" />
+    <Content Include="Imagen\Codigo\117547456.jpg" />
+    <Content Include="Imagen\Codigo\121937943.jpg" />
     <Content Include="Imagen\Codigo\12199276.jpg" />
+    <Content Include="Imagen\Codigo\14139123.jpg" />
+    <Content Include="Imagen\Codigo\14190157.jpg" />
+    <Content Include="Imagen\Codigo\14220006.jpg" />
+    <Content Include="Imagen\Codigo\17280274.jpg" />
+    <Content Include="Imagen\Codigo\17290723.jpg" />
+    <Content Include="Imagen\Codigo\17311293.jpg" />
+    <Content Include="Imagen\Codigo\17312575.jpg" />
+    <Content Include="Imagen\Codigo\17326937.jpg" />
+    <Content Include="Imagen\Codigo\17333379.jpg" />
+    <Content Include="Imagen\Codigo\17338416.jpg" />
+    <Content Include="Imagen\Codigo\17338427.jpg" />
+    <Content Include="Imagen\Codigo\17340939.jpg" />
+    <Content Include="Imagen\Codigo\17347560.jpg" />
+    <Content Include="Imagen\Codigo\17416777.jpg" />
+    <Content Include="Imagen\Codigo\17420126.jpg" />
+    <Content Include="Imagen\Codigo\17783246.jpg" />
+    <Content Include="Imagen\Codigo\19192877.jpg" />
+    <Content Include="Imagen\Codigo\19294394.jpg" />
+    <Content Include="Imagen\Codigo\19355234.jpg" />
+    <Content Include="Imagen\Codigo\19389332.jpg" />
     <Content Include="Imagen\Codigo\21203334.jpg" />
+    <Content Include="Imagen\Codigo\21231983.jpg" />
     <Content Include="Imagen\Codigo\25179384.jpg" />
+    <Content Include="Imagen\Codigo\2833258.jpg" />
+    <Content Include="Imagen\Codigo\30081424.jpg" />
+    <Content Include="Imagen\Codigo\30508908.jpg" />
+    <Content Include="Imagen\Codigo\31522758.jpg" />
+    <Content Include="Imagen\Codigo\36310768.jpg" />
+    <Content Include="Imagen\Codigo\38211971.jpg" />
+    <Content Include="Imagen\Codigo\4.465.509.jpg" />
     <Content Include="Imagen\Codigo\40092915.jpg" />
+    <Content Include="Imagen\Codigo\40277330.jpg" />
+    <Content Include="Imagen\Codigo\40341949.jpg" />
+    <Content Include="Imagen\Codigo\40374712.jpg" />
+    <Content Include="Imagen\Codigo\40389018.jpg" />
+    <Content Include="Imagen\Codigo\4039394.jpg" />
+    <Content Include="Imagen\Codigo\40399392.jpg" />
     <Content Include="Imagen\Codigo\40428183.jpg" />
+    <Content Include="Imagen\Codigo\40433595.jpg" />
+    <Content Include="Imagen\Codigo\40433925.jpg" />
+    <Content Include="Imagen\Codigo\40732716.jpg" />
+    <Content Include="Imagen\Codigo\41369335.jpg" />
+    <Content Include="Imagen\Codigo\43583036.jpg" />
+    <Content Include="Imagen\Codigo\43755916.jpg" />
+    <Content Include="Imagen\Codigo\4913247.jpg" />
+    <Content Include="Imagen\Codigo\51633767.jpg" />
+    <Content Include="Imagen\Codigo\51637711.jpg" />
+    <Content Include="Imagen\Codigo\51751178.jpg" />
+    <Content Include="Imagen\Codigo\51751179.jpg" />
+    <Content Include="Imagen\Codigo\51879274.jpg" />
+    <Content Include="Imagen\Codigo\51933477.jpg" />
+    <Content Include="Imagen\Codigo\52995984.jpg" />
+    <Content Include="Imagen\Codigo\65795650.jpg" />
+    <Content Include="Imagen\Codigo\65824087.jpg" />
+    <Content Include="Imagen\Codigo\67040502.jpg" />
+    <Content Include="Imagen\Codigo\7316967.jpg" />
+    <Content Include="Imagen\Codigo\74379558.jpg" />
+    <Content Include="Imagen\Codigo\79264939.jpg" />
+    <Content Include="Imagen\Codigo\79292533.jpg" />
+    <Content Include="Imagen\Codigo\79350895.jpg" />
+    <Content Include="Imagen\Codigo\79594076.jpg" />
+    <Content Include="Imagen\Codigo\80000882.jpg" />
+    <Content Include="Imagen\Codigo\80033511.jpg" />
+    <Content Include="Imagen\Codigo\80085453.jpg" />
     <Content Include="Imagen\Codigo\80803077.jpg" />
+    <Content Include="Imagen\Codigo\86046395.jpg" />
+    <Content Include="Imagen\Codigo\86052567.jpg" />
     <Content Include="Imagen\Codigo\86087362.jpg" />
+    <Content Include="Imagen\Codigo\96330565.jpg" />
+    <Content Include="Imagen\Codigo\98554082.jpg" />
     <Content Include="Imagen\Codigo\GetFileAttachment.jpg" />
+    <Content Include="Imagen\Codigo\YA7300316.jpg" />
     <Content Include="Imagen\Evento\logo cacao tic.png" />
     <Content Include="Estilo\Public\assets\img\bg14.jpg" />
     <Content Include="Imagen\Evento\logo theobroma.png" />
@@ -331,6 +499,34 @@
     <Content Include="Estilo\Public\assets\js\plugins\sweetalert2.min.js" />
     <Content Include="Estilo\Public\assets\css\now-ui-dashboard.css.map" />
     <Content Include="Scripts\axios.min.js" />
+    <Content Include="Scripts\jsPDF\jspdf.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.addimage.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.cell.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.from_html.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.ie_below_9_shim.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.javascript.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.sillysvgrenderer.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.split_text_to_size.js" />
+    <Content Include="Scripts\jsPDF\jspdf.plugin.standard_fonts_metrics.js" />
+    <Content Include="Scripts\jsPDF\js\basic.js" />
+    <Content Include="Scripts\jsPDF\js\circles.js" />
+    <Content Include="Scripts\jsPDF\js\editor.js" />
+    <Content Include="Scripts\jsPDF\js\font-faces.js" />
+    <Content Include="Scripts\jsPDF\js\font-size.js" />
+    <Content Include="Scripts\jsPDF\js\from-html.js" />
+    <Content Include="Scripts\jsPDF\js\images.js" />
+    <Content Include="Scripts\jsPDF\js\jquery\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jsPDF\js\jquery\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="Scripts\jsPDF\js\kitchen-sink.js" />
+    <Content Include="Scripts\jsPDF\js\landscape.js" />
+    <Content Include="Scripts\jsPDF\js\lines.js" />
+    <Content Include="Scripts\jsPDF\js\rectangles.js" />
+    <Content Include="Scripts\jsPDF\js\string-splitting.js" />
+    <Content Include="Scripts\jsPDF\js\text-colors.js" />
+    <Content Include="Scripts\jsPDF\js\theme-ambiance.js" />
+    <Content Include="Scripts\jsPDF\js\triangles.js" />
+    <Content Include="Scripts\jsPDF\js\two-page.js" />
+    <Content Include="Scripts\jsPDF\js\user-input.js" />
     <Content Include="Scripts\Metodos.js" />
     <Content Include="Vistas\Complemento\ValidarPersona.aspx" />
     <Content Include="Vistas\Error\Error.aspx" />
@@ -344,9 +540,14 @@
     <Content Include="Vistas\Privado\SuperAdmin\GestionarTiposView.aspx" />
     <Content Include="Vistas\Privado\SuperAdmin\PagPrivateMaster.Master" />
     <Content Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\AsistenciaView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\GenerarReporteView.aspx" />
     <Content Include="Vistas\Privado\Usuario\GestionarPrograma.aspx" />
     <Content Include="Vistas\Privado\Usuario\ParticipanteView.aspx" />
     <Content Include="Vistas\Privado\Usuario\PrincipalView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\RecordatorioView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\RefrigerioView.aspx" />
+    <Content Include="Vistas\Privado\Usuario\RegistrarSoporteView.aspx" />
     <Content Include="Vistas\Publico\EventosView.aspx" />
     <Content Include="Vistas\Publico\InscribirCursoView.aspx" />
     <Content Include="Vistas\Publico\LoginPrivateView.aspx" />
@@ -374,6 +575,9 @@
     <Content Include="Vistas\Publico\ProgramaView.aspx" />
     <Content Include="Vistas\Publico\RegistrarView.aspx" />
     <Content Include="Vistas\Publico\WorkshopView.aspx" />
+    <Content Include="Vistas\Reporte\EnviarCorreo.aspx" />
+    <Content Include="Vistas\Reporte\Reporte.aspx" />
+    <Content Include="Vistas\Reporte\ReportePDF.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -493,6 +697,20 @@
     <Compile Include="Vistas\Privado\SuperAdmin\PrincipalView.aspx.designer.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Privado\Usuario\AsistenciaView.aspx.cs">
+      <DependentUpon>AsistenciaView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\AsistenciaView.aspx.designer.cs">
+      <DependentUpon>AsistenciaView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\GenerarReporteView.aspx.cs">
+      <DependentUpon>GenerarReporteView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\GenerarReporteView.aspx.designer.cs">
+      <DependentUpon>GenerarReporteView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Privado\Usuario\GestionarPrograma.aspx.cs">
       <DependentUpon>GestionarPrograma.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -520,6 +738,27 @@
     </Compile>
     <Compile Include="Vistas\Privado\Usuario\PrincipalView.aspx.designer.cs">
       <DependentUpon>PrincipalView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RecordatorioView.aspx.cs">
+      <DependentUpon>RecordatorioView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RecordatorioView.aspx.designer.cs">
+      <DependentUpon>RecordatorioView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RefrigerioView.aspx.cs">
+      <DependentUpon>RefrigerioView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RefrigerioView.aspx.designer.cs">
+      <DependentUpon>RefrigerioView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RegistrarSoporteView.aspx.cs">
+      <DependentUpon>RegistrarSoporteView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Privado\Usuario\RegistrarSoporteView.aspx.designer.cs">
+      <DependentUpon>RegistrarSoporteView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Publico\EventosView.aspx.cs">
       <DependentUpon>EventosView.aspx</DependentUpon>
@@ -576,6 +815,27 @@
     </Compile>
     <Compile Include="Vistas\Publico\WorkshopView.aspx.designer.cs">
       <DependentUpon>WorkshopView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reporte\EnviarCorreo.aspx.cs">
+      <DependentUpon>EnviarCorreo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reporte\EnviarCorreo.aspx.designer.cs">
+      <DependentUpon>EnviarCorreo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reporte\Reporte.aspx.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reporte\Reporte.aspx.designer.cs">
+      <DependentUpon>Reporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Reporte\ReportePDF.aspx.cs">
+      <DependentUpon>ReportePDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Reporte\ReportePDF.aspx.designer.cs">
+      <DependentUpon>ReportePDF.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

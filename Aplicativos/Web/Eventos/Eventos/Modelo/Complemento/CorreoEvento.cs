@@ -36,7 +36,7 @@ namespace Eventos.Models.Complemento
                 if (eve.LOGO != "")
                 {
                     html += "<center><img src='cid:Logo' width='300' height='150' /></center>"
-                    +"<br />";
+                    + "<br />";
                 }
                 html += "<h1 style='text-align:center'>" + eve.NOMBRE + "</h1>"
                     + "<br />"
@@ -315,6 +315,136 @@ namespace Eventos.Models.Complemento
                   + "Usuario: <b>" + per.IDENTIFICACION + "</b>"
                   + "<br />"
                   + " Contraseña: <b>" + per.IDENTIFICACION + "</b>"
+                  + "</p>";
+
+                htmlView = AlternateView.CreateAlternateViewFromString(html, Encoding.UTF8, MediaTypeNames.Text.Html);
+                LinkedResource img;
+                if (eve.LOGO != "")
+                {
+                    //Insertar Imagen
+                    img = new LinkedResource(HttpRuntime.AppDomainAppPath + "Imagen\\Evento\\" + eve.LOGO, MediaTypeNames.Image.Jpeg);
+                    img.ContentId = "Logo";
+                    htmlView.LinkedResources.Add(img);
+                }
+
+                m.AlternateViews.Add(htmlView);//Correo listo para enviar
+
+                //Datos del correo de envio
+                m.IsBodyHtml = true;
+                smpt.Host = con_gen.Rows[0]["SMTP"].ToString();
+                smpt.Port = Convert.ToInt32(con_gen.Rows[0]["PUERTO"].ToString());
+                smpt.Credentials = new NetworkCredential(con_gen.Rows[0]["CORREO"].ToString(), con_gen.Rows[0]["PASS"].ToString());
+                smpt.EnableSsl = false;
+                smpt.Send(m);
+
+                return true;//Correo enviado
+            }
+            catch
+            {
+                return false;//Correo no enviado
+            }
+        }
+        public bool CorreoMaxivo(EventoModel eve, string correo)
+        {
+            try
+            {
+                //Datos del correo a enviar
+                m.From = new MailAddress(con_gen.Rows[0]["CORREO"].ToString());
+                m.To.Add(new MailAddress(correo));
+                m.Subject = eve.NOMBRE;
+               
+                AlternateView htmlView;
+                string html = "";
+                //Mensaje
+                html += "<h1 style='text-align:center'>" + eve.NOMBRE + "</h1>";
+                if (eve.LOGO != "")
+                {
+                    html += "<center><img src='cid:Logo' width='300' height='150' /></center>";
+                }
+                html += "<br />"
+                  + "<br />"
+                  + "<p>"
+                  + "<b>¡ACERCA EL DÍA!</b>"
+                  + "<br />"
+                  + "<br />"
+        + "Nos reuniremos productores, investigadores, estudiantes, administradores y amantes del cacao de Colombia en un solo lugar."
+        + "<br />"
+        + "<br />"
+        + "¡Villavicencio será la casa del gremio cacaocultor del país!"
+        + "<br />"
+        + "<b>¡GRACIAS!</b>"
+        + "<br />"
+        + "<br />"
+        + "Traemos para ustedes los ponentes más calificados para asegurar la mejor experiencia académica en temas de cacao."
+        + "<br />"
+        + "COLOMBIA, FRANCIA, GUATEMALA, COSTA RICA Y VENEZUELA."
+        + "<br />"
+        + "<br />"
+        + "Conoce más en <a href='www.theobromaparalapaz.com.co'>www.theobromaparalapaz.com.co</a>"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<h2 style='text-align:center'>TALLERES PRE-CONGRESO 18 Y 19 DE JUNIO DE 2018.</h2>"
+        + "<br />"
+        + "<br />"
+        + "INSTRUCTORES DE LAS MEJORES INSTITUCIONES PREPARADOS PARA DICTAR LOS TALLERES:"
+                + "<br />"
+                + "Universidad De La Amazonia"
+        + "<br />"
+        + "Fedecacao"
+        + "<br />"
+        + "Universidad Surcolombiana"
+        + "<br />"
+        + "Universidad Simón Bolívar De Venezuela"
+        + "<br />"
+        + "Universidad De Los Llanos"
+        + "<br />"
+        + "Agrosavia"
+        + "<br />"
+        + "Sena"
+        + "<br />"
+        + "<br />"
+        + "LOS CURSOS TENDRÁN UN VALOR DE $20.000 PESOS CADA UNO, SERÁN DONADOS A FINCAS SELECCIONADAS, (Deberán ser cancelados al momento de entrar al aula)."
+        + "<br />"
+        + "Inscríbete a los cursos aquí: <a href='http://registro.theobromaparalapaz.com.co/Vistas/Publico/InscribirCursoView.aspx'>registro.theobromaparalapaz.com.co/Vistas/Publico/InscribirCursoView.aspx</a>"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<h2 style='text-align:center'> WORKSHOP <br /> “Tendencias de la investigación y el desarrollo del sector cacaotero y chocolatero en Colombia”. 20 de junio de 2018.</h2>"
+        + "<br />"
+        + "<br />"
+        + "TENDRÁ LUGAR EN EL AUDITORIO JAIME GARZÓN DE LA SEDE SAN ANTONIO DE LA UNIVERSIDAD DE LOS LLANOS, HABRÁ PONENCIAS NACIONALES TODO EL DÍA."
+        + "<br />"
+        + "NO TIENE COSTO DE INGRESO."
+        + "<br />"
+        + "REQUISITO INSCRIPCIÓN PREVIA."
+        + "<br />"
+        + "<br />"
+        + "Inscríbete al Workshop aquí: <a href='http://registro.theobromaparalapaz.com.co/Vistas/Publico/WorkshopView.aspx'>registro.theobromaparalapaz.com.co/Vistas/Publico/WorkshopView.aspx</a>"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<h2 style='text-align:center'> CONGRESO INTERNACIONAL THEOBROMA PARA LA PAZ <br />  21 Y 22 DE JUNIO</h2>"
+        + "<br />"
+        + "<br />"
+        + "PONENCIAS NACIONALES E INTERNACIONALES, CONCURSO DE CATACIÓN, FOROS TEMÁTICOS, INTERCAMBIO DE SABERES, GRADUACIÓN DE PRODUCTORES."
+        + "<br />"
+        + "<br />"
+        + "NO TIENE COSTO DE INGRESO."
+        + "<br />"
+        + "REQUISITO INSCRIPCIÓN PREVIA."
+        + "<br />"
+        + "Inscríbete al congreso aquí: <a href='http://registro.theobromaparalapaz.com.co/Vistas/Publico/RegistrarView.aspx?Evento=CacaoTics'>registro.theobromaparalapaz.com.co/Vistas/Publico/RegistrarView.aspx?Evento=CacaoTics</a>"
+        + "<br />"
+        + "<br />"
+        + "¡La mejor experiencia académica en un solo recinto!"
+        + "<br />"
+        + "<br />"
+        + "<br />"
+        + "<h3 style='text-align:center'> INSCRIBETE YA, LOS CUPOS SON LIMITADOS.</h3>"
                   + "</p>";
 
                 htmlView = AlternateView.CreateAlternateViewFromString(html, Encoding.UTF8, MediaTypeNames.Text.Html);

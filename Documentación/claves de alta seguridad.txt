@@ -1,0 +1,28 @@
+noreplycacaotic@gmail.com
+cacaotic1234###
+
+godaddy
+Usuario= CacaoTic
+pas=    TCa)$%&/(#$%&/#$%&123
+num=    5874
+
+plesk pass
+usuario= noreplycacaotic@gmail.com
+pass=  (#$%&/#$%&123Ad12
+
+Worpress
+usuario= congreso
+pass=   S0y100y0m4d112345###
+
+registro.theobromaparalapaz.com.co ftc account
+ip=  184.168.224.166
+ruta= /httpdocs
+user= ph14103529821
+pass= jmGs8?86
+
+Base de datos.
+
+nombre= evento
+user= CacaoTic
+pass= 2nMx3f9@
+hodst= 50.62.209.11:3306

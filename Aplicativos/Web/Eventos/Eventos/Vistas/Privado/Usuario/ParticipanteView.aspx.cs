@@ -16,7 +16,7 @@ namespace Eventos.Vistas.Privado.Usuario
         public DataTable GENERAL = new DataTable();
 
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {  
             if (Session["EVENTO_PUBLIC"] != null)
             {
                 ParticipanteModel PART = new ParticipanteModel();

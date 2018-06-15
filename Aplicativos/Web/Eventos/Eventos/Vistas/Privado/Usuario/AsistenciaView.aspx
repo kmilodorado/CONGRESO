@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Vistas/Privado/Usuario/PagPublicMaster.Master" AutoEventWireup="true" CodeBehind="AsistenciaView.aspx.cs" Inherits="Eventos.Vistas.Privado.Usuario.AsistenciaView" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <!-- Select2 -->
+    <link rel="stylesheet" href="../../../Estilo/select2/select2.css" />
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
@@ -10,10 +13,9 @@
                     <div class="card-icon">
                         <i class="material-icons">group</i>
                     </div>
-                    <h4 class="card-title">Participantes del Evento</h4>
+                    <h4 class="card-title">Listado de la asistencia del evento</h4>
                 </div>
                 <div class="card-body ">
-
                     <ul class="nav nav-pills nav-pills-warning" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">Congreso</a>
@@ -57,12 +59,38 @@
                             </div>
                         </div>
                     </div>
+                    <hr />
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Día de la Asistencia (*)</label>
+                            <asp:TextBox ID="TXT_FECHA" required="required" CssClass="form-control" placeholder="Fecha Nacimiento..." title="Fecha Nacimiento" TextMode="Date" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Hatas el día</label>
+                            <asp:TextBox ID="TXT_HASTA"  CssClass="form-control" placeholder="Fecha Nacimiento..." title="Fecha Nacimiento" TextMode="Date" runat="server"></asp:TextBox>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Sesión</label>
+                            <asp:DropDownList ID="DDL_SESION" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Tipo Documento" runat="server"></asp:DropDownList>
+                        </div>
+                        <div class="col-md-2">
+                            
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <iframe class="preview-pane" type="application/pdf" width="100%" height="650" frameborder="0" style="position:relative;z-index:999"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Pie" runat="server">
+    <script src="../../../Estilo/select2/select2.full.min.js"></script>
      <script type="text/javascript">
         $(document).ready(function () {
             $('#datatables3').DataTable({
@@ -80,6 +108,10 @@
             var table = $('#datatables3').DataTable();
             $('.card .material-datatables label').addClass('form-group');
         });
-      
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2();
+        });
     </script>
+  
 </asp:Content>

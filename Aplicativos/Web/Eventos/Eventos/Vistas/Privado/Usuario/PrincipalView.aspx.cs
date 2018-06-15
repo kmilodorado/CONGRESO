@@ -34,7 +34,7 @@ namespace Eventos.Vistas.Privado.Usuario
             {
                 Response.Redirect("~/Vistas/Publico/EventosView.aspx");
             }
-           
+
 
 
             //DataTable consulta = new ParticipanteModel().ConsultarParticipantes("1");

@@ -50,9 +50,9 @@ namespace Eventos.Modelo.Clases
             return new Datos().OperarDatos("");
         }
 
-        public DataTable ConsultarAsistencia(string evento)
+        public DataTable ConsultarRefrigerio(string evento)
         {
-            return new Datos().ConsultarDatos("");
+            return new Datos().ConsultarDatos("CALL `PR_REFRIGERIO_CONSULTAR`('"+1+"')");
         }
 
         public DataTable ConsultarParticipante(string Participante)
