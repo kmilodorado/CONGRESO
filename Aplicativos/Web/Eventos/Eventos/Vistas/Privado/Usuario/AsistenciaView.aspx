@@ -62,26 +62,17 @@
                     <hr />
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-5">
                             <label>Día de la Asistencia (*)</label>
                             <asp:TextBox ID="TXT_FECHA" required="required" CssClass="form-control" placeholder="Fecha Nacimiento..." title="Fecha Nacimiento" TextMode="Date" runat="server"></asp:TextBox>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-5">
                             <label>Hatas el día</label>
                             <asp:TextBox ID="TXT_HASTA"  CssClass="form-control" placeholder="Fecha Nacimiento..." title="Fecha Nacimiento" TextMode="Date" runat="server"></asp:TextBox>
                         </div>
-                        <div class="col-md-3">
-                            <label>Sesión</label>
-                            <asp:DropDownList ID="DDL_SESION" CssClass="form-control  select2" data-style="btn select-with-transition" title=" Seleccionar Tipo Documento" runat="server"></asp:DropDownList>
-                        </div>
                         <div class="col-md-2">
-                            
-                        </div>
-                    </div>
-                    <br />
-                    <div class="row">
-                        <div class="col-md-12">
-                            <iframe class="preview-pane" type="application/pdf" width="100%" height="650" frameborder="0" style="position:relative;z-index:999"></iframe>
+                            <br />
+                            <asp:Button ID="Reporte" CssClass="btn btn-info" OnClick="Reporte_Click" runat="server" Text="Reporte" />
                         </div>
                     </div>
                 </div>

@@ -24,5 +24,19 @@ namespace Eventos.Vistas.Privado.Usuario
                 Response.Redirect("~/Vistas/Publico/EventosView.aspx");
             }
         }
+
+        protected void Reporte_Click(object sender, EventArgs e)
+        {
+            if (Session["EVENTO_PUBLIC"] != null)
+            {
+                EventoModel EVEN = (EventoModel)Session["EVENTO_PUBLIC"];
+                Session["report"] = new AsistenciaModel().ConsultarAsistencia(EVEN.IDEVENTO, TXT_FECHA.Text, TXT_HASTA.Text);
+                Response.Redirect("~/Vistas/Reporte/Reporte.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
+            }
+        }
     }
 }

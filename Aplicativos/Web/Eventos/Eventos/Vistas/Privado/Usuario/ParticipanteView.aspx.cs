@@ -54,5 +54,47 @@ namespace Eventos.Vistas.Privado.Usuario
             }
             return aux;
         }
+
+        protected void Reporte_Click(object sender, EventArgs e)
+        {
+            if (Session["EVENTO_PUBLIC"] != null)
+            {
+                EventoModel EVEN = (EventoModel)Session["EVENTO_PUBLIC"];
+                Session["report"] = new ParticipanteModel().ConsultarParticipanteInscripcion(EVEN.IDEVENTO, "1");
+                Response.Redirect("~/Vistas/Reporte/Reporte.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
+            }
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (Session["EVENTO_PUBLIC"] != null)
+            {
+                EventoModel EVEN = (EventoModel)Session["EVENTO_PUBLIC"];
+                Session["report"] = new ParticipanteModel().ConsultarParticipanteInscripcion(EVEN.IDEVENTO, "2");
+                Response.Redirect("~/Vistas/Reporte/Reporte.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            if (Session["EVENTO_PUBLIC"] != null)
+            {
+                EventoModel EVEN = (EventoModel)Session["EVENTO_PUBLIC"];
+                Session["report"] = new ParticipanteModel().ConsultarParticipanteInscripcion(EVEN.IDEVENTO, "3");
+                Response.Redirect("~/Vistas/Reporte/Reporte.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/Vistas/Publico/EventosView.aspx");
+            }
+        }
     }
 }

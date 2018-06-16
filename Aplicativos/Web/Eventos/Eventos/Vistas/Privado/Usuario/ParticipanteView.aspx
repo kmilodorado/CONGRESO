@@ -57,6 +57,13 @@
                                         </asp:Repeater>
                                     </tbody>
                                 </table>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto  text-center"">
+                                        <br />
+                                        <asp:Button ID="Reporte" CssClass="btn btn-info" OnClick="Reporte_Click" runat="server" Text="Reporte" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane" id="link2">
@@ -97,6 +104,13 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <hr />
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto  text-center"">
+                                        <br />
+                                        <asp:Button ID="Button1" CssClass="btn btn-info" OnClick="Button1_Click" runat="server" Text="Reporte" />
+                                    </div>
+                                </div>
                         </div>
                         <div class="tab-pane" id="link3">
                             <div class="toolbar">
@@ -130,6 +144,13 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <hr />
+                                <div class="row">
+                                    <div class="col-md-6 ml-auto mr-auto  text-center"">
+                                        <br />
+                                        <asp:Button ID="Button2" CssClass="btn btn-info" OnClick="Button2_Click" runat="server" Text="Reporte" />
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

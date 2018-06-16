@@ -59,6 +59,15 @@ namespace Eventos.Modelo.Clases
             return new Datos().ConsultarDatos("CALL `PR_ASISTENCIA_CONSULTAR`('"+evento+"')");
         }
 
+        public DataTable ConsultarAsistencia(string evento,string fecha, string hasta)
+        {
+            return new Datos().ConsultarDatos("CALL `PR_ASISTENCIA_VARIA`('"+evento+"', '"+ fecha+"', '"+ hasta + "')");
+        }
+
+        public DataTable ConsultarSesion()
+        {
+            return new Datos().ConsultarDatos("SELECT * FROM SESION;");
+        }
         public DataTable ConsultarParticipante(string Participante)
         {
             return new Datos().ConsultarDatos("");
